@@ -74,7 +74,7 @@
                 ]
             }
         });
-        fetch('https://mirrors.shuosc.org/status/task_status.json')
+        fetch('status/task_status.json')
             .then(function(response) {
                 return response.json();
             }).then(function(data) {
