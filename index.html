@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>上海大学开源社区镜像站</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<div class="main-panel">
+		<img src="logo.png" class="logo">
+		<div class="title">上海大学开源社区</div>
+		<div class="title">镜像站</div>
+		<div class="mirror-list">
+            <div class="list-item">
+				<img src="images/ubuntu-icon.png" class="mirror-icon">
+				<div class="item-container">
+					<div class="mirror-title"> <a href="/ubuntu">Ubuntu</a> </div> 
+					<div class="update-time"></div>
+				</div>
+			</div>
+			<div class="list-item">
+				<img src="images/centos-icon.png" class="mirror-icon">
+				<div class="item-container">
+					<div class="mirror-title"> <a href="/centos">CentOS</a> </div> 
+					<div class="update-time"></div>
+				</div>
+			</div>
+			<div class="list-item">
+				<img src="images/archlinux-icon.png" class="mirror-icon">
+				<div class="item-container">
+					<div class="mirror-title"> <a href="/archlinux">Arch Linux</a> </div> 
+					<div class="update-time"></div>
+				</div>
+			</div>
+			<div class="list-item">
+				<img src="images/opensuse-icon.png" class="mirror-icon">
+				<div class="item-container">
+					<div class="mirror-title"> <a href="/opensuse">OpenSUSE</a> </div> 
+					<div class="update-time"></div>
+				</div>
+			</div>
+			<div class="list-item">
+				<img src="/apache/favicon.ico" class="mirror-icon">
+				<div class="item-container">
+					<div class="mirror-title"> <a href="/apache">Apache</a> </div> 
+					<div class="update-time">Updated at 2016-12-20 21:00:00</div>
+				</div>
+			</div>
+            <div class="list-item">
+                <img src="/images/tensorflow.jpg" class="mirror-icon">
+                <div class="item-container">
+                    <div class="mirror-title"> <a href="/tensorflow">TensorFLow</a></div>
+                    <div class="update-time">Updated at 2016-12-30 13:00:00</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="/images/mongodb.jpg" class="mirror-icon">
+                <div class="item-container">
+                    <div class="mirror-title"> <a href="/mongodb">Mongodb</a></div>
+                    <div class="update-time">Updated at 2016-12-30 22:22:10</div>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="/images/mysql.svg" class="mirror-icon" >
+                <div class="item-container">
+                    <div class="mirror-title"> <a href="/mysql">Mysql</a></div>
+                    <div class="update-time">Updated at 2016-12-30 14:11:22 </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="/images/postgresql.png" class="mirror-icon">
+                <div class="item-container">
+                    <div class="mirror-title"> <a href="/postgresql">Postgresql</a></div>
+                    <div class="update-time"> </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="/images/Rlogo.svg" class="mirror-icon">
+                <div class="item-container">
+                    <div class="mirror-title"> <a href="/cran">CRAN</a></div>
+                    <div class="update-time"> </div>
+                </div>
+            </div>
+             <div class="list-item">
+                   <img src="https://cldup.com/Rg6WLgqccB.svg" class="mirror-icon">
+                   <div class="item-container">
+                        <div class="mirror-title"><a href="https://npm.shuosc.org">NPM </a> </div>
+                        <div class="update-time">Update at 2016-12-30 23:00:00</div>
+                   </div>
+             </div>
+		</div>
+		<div class="footer">
+            <a href="http://git.shuosc.org" class="contact">gitlab服务</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://wiki.shuosc.org" class="contact">使用帮助</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="mailto:bucketzxm@gmail.com" class="contact">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="rsync.html" class="contact">同步详情</a>
+		</div>
+	</div>
+
+	<script src="js/trianglify.min.js"></script>
+    <script src="src/es6-promise/es6-promise.min.js"></script>
+    <script src="src/fetch/fetch.js"></script>
+	<script>
+		var background = Trianglify({
+			y_colors: ["#2b7c6b", "#56c6af","#44967f","#22bc9e"],
+			x_colors: ["#34485e", "#435c70"],
+			cell_size: 150,
+			width: window.screen.width,
+			height: window.screen.height
+    	});
+    	document.body.style['background'] = 'url(' + background.png() + ')';
+        /** 更新时间*/
+        var time = document.getElementsByClassName("list-item");
+        fetch('status/task_status.json')
+            .then(function(response) {
+                return response.json()
+            }).then(function(json) {
+                //console.log(json['ubuntu'])
+                time[0].querySelector(".update-time").innerHTML = 'Updated at '+json['ubuntu'].date;
+                time[1].querySelector(".update-time").innerHTML = 'Updated at '+json['centos'].date;
+                time[2].querySelector(".update-time").innerHTML = 'Updated at '+json['archlinux'].date;
+                time[3].querySelector(".update-time").innerHTML = 'Updated at '+json['opensuse'].date;
+                time[8].querySelector(".update-time").innerHTML = 'Updated at '+json['postgresql'].date;
+                time[9].querySelector(".update-time").innerHTML = 'Updated at '+json['cran'].date;
+            }).catch(function(ex) {
+                console.log('parsing failed', ex)
+            })
+	</script>
+</body>
+</html>

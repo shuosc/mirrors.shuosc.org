@@ -1,0 +1,23 @@
+{
+  "name": "mirrors.shuosc.org",
+  "authors": [
+    "zhonger <wuwozhonger@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch": "^1.0.0",
+    "es6-promise": "^3.3.1"
+  }
+}
+
