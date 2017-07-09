@@ -49,14 +49,7 @@
     <script src="src/es6-promise/es6-promise.min.js"></script>
     <script src="src/fetch/fetch.js"></script>
 	<script>
-		var background = Trianglify({
-			y_colors: ["#2b7c6b", "#56c6af","#44967f","#22bc9e"],
-			x_colors: ["#34485e", "#435c70"],
-			cell_size: 150,
-			width: window.screen.width,
-			height: window.screen.height
-    	});
-    	document.body.style['background'] = 'url(' + background.png() + ')';
+
         var createMirror = function(value) {
             return Object.assign({status: 'Loading', 
                 updateDate: '0000-00-00 00:00:00', nextDate: '0000-00-00 00:00:00'}, value);
@@ -90,6 +83,14 @@
                 }
                 console.error(err);
             });
+        var background = Trianglify({
+            y_colors: ["#2b7c6b", "#56c6af","#44967f","#22bc9e"],
+            x_colors: ["#34485e", "#435c70"],
+            cell_size: 150,
+            width: window.screen.width,
+            height: window.screen.height
+        });
+        document.body.style['background'] = 'url(' + background.png() + ')';
 	</script>
 </body>
 </html>
