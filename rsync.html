@@ -32,10 +32,10 @@
             <tbody>
                 <tr v-for="mirror in mirrors">
                     <td> <img :src="mirror.logo" class="mirror-icon"></td>
-                    <td> {{ mirror.name }} </td>
-                    <td> {{ mirror.status }}</td>
-                    <td> {{ mirror.updateDate }}</td>
-                    <td> {{ mirror.nextDate }}</td>
+                    <td v-text="mirror.name"></td>
+                    <td v-text="mirror.status"></td>
+                    <td v-text="mirror.updateDate"></td>
+                    <td v-text="mirror.nextDate"></td>
                 </tr>
             </tbody>
         </table>
