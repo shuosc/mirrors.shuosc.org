@@ -1,11 +1,26 @@
-		.main-panel { 
+        html, body {
+            height: 100%;
+            margin: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            resize: vertical;
+            overflow: auto;
+        } 
+
+        .main-panel { 
 			background-color: #fff; 
 			border-radius: 3px; 
 			width: 300px; 
 			min-height: 455px; 
-			margin: 80px auto 30px;
+			margin: 40px auto;
 			border: 1px solid #f1f1f1;
 			color: #778490;
+            resize: vertical;
+            overflow: auto;
 		}
 
 		.logo {
