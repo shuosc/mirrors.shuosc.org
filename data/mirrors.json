@@ -1,0 +1,29 @@
+{
+    "fileName": "上海大学开源社区镜像列表",
+    "sources": [{
+        "name": "ubuntu",
+        "isNew": false,
+        "help": "",
+        "description": "常用linux桌面操作系统",
+        "url": "/ubuntu"
+    }, {
+        "name": "ubuntu",
+        "isNew": false,
+        "help": "",
+        "description": "常用linux桌面操作系统",
+        "url": "/ubuntu"
+    }],
+    "isos": [{
+        "name": "ubuntu-cd",
+        "images": [{
+            "title": "ubuntu16.04",
+            "url": ""
+        }, {
+            "title": "ubuntu16.04",
+            "url": ""
+        }, {
+            "title": "ubuntu16.04",
+            "url": ""
+        }]
+    }]
+}

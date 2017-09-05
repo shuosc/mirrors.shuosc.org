@@ -1,0 +1,268 @@
+/* http://mirrors.shuosc.org/status/task_status.json */
+{
+    "alpine": {
+        "status": 0,
+        "upstream": "rsync.alpinelinux.org::alpine//",
+        "schedule": "2017-08-25 16:35:00"
+    },
+    "anaconda": {
+        "status": 2,
+        "date": "2017-08-25 15:36:12",
+        "message": "Task finished",
+        "exitcode": 15,
+        "schedule": "2017-08-26 04:05:00"
+    },
+    "apache": {
+        "status": 2,
+        "schedule": "2017-08-25 16:40:00",
+        "upstream": "rsync.apache.org::apache-dist//",
+        "date": "2017-08-25 00:55:16",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "archlinux": {
+        "status": 2,
+        "schedule": "2017-08-25 16:30:00",
+        "upstream": "mirrors.ustc.edu.cn::archlinux//",
+        "date": "2017-08-25 00:55:00",
+        "message": "Error in socket I/O",
+        "exitcode": 10
+    },
+    "centos": {
+        "status": 2,
+        "schedule": "2017-08-25 18:23:00",
+        "upstream": "mirrors.ustc.edu.cn::centos//",
+        "date": "2017-08-25 00:35:18",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "cran": {
+        "status": 2,
+        "schedule": "2017-08-25 20:15:00",
+        "upstream": "cran.r-project.org::CRAN//",
+        "date": "2017-08-25 00:15:53",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "ctan": {
+        "status": 2,
+        "schedule": "2017-08-25 16:47:00",
+        "upstream": "rsync.dante.ctan.org::CTAN//",
+        "date": "2017-08-25 10:55:00",
+        "message": "Received SIGUSR1 or SIGINT",
+        "exitcode": 20
+    },
+    "debian": {
+        "status": 2,
+        "schedule": "2017-08-25 18:22:00",
+        "upstream": "ftp.cn.debian.org::debian//",
+        "date": "2017-08-25 00:18:29",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "debian-cd": {
+        "status": 0,
+        "schedule": "2017-08-25 20:10:00",
+        "upstream": "mirrors.kernel.org::debian-cd//"
+    },
+    "debian-multimedia": {
+        "status": 2,
+        "schedule": "2017-08-26 00:25:00",
+        "upstream": "www.deb-multimedia.org::deb//",
+        "date": "2017-08-25 00:26:24",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "deepin": {
+        "status": 0,
+        "upstream": "rsync.deepin.com::deeping//",
+        "schedule": "2017-08-25 16:45:00"
+    },
+    "deepin-cd": {
+        "status": 0,
+        "upstream": "rsync.deepin.com::releases//",
+        "schedule": "2017-08-26 01:48:00"
+    },
+    "docker": {
+        "status": 2,
+        "date": "2017-08-25 15:36:12",
+        "message": "Task finished",
+        "schedule": "2017-08-26 03:45:00",
+        "exitcode": 15
+    },
+    "elvish": {
+        "status": 0,
+        "upstream": "rsync.elvish.io::elvish//",
+        "schedule": "2017-08-26 00:45:00"
+    },
+    "gentoo": {
+        "status": 2,
+        "schedule": "2017-08-25 18:52:00",
+        "upstream": "mirror.us.leaseweb.net::gentoo//",
+        "date": "2017-08-25 10:50:00",
+        "message": "Received SIGUSR1 or SIGINT",
+        "exitcode": 20
+    },
+    "homebrew-bottles": {
+        "status": 2,
+        "schedule": "2017-08-26 00:50:00",
+        "upstream": "mirrors.ustc.edu.cn::homebrew-bottles//",
+        "date": "2017-08-25 06:40:11",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "jenkins": {
+        "status": 0,
+        "upstream": "rsync.osuosl.org::jenkins//",
+        "schedule": "2017-08-25 16:08:00"
+    },
+    "kali": {
+        "status": 2,
+        "schedule": "2017-08-25 18:35:00",
+        "upstream": "mirrors.ustc.edu.cn::kali//",
+        "date": "2017-08-25 07:04:57",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "kali-images": {
+        "status": 0,
+        "upstream": "ftp.nluug.nl::kali-images//",
+        "schedule": "2017-08-25 18:11:00"
+    },
+    "kali-security": {
+        "status": 0,
+        "upstream": "ftp.nluug.nl::debian//",
+        "schedule": "2017-08-26 00:20:00"
+    },
+    "mariadb": {
+        "status": 2,
+        "schedule": "2017-08-25 16:08:00",
+        "upstream": "rsync.osuosl.org::mariadb//",
+        "date": "2017-08-25 10:50:00",
+        "message": "Received SIGUSR1 or SIGINT",
+        "exitcode": 20
+    },
+    "mongodb": {
+        "status": 2,
+        "date": "2017-08-25 14:05:00",
+        "message": "Task finished",
+        "schedule": "2017-08-26 02:05:00",
+        "exitcode": 15
+    },
+    "mysql": {
+        "status": 2,
+        "date": "2017-08-25 02:53:14",
+        "message": "Task finished",
+        "schedule": "2017-08-26 02:25:00",
+        "exitcode": 8
+    },
+    "node": {
+        "status": 2,
+        "date": "2017-08-25 13:45:00",
+        "message": "Task finished",
+        "schedule": "2017-08-26 01:45:00",
+        "exitcode": 15
+    },
+    "opensuse": {
+        "status": 2,
+        "schedule": "2017-08-25 18:05:00",
+        "upstream": "rsync.opensuse.org::opensuse-hotstuff-160gb//",
+        "date": "2017-08-24 23:06:25",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "postgresql": {
+        "status": 2,
+        "schedule": "2017-08-25 16:23:00",
+        "upstream": "rsync.postgresql.org::pgsql-ftp//",
+        "date": "2017-08-25 10:50:01",
+        "message": "Received SIGUSR1 or SIGINT",
+        "exitcode": 20
+    },
+    "pritunl": {
+        "status": 2,
+        "date": "2017-08-25 03:08:29",
+        "message": "Task finished",
+        "schedule": "2017-08-26 02:45:00",
+        "exitcode": 8
+    },
+    "pypi": {
+        "status": 2,
+        "date": "2017-08-25 01:25:02",
+        "message": "Task finished",
+        "schedule": "2017-08-26 01:25:00",
+        "exitcode": 1
+    },
+    "repoforge": {
+        "status": 0,
+        "upstream": "ftp.nluug.nl::repoforge//",
+        "schedule": "2017-08-25 20:25:00"
+    },
+    "ruby": {
+        "status": 2,
+        "date": "2017-08-25 04:05:20",
+        "message": "Task finished",
+        "schedule": "2017-08-26 03:25:00",
+        "exitcode": 8
+    },
+    "sleep": {
+        "status": 2,
+        "date": "2017-08-25 15:36:12",
+        "message": "Task finished",
+        "schedule": "2017-08-25 15:37:00",
+        "exitcode": 15
+    },
+    "ubuntu": {
+        "status": 2,
+        "schedule": "2017-08-25 18:12:00",
+        "upstream": "cn.rsync.archive.ubuntu.com::ubuntu//",
+        "date": "2017-08-25 00:41:26",
+        "message": "Received SIGUSR1 or SIGINT",
+        "exitcode": 20
+    },
+    "ubuntu-releases": {
+        "status": 2,
+        "schedule": "2017-08-26 00:50:00",
+        "upstream": "rsync.releases.ubuntu.com::releases//",
+        "date": "2017-08-25 00:54:16",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "videolan-ftp": {
+        "status": 0,
+        "schedule": "2017-08-25 20:05:00",
+        "upstream": "rsync.videolan.org::videolan-ftp//"
+    },
+    "vim": {
+        "status": 0,
+        "schedule": "2017-08-25 18:05:00",
+        "upstream": "ftp.tsukuba.wide.ad.jp::vim//"
+    },
+    "virtualbox": {
+        "status": 2,
+        "date": "2017-08-25 15:36:12",
+        "message": "Task finished",
+        "exitcode": 15,
+        "schedule": "2017-08-26 04:25:00"
+    },
+    "wgetcleaner": {
+        "status": 1,
+        "date": "2017-08-25 08:00:00",
+        "schedule": "2017-08-26 08:00:00"
+    },
+    "zabbix": {
+        "status": 2,
+        "schedule": "2017-08-25 23:25:00",
+        "upstream": "repo.zabbix.com::mirror//",
+        "date": "2017-08-24 23:25:11",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "zerotier": {
+        "status": 2,
+        "date": "2017-08-25 04:07:51",
+        "message": "Task finished",
+        "schedule": "2017-08-26 03:05:00",
+        "exitcode": 0
+    }
+}
