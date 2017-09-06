@@ -2,16 +2,22 @@ body {
     margin: 0px;
 }
 
-.logo {
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+#menu{
+    background-color: #eef1f6;
+}
+
+#menu .title{
+    float: left;
     display: inline-block;
-    background: url(/logo.png) no-repeat;
-    background-size: 40px 40px;
-    background-position: left;
     line-height: 60px;
-    padding-left: 48px;
     margin-left: 60px;
     font-size: 24px;
-    color: #435c70;
+    color: #34495e;
 }
 
 .navBar {
@@ -24,8 +30,8 @@ a {
     text-decoration: none;
 }
 
-#mirrors-list {
-    margin: 20px 40px;
+#mirrors-list,#isos,#news,#links,#copyright {
+    padding: 20px 40px;
 }
 
 #mirrors-list a:hover {
@@ -39,28 +45,67 @@ a {
 
 .bar .title {
     display: inline-block;
-    width: 100px;
     font-size: 24px;
     line-height: 36px;
+    color: #435c70;
 }
 
 .bar .search {
     display: inline-block;
     width: 200px;
     float: right;
-    margin-right: 100px;
+    margin-right: 50px;
+}
+
+
+#news a:hover,#links a:hover {
+    text-decoration: underline;
+}
+
+#news a,#links a{
+    margin:5px 10px;
+    color: #34495e;
 }
 
 #copyright {
     background-color: #435c70;
-    color: #fff;
+    color: #dbdbdb;
     font-size: 14px;
-    line-height: 20px;
-    padding: 10px 40px;
+    line-height: 25px;
+    padding: 20px 40px;
 }
 
 #copyright a {
     color: #fff;
-    text-decoration: underline;
+    font-weight: bold;
     margin: 0 5px;
+}
+
+#copyright .content{
+    width: 72%;
+    margin: 10px;
+    display: inline-block;
+}
+
+#copyright p{
+    margin: 0;
+}
+
+#copyright .logo {
+    display: inline-block;
+    position: relative;
+    float: right;
+    background: url(/logo.png) no-repeat;
+    background-size: 70px 70px;
+    background-position: top;
+    margin-top: 8px;
+    padding-top: 80px;
+    font-size: 24px;
+    color: #fff;
+}
+
+@media screen and  (max-width: 1370px) {
+    .container {
+        width: 100%;
+    }
 }

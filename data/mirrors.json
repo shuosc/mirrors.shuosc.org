@@ -1,29 +1,532 @@
 {
-    "fileName": "上海大学开源社区镜像列表",
-    "sources": [{
-        "name": "ubuntu",
+    "mirrors": [ {
+        "name": "debian",
         "isNew": false,
-        "help": "",
-        "description": "常用linux桌面操作系统",
-        "url": "/ubuntu"
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/debian",
+        "updateTime": "2017-08-23 19:00:00",
+        "url": "/debian",
+        "help": "https://wiki.shuosc.org/help/debian",
+        "exitcode": "0"
     }, {
+        "name": "debian-multimedia",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::www.deb-multimedia.org/deb",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/debian-multimedia",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "ubuntu-releases",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.releases.ubuntu.com/releases",
+        "updateTime": "2017-08-23 12:00:00",
+        "url": "/ubuntu-releases",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "homebrew-bottles",
+        "isNew": true,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/homebrew-bottles",
+        "updateTime": "2017-08-23 12:00:00",
+        "url": "/homebrew-bottles",
+        "help": "https://wiki.shuosc.org/help/homebrew-bottles",
+        "exitcode": "0"
+    }, {
+        "name": "pypi",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://pypi.python.org",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/pypi",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "node",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://nodejs.org/dist/",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/node",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "mongodb",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://repo.mongodb.org",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/monogodb",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "mysql",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://repo.mysql.com",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/mysql",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "pritunl",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "https://repo.pritunl.com",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/pritunl",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "zerotier",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://download.zerotier.com",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/zerotier",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "ruby",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://cache.ruby-china.org",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/ruby",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "docker-ce",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://download.docker.com",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/docker-ce",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "anaconda",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "https://repo.continuum.io",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/anaconda",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "virtualbox",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "http://download.virtualbox.org/virtualbox",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/virtualbox",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "archlinux",
+        "isNew": false,
+        "taskStatus": "1",
+        "sources": "rsync::mirrors.ustc.edu.cn/archlinux",
+        "updateTime": "2017-08-23 19:00:00",
+        "url": "/archlinux",
+        "help": "https://wiki.shuosc.org/help/archlinux",
+        "exitcode": "0"
+    },{
         "name": "ubuntu",
         "isNew": false,
+        "taskStatus": "0",
+        "sources": "rsync::archive.ubuntu.com/ubuntu",
+        "updateTime": "",
+        "url": "/ubuntu",
+        "help": "https://wiki.shuosc.org/help/ubuntu"
+    }, {
+        "name": "apache",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.apache.org/apache-dist",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/apache",
         "help": "",
-        "description": "常用linux桌面操作系统",
-        "url": "/ubuntu"
+        "exitcode": "0"
+    }, {
+        "name": "centos",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/centos",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/centos",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kali",
+        "isNew": true,
+        "taskStatus": "1",
+        "sources": "rsync::mirrors.ustc.edu.cn/kali",
+        "updateTime": "2017-08-23 18:00:00",
+        "url": "/kali",
+        "help": "https://wiki.shuosc.org/help/kali"
+    }, {
+        "name": "mariadb",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.osuosl.org/mariadb",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/mariadb",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "postgresql",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.postgresql.org/pgsql-ftp",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/postgresql",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "CTAN",
+        "isNew": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.dante.ctan.org/CTAN",
+        "updateTime": "2017-08-23 21:00:00",
+        "url": "/CTAN",
+        "help": "https://wiki.shuosc.org/help/ctan",
+        "exitcode": "0"
+    }, {
+        "name": "gentoo",
+        "isNew": false,
+        "taskStatus": "0",
+        "sources": "rsync::ftp.iij.ad.jp/gentoo",
+        "updateTime": "",
+        "url": "/gentoo",
+        "help": "https://wiki.shuosc.org/help/gentoo",
+        "exitcode": "20"
+    }, {
+        "name": "opensuse",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/opensuse",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/opensuse",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "zabbix",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::repo.zabbix.com/mirror",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/zabbix",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "CRAN",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::cran.r-project.org/CRAN",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/CRAN",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "vim",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.tsukuba.wide.ad.jp/vim",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/vim",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "jenkins",
+        "isNew": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.osuosl.org/jenkins",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/jenkins",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "debian-cd",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.kernel.org/debian-cd",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/debian-cd",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kali-images",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/kali-images",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/kali-images",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kali-security",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/kali-security",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/kali-security",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "repoforge",
+        "isNew": true,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/repoforge",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/repoforge",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "elvish",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.elvish.io/elvish",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/elvish",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "videolan-ftp",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.videolan.org/videolan-ftp",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/videolan-ftp",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "alpine",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.alpinlinux.org/alpine",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/alpine",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "deepin",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.deepin.com/deepin",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/deepin",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "deepin-cd",
+        "isNew": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.deepin.com/release",
+        "updateTime": "2017-08-23 22:00:00",
+        "url": "/deepin-cd",
+        "help": "",
+        "exitcode": "0"
     }],
     "isos": [{
-        "name": "ubuntu-cd",
-        "images": [{
-            "title": "ubuntu16.04",
-            "url": ""
-        }, {
-            "title": "ubuntu16.04",
-            "url": ""
-        }, {
-            "title": "ubuntu16.04",
-            "url": ""
+        "value": "Ubuntu",
+        "label": "Ubuntu",
+        "children": [{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-amd64.iso",
+            "label": "16.04-server-amd64"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-i386.iso",
+            "label": "16.04-server-i386"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-amd64.iso",
+            "label": "16.04-desktop-amd64"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-i386.iso",
+            "label": "16.04-desktop-i386"
+        },{
+            "value": "/ubuntu-releases/zesty/ubuntu-17.04-server-amd64.iso",
+            "label": "17.04-server-amd64"
+        },{
+            "value": "/ubuntu-releases/zesty/ubuntu-17.04-server-i386.iso",
+            "label": "17.04-server-i386"
+        },{
+            "value": "/ubuntu-releases/zesty/ubuntu-17.04-desktop-amd64.iso",
+            "label": "17.04-desktop-amd64"
+        },{
+            "value": "/ubuntu-releases/zesty/ubuntu-17.04-desktop-i386.iso",
+            "label": "17.04-desktop-i386"
+        }]
+    },{
+        "value": "Centos",
+        "label": "Centos",
+        "children": [{
+            "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1611.iso",
+            "label": "7-livecd-amd64"
+        },{
+            "value": "/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-LiveDVD.iso",
+            "label": "6.9-livecd-amd64"
+        },{
+            "value": "/centos/6.9/isos/i386/CentOS-6.9-i386-LiveDVD.iso",
+            "label": "6.9-livecd-i386"
+        }]
+    },{
+        "value": "Kali",
+        "label": "Kali",
+        "children": [{
+            "value": "/kali-images/kali-2017.1/kali-linux-2017.1-amd64.iso",
+            "label": "2017.1-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-2017.1-i386.iso",
+            "label": "2017.1-i386"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-kde-2017.1-amd64.iso",
+            "label": "2017.1-kde-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-mate-2017.1-amd64.iso",
+            "label": "2017.1-mate-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-xfce-2017.1-amd64.iso",
+            "label": "2017.1-xfce-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-amd64.iso",
+            "label": "2017.1-light-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-i386.iso",
+            "label": "2017.1-light-i386"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-lxde-2017.1-amd64.iso",
+            "label": "2017.1-lxde-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-e17-2017.1-amd64.iso",
+            "label": "2017.1-e17-amd64"
+        }]
+    },{
+        "value": "Debian",
+        "label": "Debian",
+        "children": [{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso",
+            "label": "9.1-gnome-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-kde.iso",
+            "label": "9.1-kde-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-mate.iso",
+            "label": "9.1-mate-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-xfce.iso",
+            "label": "9.1-xfce-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-cinnamon.iso",
+            "label": "9.1-cinnamon-amd64"
+        }]
+    },{
+        "value": "Archlinux",
+        "label": "Archlinux",
+        "children": [{
+            "value": "/archlinux/iso/2017.09.01/archlinux-2017.09.01-x86_64.iso",
+            "label": "2017.09.01-amd64"
+        },{
+            "value": "/archlinux/iso/2017.08.01/archlinux-2017.08.01-x86_64.iso",
+            "label": "2017.08.01-amd64"
+        },{
+            "value": "/archlinux/iso/2017.07.01/archlinux-2017.07.01-x86_64.iso",
+            "label": "2017.07.01-amd64"
+        }]
+    },{
+        "value": "Gentoo",
+        "label": "Gentoo",
+        "children": [{
+            "value": "/gentoo/releases/amd64/20170118/livedvd-amd64-hardened-nomultilib-20170118.iso",
+            "label": "20170118-amd64"
+        },{
+            "value": "/gentoo/releases/amd64/20160704/livedvd-amd64-multilib-20160704.iso",
+            "label": "20160704-amd64"
+        },{
+            "value": "/gentoo/releases/amd64/20160704/livedvd-x86-amd64-32ul-20160704.iso",
+            "label": "20160704-amd64"
+        }]
+    },{
+        "value": "Deepin",
+        "label": "Deepin",
+        "children": [{
+            "value": "/deepin-cd/15.4.1/deepin-15.4.1-amd64.iso",
+            "label": "15.4.1-amd64"
+        },{
+            "value": "/deepin-cd/15.3/deepin-15.3-amd64.iso",
+            "label": "15.3-amd64"
+        },{
+            "value": "/deepin-cd/15.3/deepin-15.3-i386.iso",
+            "label": "15.3-i386"
+        }]
+    },{
+        "value": "Opensuse",
+        "label": "Opensuse",
+        "children": [{
+            "value": "/opensuse/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso",
+            "label": "42.3-amd64"
+        },{
+            "value":" /opensuse/distribution/leap/42.2/iso/openSUSE-Leap-42.2-DVD-x86_64.iso",
+            "label": "42.2-amd64"
+        },{
+            "value": "/opensuse/distribution/leap/42.1/iso/openSUSE-Leap-42.1-DVD-x86_64.iso",
+            "label": "42.1-amd64"
+        }]
+    },{
+        "value": "CTAN",
+        "label": "CTAN",
+        "children": [{
+            "value": "/CTAN/systems/mac/mactex/MacTeX.pkg",
+            "label": "MacTex"
+        },{
+            "value":"/CTAN/systems/texlive/Images/texlive.iso",
+            "label": "Texlive-linux&&win"
+        },{
+            "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361-x64.exe",
+            "label": "miktex-win64"
+        },{
+            "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361.exe",
+            "label": "miktex-win32"
+        }]
+    },{
+        "value": "Virtualbox",
+        "label": "Virtualbox",
+        "children": [{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1.8-111374-Win.exe",
+            "label": "5.1.8-win64"
+        },{
+            "value":" /virtualbox/5.1.8/VirtualBox-5.1.8-111374-Linux_amd64.run",
+            "label": "5.1.8-linux-amd64"
+        },{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1-5.1.8_111374_openSUSE132-1.x86_64.rpm",
+            "label": "5.1.8-opensuse-amd64"
+        },{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1.8-111374-OSX.dmg",
+            "label": "5.1.8-mac-amd64"
+        },{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1-5.1.8_111374_el7-1.x86_64.rpm",
+            "label": "5.1.8-centos7-amd64"
+        },{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1-5.1.8_111374_el6-1.x86_64.rpm",
+            "label": "5.1.8-centos6-amd64"
+        },{
+            "value": "/virtualbox/5.1.8/VirtualBox-5.1-5.1.8_111374_fedora24-1.x86_64.rpm",
+            "label": "5.1.8-fedora-amd64"
+        }]
+    },{
+        "value": "Node",
+        "label": "Node",
+        "children": [{
+            "value": "/node/latest/node-v8.4.0-x64.msi",
+            "label": "8.4.0-win64"
+        },{
+            "value":" /node/latest/node-v8.4.0-linux-x64.tar.gz",
+            "label": "8.4.0-linux-amd64"
+        },{
+            "value": "/node/latest/node-v8.4.0.pkg",
+            "label": "8.4.0-mac-amd64"
         }]
     }]
 }

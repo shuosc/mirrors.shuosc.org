@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>上海大学开源镜像站</title>
+  
+  <link href="/news/atom.xml" rel="self"/>
+  
+  <link href="https://mirrors.as/"/>
+  <updated>2017-09-06T09:24:46.770Z</updated>
+  <id>https://mirrors.as/</id>
+  
+  <author>
+    <name>SHUOSC</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>镜像站管理升级</title>
+    <link href="https://mirrors.as/p/366ce3f7.html"/>
+    <id>https://mirrors.as/p/366ce3f7.html</id>
+    <published>2017-09-06T09:23:50.000Z</published>
+    <updated>2017-09-06T09:24:46.770Z</updated>
+    
+    <content type="html"><![CDATA[<p>本次镜像站对管理工具进行了整合，全面实现镜像站的管理升级。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本次镜像站对管理工具进行了整合，全面实现镜像站的管理升级。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>镜像站新主页上线了！</title>
+    <link href="https://mirrors.as/p/91a56fcb.html"/>
+    <id>https://mirrors.as/p/91a56fcb.html</id>
+    <published>2017-09-06T09:23:09.000Z</published>
+    <updated>2017-09-06T09:23:44.851Z</updated>
+    
+    <content type="html"><![CDATA[<p>镜像站新主页终于上线了！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;镜像站新主页终于上线了！&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
