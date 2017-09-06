@@ -5,23 +5,176 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>上海大学开源社区</title>
+    <title>上海大学开源镜像站</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
     <link href="https://cdn.bootcss.com/element-ui/1.4.3/theme-default/index.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="src/mirrors.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
+    <div id="menu">
+        <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect">
+            <div class="navBar">
+                <el-menu-item index="1"><a href="#mirrors-list">源列表</a></el-menu-item>
+                <el-menu-item index="2"><a href="#isos">获取安装镜像</a></el-menu-item>
+                <el-menu-item index="3"><a href="#news">镜像通知</a></el-menu-item>
+            </div>
+        </el-menu>
+    </div>
+    <div id="description">
 
+    </div>
+    <div id="mirrors-list">
+        <div class="bar">
+            <div class="title">源列表</div>
+            <el-input v-model="search" placeholder="输入关键词筛选镜像" class="search"></el-input>
+        </div>
+        <template>
+            <el-table :data="searchData" stripe style="width: 100%" >
+                <el-table-column prop="name" label="镜像名" width="200" sortable>
+                    <template scope="scope">
+                        <a v-bind:href="['https://mirrors.shuosc.org'+scope.row.url]">{{scope.row.name}}</a>
+                        <el-tag v-if="scope.row.isNew" type="primary">新</el-tag>
+                    </template>
+        </el-table-column>
+        <el-table-column prop="sources" label="上游地址" width="350"></el-table-column>
+        <el-table-column prop="taskStatus" label="同步状态" width="120" sortable>
+            <template scope="scope">
+                        <el-tag v-if="scope.row.taskStatus === '1'" type="primary">正在同步</el-tag>
+                        <el-tag v-else-if="scope.row.taskStatus === '2'" type="success">同步完成</el-tag>
+                        <el-tag v-else type="danger">同步出错</el-tag>
+                    </template>
+        </el-table-column>
+        <el-table-column prop="updateTime" label="最近一次同步时间">
+            <template scope="scope">
+                        <div v-if="scope.row.updateTime == ''">Unknow</div>
+                        <div v-else>{{scope.row.updateTime}}</div>
+                    </template>
+        </el-table-column>
+        <el-table-column prop="help" label="帮助" width="100" sortable>
+            <template scope="scope">
+                        <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank">Help</a>
+                    </template>
+        </el-table-column>
+        </el-table>
+        </template>
+    </div>
+    <div id="isos">
+
+    </div>
+    <div id="news">
+
+    </div>
+    <div id="copyright">
+        <p>上海大学开源软件镜像是由<a href="http://www.its.shu.edu.cn" target="_blank">上海大学信息化办公室</a>提供基础设施、技术指导支持，由<a href="https://nita.shu.edu.cn">上海大学NITA实验室</a>提供服务器支持，由<a href="https://osc.shu.edu.cn">上海大学开源社区</a>负责管理维护。</p>
+        <p>快速链接：<a href="https://github.com/shuopensourcecommunity">Github</a><a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new">提交问题或建议</a><a href="https://www.shuhelper.cn">SHUhelper</a>
+            <a href=""></a>
+        </p>
     </div>
     <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
     <script src="https://cdn.bootcss.com/element-ui/1.4.3/index.js"></script>
-    <script src="https://cdn.bootcss.com/es6-promise/4.1.1/es6-promise.min.js"></script>
-    <script src="https://cdn.bootcss.com/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.2/axios.js"></script>
     <script>
+        var menu = new Vue({
+            el: '#menu',
+            data: {
+                activeIndex: '1'
+            },
+            methods: {
+                handleSelect(key, keyPath) {
+                    console.log(key, keyPath);
+                }
+            }
+        })
+        var mirrors = new Vue({
+            el: '#mirrors-list',
+            data: {
+                search: '',
+                items: [{
+                    "name": "ubuntu",
+                    "isNew": false,
+                    "taskStatus": '0',
+                    "sources": "rsync::archive.ubuntu.com/ubuntu",
+                    "updateTime": '',
+                    "url": "/ubuntu",
+                    "help": "https://wiki.shuosc.org/help/ubuntu"
+                }, {
+                    "name": "kali",
+                    "isNew": true,
+                    "taskStatus": '1',
+                    "sources": "rsync::mirrors.ustc.edu.cn/kali",
+                    "updateTime": "2017-08-23 18:00:00",
+                    "url": "/kali",
+                    "help": "https://wiki.shuosc.org/help/kali"
+                }, {
+                    "name": "debian",
+                    "isNew": false,
+                    "taskStatus": '2',
+                    "sources": "rsync::mirrors.ustc.edu.cn/debian",
+                    "updateTime": "2017-08-23 19:00:00",
+                    "url": "/debian",
+                    "help": "https://wiki.shuosc.org/help/debian"
+                }, {
+                    "name": "homebrew-bottles",
+                    "isNew": true,
+                    "taskStatus": '2',
+                    "sources": "rsync::mirrors.ustc.edu.cn/homebrew-bottles",
+                    "updateTime": "2017-08-23 12:00:00",
+                    "url": "/homebrew-bottles",
+                    "help": "https://wiki.shuosc.org/help/homebrew-bottles"
+                }, {
+                    "name": "gentoo",
+                    "isNew": false,
+                    "taskStatus": '0',
+                    "sources": "rsync::ftp.iij.ad.jp/gentoo",
+                    "updateTime": '',
+                    "url": "/gentoo",
+                    "help": "https://wiki.shuosc.org/help/gentoo"
+                }, {
+                    "name": "archlinux",
+                    "isNew": false,
+                    "taskStatus": '1',
+                    "sources": "rsync::mirrors.ustc.edu.cn/archlinux",
+                    "updateTime": "2017-08-23 19:00:00",
+                    "url": "/archlinux",
+                    "help": "https://wiki.shuosc.org/help/archlinux"
+                }, {
+                    "name": "CTAN",
+                    "isNew": true,
+                    "taskStatus": '2',
+                    "sources": "rsync::rsync.dante.ctan.org/CTAN",
+                    "updateTime": "2017-08-23 21:00:00",
+                    "url": "/CTAN",
+                    "help": "https://wiki.shuosc.org/help/ctan"
+                }, {
+                    "name": "centos",
+                    "isNew": false,
+                    "taskStatus": '2',
+                    "sources": "rsync::mirrors.ustc.edu.cn/centos",
+                    "updateTime": "2017-08-23 22:00:00",
+                    "url": "/centos",
+                    "help": ""
+                }]
+            },
+            computed: {
+                searchData: function() {
+                    var search = this.search;
+
+                    if (search) {
+                        return this.items.filter(function(item) {
+                            return Object.keys(item).some(function(key) {
+                                return String(item[key]).toLowerCase().indexOf(search) > -1
+                            })
+                        })
+                    }
+                    this.items = this.items.sort(function(x, y) {
+                        return x.name.localeCompare(y.name);
+                    });
+                    return this.items;
+                }
+            }
+        })
     </script>
 </body>
 
