@@ -3,20 +3,138 @@
   
     
     <entry>
-      <title><![CDATA[镜像站管理升级]]></title>
-      <url>/news/p/366ce3f7.html</url>
-      <content type="html"><![CDATA[<p>本次镜像站对管理工具进行了整合，全面实现镜像站的管理升级。</p>
+      <title><![CDATA[镜像站V2正式上线了！]]></title>
+      <url>/news/p/72c2d2b9.html</url>
+      <content type="html"><![CDATA[<h1 id="镜像站更新日志20170907"><a href="#镜像站更新日志20170907" class="headerlink" title="镜像站更新日志20170907"></a>镜像站更新日志20170907</h1><p>本次镜像站经过不懈努力终于成功从原来的<code>V1.0</code>升级到<code>V2.0</code>，更新的地方主要有以下几点：</p>
+<ul>
+<li>同步Linux镜像源数和开源软件源数大幅度增加：从<code>13</code>种增加到<code>37</code>种，由于目前服务器硬盘空间已近极限，现正在设法通过NFS增加服务器空间以期后续增加更多镜像。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">原来支持镜像源</th>
+<th style="text-align:center">现在增加镜像源</th>
+<th style="text-align:center">原来支持软件源</th>
+<th style="text-align:center">现在增加软件源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ubuntu</td>
+<td style="text-align:center">Alpine</td>
+<td style="text-align:center">Apache</td>
+<td style="text-align:center">Anaconda</td>
+</tr>
+<tr>
+<td style="text-align:center">Centos</td>
+<td style="text-align:center">Debian</td>
+<td style="text-align:center">Mongodb</td>
+<td style="text-align:center">CTAN</td>
+</tr>
+<tr>
+<td style="text-align:center">Gentoo</td>
+<td style="text-align:center">Debian-cd</td>
+<td style="text-align:center">Mysql</td>
+<td style="text-align:center">elvish</td>
+</tr>
+<tr>
+<td style="text-align:center">Archlinux</td>
+<td style="text-align:center">Debian-multimedia</td>
+<td style="text-align:center">Postgresql</td>
+<td style="text-align:center">homebrew-bottles</td>
+</tr>
+<tr>
+<td style="text-align:center">OpenSUSE</td>
+<td style="text-align:center">Deepin</td>
+<td style="text-align:center">CRAN</td>
+<td style="text-align:center">jenkins</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">Deepin-cd</td>
+<td style="text-align:center">Zabbix</td>
+<td style="text-align:center">mariadb</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">Kali</td>
+<td style="text-align:center">Pypi</td>
+<td style="text-align:center">node</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">Kali-images</td>
+<td style="text-align:center">Virtualbox</td>
+<td style="text-align:center">pritunl</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">Kali-security</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">ruby</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">repoforge</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">vim</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">Ubuntu-releases</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">videolan-ftp</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">zerotier</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>镜像站主页页面进行了升级：<ul>
+<li>将<code>镜像同步状态</code>、<code>镜像帮助</code>整合成了完整的镜像列表，用户可以在一张表上获取有关于镜像站运行和使用帮助的所有信息。</li>
+<li>主页新增获取发行版的功能：主要涵盖的发行版有各Linux发行版的镜像下载、<code>CTAN</code>、<code>Virtualbox</code>、<code>Node</code>的应用程序下载地址，方便用户使用。</li>
+<li>新增镜像站通知：采用<a href="https://heox.io" target="_blank" rel="external">Hexo</a>和<a href="https://github.com/bulandent/hexo-theme-bubuzou" target="_blank" rel="external">bubuzou</a>(稍作了修改)构建，方便用户了解镜像站所发布的一些通知。</li>
+<li>新增常用链接：<ul>
+<li>上海大学开源社区Github地址</li>
+<li>对于上海大学开源镜像站提交问题或者建议，如果校内人员需要新增镜像也请从此入口进入</li>
+<li>SHUhelper是由开源社区的<code>赵逸群</code>(大lao)开发的，上大同学出门居家必备之良品</li>
+<li>在线交流是开源社区的Telegram群，如有兴趣可点击邀请链接加入</li>
+<li>Git@SHUOSC是开源社区采用<a href="https://github.com/sameersbn/docker-gitlab" target="_blank" rel="external">docker-gitlab</a>搭建的，有需要可以注册使用，该项目目前处于<code>试用</code>阶段，一般来说校内访问速度快得飞起</li>
+<li>NPM镜像是采用<a href="https://github.com/cnpm/cnpmjs.org" target="_blank" rel="external">cnpm</a>搭建的，与阿里云提供的<a href="https://npm.taobao.org" target="_blank" rel="external">NPM镜像</a>是一致的，唯一的不同就是限于空间原因，本站所提供的NPM镜像的npm库属于部分同步，使用时如没有镜像会直接从<a href="https://registry.npmjs.org" target="_blank" rel="external">源站</a>拉取，在校内使用速度绝对有保障</li>
+<li>Pypi镜像是采用Python官方提供的<code>bangersnatch</code>工具构建的全量镜像，所有python第三方库均可直接使用<code>pip install</code>下载安装</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>镜像站基本知识：<ul>
+<li>本镜像站的服务器来自于<a href="https://nita.shu.edu.cn" target="_blank" rel="external">上海大学NITA实验室</a>，服务器托管于<a href="http://www.its.shu.edu.cn" target="_blank" rel="external">上海大学信息化办公室</a>托管机房，共有两台，分别承担<code>主站镜像任务</code>和<code>NPM镜像任务</code></li>
+<li>本镜像站是由<a href="https://osc.shu.edu.cn" target="_blank" rel="external">上海大学开源社区</a>负责管理维护，主要是为了满足上海大学校内的开源镜像源和开源软件使用需求，同时也是为了弘扬自由软件精神、培养自由软件社区文化氛围</li>
+<li>本镜像站主站镜像任务采用的是bjtu的<code>ideal</code>开源的<a href="https://github.com/ideal/mirror" target="_blank" rel="external">mirror</a>工具，此次将<code>rsync</code>和<code>wget</code>做了一个整合，重新配置了<code>mirror</code></li>
+<li>本镜像站原来命名为<code>上海大学开源社区镜像站</code>，现在正在向学校信息办申请成为学校官方的开源镜像站（即<a href="https://mirrors.shu.edu.cn" target="_blank" rel="external">https://mirrors.shu.edu.cn</a>），故而V2版主页已提前命名为<code>上海大学开源镜像站</code>，希望能得到学校方面的认可</li>
+<li>本镜像站目前主页暂不适用于移动端观看（相信大部分人是用PC访问镜像站的吧！）</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       
+        <categories>
+            
+            <category> 站内事务 </category>
+            
+        </categories>
         
-    </entry>
-    
-    <entry>
-      <title><![CDATA[镜像站新主页上线了！]]></title>
-      <url>/news/p/91a56fcb.html</url>
-      <content type="html"><![CDATA[<p>镜像站新主页终于上线了！</p>
-]]></content>
-      
+        
+        <tags>
+            
+            <tag> 镜像站 </tag>
+            
+            <tag> 更新 </tag>
+            
+        </tags>
         
     </entry>
     

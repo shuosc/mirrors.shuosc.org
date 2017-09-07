@@ -92,9 +92,9 @@
             <div class="bar">
                 <div class="title">镜像站通知</div>
             </div>
-            <p v-if="isNull">暂无通知</p>
+            <ul v-if="isNull" v-cloak>暂无通知</ul>
             <ul v-else id="news-lists">
-                <li v-for="item in items"><a :href="item.url">{{item.title}}</a></li>
+                <li v-for="item in items" v-cloak><a :href="item.url" v-cloak>{{item.title}}</a></li>
             </ul>
         </div>
     </div>
@@ -102,7 +102,7 @@
         <div class="container">
             <div class="bar">
                 <div class="title">常用链接</div>
-                <p><a :href="link.url" v-for="link in links">{{link.title}}</a></p>
+                <p><a :href="link.url" v-for="link in links" v-cloak>{{link.title}}</a></p>
             </div>
         </div>
     </div>

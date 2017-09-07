@@ -2,6 +2,10 @@ body {
     margin: 0px;
 }
 
+[v-cloak] {
+    display: none;
+}
+
 .container{
     width: 75%;
     margin: 0 auto;

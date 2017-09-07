@@ -236,7 +236,7 @@ ul.nav,ul.post-list {
 ul {  margin: 1rem 0; }
 
 .post-content ul { padding-left: 20px; }
-
+.post-content li { line-height: 25px; }
 .post-content ol { padding-left: 15px; }
 
 a,
