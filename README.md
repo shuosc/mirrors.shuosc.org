@@ -2,8 +2,9 @@
 
 > mirrors.shuosc.org
 
+v1版截图
 ![v1 screenshot](https://ws2.sinaimg.cn/large/006tKfTcly1fiop8muo0vj30dd0k4dgm.jpg)
-
+v2版截图
 ![v2 screenshot1](https://vgy.me/4dH4WL.png)
 ![v2 screenshot2](https://vgy.me/IxmzHH.png)
 

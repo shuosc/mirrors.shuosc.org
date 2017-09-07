@@ -1,2 +1,4 @@
 node_modules/
 !hexo/themes/bubuzou/
+hexo/public
+hexo/db.json
