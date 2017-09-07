@@ -11,6 +11,10 @@ body {
     background-color: #eef1f6;
 }
 
+#menu .el-menu-item.is-active{
+    color: #34495e;
+}
+
 #menu .title{
     float: left;
     display: inline-block;
@@ -57,6 +61,9 @@ a {
     margin-right: 50px;
 }
 
+#news li{
+    line-height: 25px;
+}
 
 #news a:hover,#links a:hover {
     text-decoration: underline;

@@ -15,7 +15,7 @@
         "sources": "rsync::www.deb-multimedia.org/deb",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/debian-multimedia",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/debian-multimedia",
         "exitcode": "0"
     }, {
         "name": "ubuntu-releases",
@@ -42,7 +42,7 @@
         "sources": "http://pypi.python.org",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/pypi",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/pypi",
         "exitcode": "0"
     }, {
         "name": "node",
@@ -60,7 +60,7 @@
         "sources": "http://repo.mongodb.org",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/monogodb",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/mongodb",
         "exitcode": "0"
     }, {
         "name": "mysql",
@@ -69,7 +69,7 @@
         "sources": "http://repo.mysql.com",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/mysql",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/mysql",
         "exitcode": "0"
     }, {
         "name": "pritunl",
@@ -78,7 +78,7 @@
         "sources": "https://repo.pritunl.com",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/pritunl",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/pritunl",
         "exitcode": "0"
     }, {
         "name": "zerotier",
@@ -87,7 +87,7 @@
         "sources": "http://download.zerotier.com",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/zerotier",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/zerotier",
         "exitcode": "0"
     }, {
         "name": "ruby",
@@ -105,7 +105,7 @@
         "sources": "http://download.docker.com",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/docker-ce",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/docker-ce",
         "exitcode": "0"
     }, {
         "name": "anaconda",
@@ -114,7 +114,7 @@
         "sources": "https://repo.continuum.io",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/anaconda",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/anaconda",
         "exitcode": "0"
     }, {
         "name": "virtualbox",
@@ -158,7 +158,7 @@
         "sources": "rsync::mirrors.ustc.edu.cn/centos",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/centos",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/centos",
         "exitcode": "0"
     }, {
         "name": "kali",
@@ -175,7 +175,7 @@
         "sources": "rsync::rsync.osuosl.org/mariadb",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/mariadb",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/mariadb",
         "exitcode": "0"
     }, {
         "name": "postgresql",
@@ -184,7 +184,7 @@
         "sources": "rsync::rsync.postgresql.org/pgsql-ftp",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/postgresql",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/postgresql",
         "exitcode": "0"
     }, {
         "name": "CTAN",
@@ -211,7 +211,7 @@
         "sources": "rsync::mirrors.ustc.edu.cn/opensuse",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/opensuse",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/opensuse",
         "exitcode": "0"
     }, {
         "name": "zabbix",
@@ -220,7 +220,7 @@
         "sources": "rsync::repo.zabbix.com/mirror",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/zabbix",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/zabbix",
         "exitcode": "0"
     }, {
         "name": "CRAN",
@@ -229,7 +229,7 @@
         "sources": "rsync::cran.r-project.org/CRAN",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/CRAN",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/cran",
         "exitcode": "0"
     }, {
         "name": "vim",
@@ -247,7 +247,7 @@
         "sources": "rsync::rsync.osuosl.org/jenkins",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/jenkins",
-        "help": "",
+        "help": "https://jenkins.io",
         "exitcode": "0"
     }, {
         "name": "debian-cd",
@@ -283,7 +283,7 @@
         "sources": "rsync::ftp.nluug.nl/repoforge",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/repoforge",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/repoforge",
         "exitcode": "0"
     }, {
         "name": "elvish",
@@ -292,7 +292,7 @@
         "sources": "rsync::rsync.elvish.io/elvish",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/elvish",
-        "help": "",
+        "help": "https://elvish.io",
         "exitcode": "0"
     }, {
         "name": "videolan-ftp",
@@ -310,7 +310,7 @@
         "sources": "rsync::rsync.alpinlinux.org/alpine",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/alpine",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/alpine",
         "exitcode": "0"
     }, {
         "name": "deepin",
@@ -319,7 +319,7 @@
         "sources": "rsync::rsync.deepin.com/deepin",
         "updateTime": "2017-08-23 22:00:00",
         "url": "/deepin",
-        "help": "",
+        "help": "https://wiki.shuosc.org/help/deepin",
         "exitcode": "0"
     }, {
         "name": "deepin-cd",

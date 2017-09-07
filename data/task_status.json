@@ -130,7 +130,7 @@
     },
     "kali-security": {
         "status": 0,
-        "upstream": "ftp.nluug.nl::debian//",
+        "upstream": "ftp.nluug.nl::kali-security//",
         "schedule": "2017-08-26 00:20:00"
     },
     "mariadb": {
