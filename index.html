@@ -48,9 +48,9 @@
         <el-table-column prop="sources" label="上游地址" width="360"></el-table-column>
         <el-table-column prop="taskStatus" label="同步状态" width="120">
             <template scope="scope">
-                        <el-tag v-if="scope.row.taskStatus === '1'" type="primary">正在同步</el-tag>     
-                        <el-tag v-else-if="scope.row.taskStatus === '0'" type="primary">尚未同步</el-tag>
-                        <el-tag v-else-if="scope.row.taskStatus === '2'&&scope.row.exitcode== '0'" type="success">同步完成</el-tag>
+                        <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>     
+                        <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
+                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
                         <el-tag v-else type="danger">同步出错</el-tag>
                     </template>
         </el-table-column>
@@ -148,7 +148,7 @@
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
-                            item.status = data['status'];
+                            item.taskStatus = data['status'];
                             if(typeof(data['date'])!== "undefined"){
                                 item.updateTime = data['date'];
                             }
