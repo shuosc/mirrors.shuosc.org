@@ -1,267 +1,447 @@
 {
-    "alpine": {
-        "status": 0,
-        "upstream": "rsync.alpinelinux.org::alpine//",
-        "schedule": "2017-08-25 16:35:00"
-    },
-    "anaconda": {
+    "CPAN": {
         "status": 2,
-        "date": "2017-08-25 15:36:12",
-        "message": "Task finished",
-        "exitcode": 15,
-        "schedule": "2017-08-26 04:05:00"
-    },
-    "apache": {
-        "status": 2,
-        "schedule": "2017-08-25 16:40:00",
-        "upstream": "rsync.apache.org::apache-dist//",
-        "date": "2017-08-25 00:55:16",
-        "message": "Sync succeed",
-        "exitcode": 0
-    },
-    "archlinux": {
-        "status": 2,
-        "schedule": "2017-08-25 16:30:00",
-        "upstream": "mirrors.ustc.edu.cn::archlinux//",
-        "date": "2017-08-25 00:55:00",
-        "message": "Error in socket I/O",
-        "exitcode": 10
-    },
-    "centos": {
-        "status": 2,
-        "schedule": "2017-08-25 18:23:00",
-        "upstream": "mirrors.ustc.edu.cn::centos//",
-        "date": "2017-08-25 00:35:18",
+        "schedule": "2017-11-07 20:15:00",
+        "upstream": "mirror.math.princeton.edu::pub/CPAN//",
+        "date": "2017-11-07 10:23:35",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "CRAN": {
         "status": 2,
-        "schedule": "2017-08-25 20:15:00",
+        "schedule": "2017-11-07 20:15:00",
         "upstream": "cran.r-project.org::CRAN//",
-        "date": "2017-08-25 00:15:53",
+        "date": "2017-11-07 11:23:47",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "CTAN": {
         "status": 2,
-        "schedule": "2017-08-25 16:47:00",
+        "schedule": "2017-11-07 16:47:00",
         "upstream": "rsync.dante.ctan.org::CTAN//",
-        "date": "2017-08-25 10:55:00",
-        "message": "Received SIGUSR1 or SIGINT",
-        "exitcode": 20
-    },
-    "debian": {
-        "status": 2,
-        "schedule": "2017-08-25 18:22:00",
-        "upstream": "ftp.cn.debian.org::debian//",
-        "date": "2017-08-25 00:18:29",
+        "date": "2017-11-07 09:10:39",
         "message": "Sync succeed",
         "exitcode": 0
     },
-    "debian-cd": {
-        "status": 0,
-        "schedule": "2017-08-25 20:10:00",
-        "upstream": "mirrors.kernel.org::debian-cd//"
-    },
-    "debian-multimedia": {
+    "RFCs": {
         "status": 2,
-        "schedule": "2017-08-26 00:25:00",
+        "schedule": "2017-11-08 00:22:00",
+        "upstream": "mirror.math.princeton.edu::pub/RFCs//",
+        "date": "2017-11-07 00:22:07",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "alpine": {
+        "status": 2,
+        "schedule": "2017-11-07 16:35:00",
+        "upstream": "rsync.alpinelinux.org::alpine//",
+        "date": "2017-11-07 09:44:25",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "anaconda": {
+        "status": 2,
+        "date": "2017-11-07 12:48:30",
+        "message": "Task finished",
+        "exitcode": 8,
+        "schedule": "2017-11-08 04:05:00"
+    },
+    "apache": {
+        "status": 2,
+        "schedule": "2017-11-07 16:40:00",
+        "upstream": "rsync.apache.org::apache-dist//",
+        "date": "2017-11-07 09:32:26",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "archlinux": {
+        "status": 2,
+        "schedule": "2017-11-07 16:30:00",
+        "upstream": "mirrors.rit.edu::archlinux//",
+        "date": "2017-11-07 08:31:42",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "brew": {
+        "status": 2,
+        "date": "2017-11-07 08:24:02",
+        "message": "Task finished",
+        "schedule": "2017-11-07 16:23:00",
+        "exitcode": 1
+    },
+    "centos": {
+        "status": 2,
+        "schedule": "2017-11-07 18:23:00",
+        "upstream": "msync.centos.org::CentOS//",
+        "date": "2017-11-07 12:26:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "ceph": {
+        "status": 2,
+        "schedule": "2017-11-07 20:16:00",
+        "upstream": "mirror.math.princeton.edu::pub/ceph//",
+        "date": "2017-11-07 10:17:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "cygwin": {
+        "status": 2,
+        "schedule": "2017-11-07 20:33:00",
+        "upstream": "mirror.math.princeton.edu::pub/cygwin//",
+        "date": "2017-11-07 10:38:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "deb-multimedia": {
+        "status": 2,
+        "schedule": "2017-11-07 16:46:00",
         "upstream": "www.deb-multimedia.org::deb//",
-        "date": "2017-08-25 00:26:24",
+        "date": "2017-11-07 08:47:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "debian": {
+        "status": 1,
+        "date": "2017-11-07 06:22:00",
+        "upstream": "ftp.us.debian.org::debian//",
+        "schedule": "2017-11-07 16:22:00"
+    },
+    "debian-cd": {
+        "status": 2,
+        "schedule": "2017-11-07 20:10:00",
+        "upstream": "mirrors.kernel.org::debian-cd//",
+        "date": "2017-11-07 10:10:13",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "deepin": {
-        "status": 0,
-        "upstream": "rsync.deepin.com::deeping//",
-        "schedule": "2017-08-25 16:45:00"
-    },
-    "deepin-cd": {
-        "status": 0,
-        "upstream": "rsync.deepin.com::releases//",
-        "schedule": "2017-08-26 01:48:00"
-    },
-    "docker-ce": {
         "status": 2,
-        "date": "2017-08-25 15:36:12",
-        "message": "Task finished",
-        "schedule": "2017-08-26 03:45:00",
-        "exitcode": 15
-    },
-    "elvish": {
-        "status": 0,
-        "upstream": "rsync.elvish.io::elvish//",
-        "schedule": "2017-08-26 00:45:00"
-    },
-    "gentoo": {
-        "status": 2,
-        "schedule": "2017-08-25 18:52:00",
-        "upstream": "mirror.us.leaseweb.net::gentoo//",
-        "date": "2017-08-25 10:50:00",
-        "message": "Received SIGUSR1 or SIGINT",
-        "exitcode": 20
-    },
-    "homebrew-bottles": {
-        "status": 2,
-        "schedule": "2017-08-26 00:50:00",
-        "upstream": "mirrors.ustc.edu.cn::homebrew-bottles//",
-        "date": "2017-08-25 06:40:11",
+        "schedule": "2017-11-07 16:45:00",
+        "upstream": "rsync.deepin.com::deepin//",
+        "date": "2017-11-07 08:46:18",
         "message": "Sync succeed",
         "exitcode": 0
     },
+    "deepin-cd": {
+        "status": 2,
+        "schedule": "2017-11-08 01:48:00",
+        "upstream": "rsync.deepin.com::releases//",
+        "date": "2017-11-07 01:49:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "docker-ce": {
+        "status": 2,
+        "date": "2017-11-07 04:10:13",
+        "message": "Task finished",
+        "schedule": "2017-11-08 03:45:00",
+        "exitcode": 0
+    },
+    "eclipse": {
+        "status": 2,
+        "schedule": "2017-11-07 18:42:00",
+        "upstream": "mirror.math.princeton.edu::pub/eclipse//",
+        "date": "2017-11-07 14:00:02",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "elvish": {
+        "status": 2,
+        "schedule": "2017-11-08 00:45:00",
+        "upstream": "mirrors.tuna.tsinghua.edu.cn::elvish//",
+        "date": "2017-11-07 00:45:00",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "ftpsync": {
+        "status": 2,
+        "date": "2017-10-20 15:29:52",
+        "message": "Task finished",
+        "schedule": "2017-10-20 06:10:00",
+        "exitcode": 0
+    },
+    "gentoo": {
+        "status": 2,
+        "schedule": "2017-11-07 18:52:00",
+        "upstream": "mirrors.rit.edu::gentoo//",
+        "date": "2017-11-07 12:53:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "gimp": {
+        "status": 2,
+        "schedule": "2017-11-08 01:32:00",
+        "upstream": "mirror.math.princeton.edu::pub/gimp//",
+        "date": "2017-11-07 01:32:18",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "gnome": {
+        "status": 2,
+        "schedule": "2017-11-08 01:55:00",
+        "upstream": "mirror.math.princeton.edu::pub/gnome//",
+        "date": "2017-11-07 01:59:33",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "gnu": {
+        "status": 2,
+        "schedule": "2017-11-07 20:56:00",
+        "upstream": "mirror.math.princeton.edu::pub/gnu//",
+        "date": "2017-11-07 10:57:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "homebrew-bottles": {
+        "status": 2,
+        "schedule": "2017-11-07 15:42:00",
+        "upstream": "mirrors.ustc.edu.cn::homebrew-bottles//",
+        "date": "2017-11-07 10:43:07",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "homebrew-cask": {
+        "status": 2,
+        "date": "2017-11-07 08:27:05",
+        "message": "Task finished",
+        "schedule": "2017-11-07 16:24:00",
+        "exitcode": 1
+    },
+    "homebrew-core": {
+        "status": 2,
+        "date": "2017-11-07 08:22:33",
+        "message": "Task finished",
+        "schedule": "2017-11-07 16:22:00",
+        "exitcode": 1
+    },
     "jenkins": {
-        "status": 0,
+        "status": 2,
+        "schedule": "2017-11-07 16:08:00",
         "upstream": "rsync.osuosl.org::jenkins//",
-        "schedule": "2017-08-25 16:08:00"
+        "date": "2017-11-07 08:09:38",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "kali": {
         "status": 2,
-        "schedule": "2017-08-25 18:35:00",
+        "schedule": "2017-11-07 18:35:00",
         "upstream": "mirrors.ustc.edu.cn::kali//",
-        "date": "2017-08-25 07:04:57",
+        "date": "2017-11-07 12:37:05",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "kali-images": {
-        "status": 0,
+        "status": 1,
+        "date": "2017-11-07 10:11:00",
         "upstream": "ftp.nluug.nl::kali-images//",
-        "schedule": "2017-08-25 18:11:00"
+        "schedule": "2017-11-07 20:11:00"
     },
     "kali-security": {
-        "status": 0,
+        "status": 2,
+        "schedule": "2017-11-08 00:20:00",
         "upstream": "ftp.nluug.nl::kali-security//",
-        "schedule": "2017-08-26 00:20:00"
+        "date": "2017-11-07 00:20:14",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "kde": {
+        "status": 2,
+        "schedule": "2017-11-08 01:58:00",
+        "upstream": "mirror.math.princeton.edu::pub/kde//",
+        "date": "2017-11-07 02:33:17",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "kernel": {
+        "status": 2,
+        "schedule": "2017-11-07 20:12:00",
+        "upstream": "mirror.math.princeton.edu::pub/kernel//",
+        "date": "2017-11-07 10:14:24",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "libreoffice": {
+        "status": 2,
+        "schedule": "2017-11-08 02:12:00",
+        "upstream": "mirror.math.princeton.edu::pub/libreoffice//",
+        "date": "2017-11-07 02:12:31",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "mariadb": {
         "status": 2,
-        "schedule": "2017-08-25 16:08:00",
+        "schedule": "2017-11-07 16:08:00",
         "upstream": "rsync.osuosl.org::mariadb//",
-        "date": "2017-08-25 10:50:00",
-        "message": "Received SIGUSR1 or SIGINT",
-        "exitcode": 20
+        "date": "2017-11-07 08:09:05",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "mongodb": {
         "status": 2,
-        "date": "2017-08-25 14:05:00",
+        "date": "2017-11-07 03:49:48",
         "message": "Task finished",
-        "schedule": "2017-08-26 02:05:00",
-        "exitcode": 15
+        "schedule": "2017-11-08 02:05:00",
+        "exitcode": 0
     },
     "mysql": {
         "status": 2,
-        "date": "2017-08-25 02:53:14",
+        "date": "2017-11-07 02:33:15",
         "message": "Task finished",
-        "schedule": "2017-08-26 02:25:00",
-        "exitcode": 8
+        "schedule": "2017-11-08 02:25:00",
+        "exitcode": 0
     },
     "node": {
-        "status": 2,
-        "date": "2017-08-25 13:45:00",
-        "message": "Task finished",
-        "schedule": "2017-08-26 01:45:00",
-        "exitcode": 15
+        "status": 1,
+        "date": "2017-11-07 08:45:10",
+        "schedule": "2017-11-07 20:45:10"
     },
     "opensuse": {
         "status": 2,
-        "schedule": "2017-08-25 18:05:00",
-        "upstream": "rsync.opensuse.org::opensuse-hotstuff-160gb//",
-        "date": "2017-08-24 23:06:25",
+        "schedule": "2017-11-07 18:05:00",
+        "upstream": "mirrors.kernel.org::opensuse//",
+        "date": "2017-11-07 12:57:02",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "openwrt": {
+        "status": 2,
+        "schedule": "2017-11-07 20:02:00",
+        "upstream": "mirror.math.princeton.edu::pub/openwrt//",
+        "date": "2017-11-07 10:06:11",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "parrot": {
+        "status": 2,
+        "schedule": "2017-11-07 18:12:00",
+        "upstream": "archive.parrotsec.org::parrot//",
+        "date": "2017-11-07 12:14:29",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "postgresql": {
         "status": 2,
-        "schedule": "2017-08-25 16:23:00",
+        "schedule": "2017-11-07 16:23:00",
         "upstream": "rsync.postgresql.org::pgsql-ftp//",
-        "date": "2017-08-25 10:50:01",
-        "message": "Received SIGUSR1 or SIGINT",
-        "exitcode": 20
+        "date": "2017-11-07 08:45:19",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "pritunl": {
         "status": 2,
-        "date": "2017-08-25 03:08:29",
+        "date": "2017-11-07 02:46:34",
         "message": "Task finished",
-        "schedule": "2017-08-26 02:45:00",
-        "exitcode": 8
+        "schedule": "2017-11-08 02:45:00",
+        "exitcode": 0
+    },
+    "putty": {
+        "status": 2,
+        "schedule": "2017-11-08 02:32:00",
+        "upstream": "mirror.math.princeton.edu::pub/putty//",
+        "date": "2017-11-07 02:32:14",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "pypi": {
         "status": 2,
-        "date": "2017-08-25 01:25:02",
+        "date": "2017-11-07 12:18:26",
         "message": "Task finished",
-        "schedule": "2017-08-26 01:25:00",
-        "exitcode": 1
+        "exitcode": 1,
+        "schedule": "2017-11-07 18:10:00"
+    },
+    "raspbian": {
+        "status": 2,
+        "schedule": "2017-11-07 18:30:00",
+        "upstream": "archive.raspbian.org::archive//",
+        "date": "2017-11-07 12:31:48",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "repoforge": {
-        "status": 0,
+        "status": 2,
+        "schedule": "2017-11-07 20:25:00",
         "upstream": "ftp.nluug.nl::repoforge//",
-        "schedule": "2017-08-25 20:25:00"
+        "date": "2017-11-07 10:31:19",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "ruby": {
         "status": 2,
-        "date": "2017-08-25 04:05:20",
+        "date": "2017-11-07 03:50:46",
         "message": "Task finished",
-        "schedule": "2017-08-26 03:25:00",
+        "schedule": "2017-11-08 03:25:00",
         "exitcode": 8
     },
-    "sleep": {
+    "rubygems": {
         "status": 2,
-        "date": "2017-08-25 15:36:12",
+        "date": "2017-11-07 14:59:05",
         "message": "Task finished",
-        "schedule": "2017-08-25 15:37:00",
-        "exitcode": 15
+        "exitcode": 0,
+        "schedule": "2017-11-07 16:45:00"
+    },
+    "sleep": {
+        "status": 1,
+        "date": "2017-11-07 14:59:00",
+        "schedule": "2017-11-08 02:59:00"
     },
     "ubuntu": {
-        "status": 2,
-        "schedule": "2017-08-25 18:12:00",
-        "upstream": "cn.rsync.archive.ubuntu.com::ubuntu//",
-        "date": "2017-08-25 00:41:26",
-        "message": "Received SIGUSR1 or SIGINT",
-        "exitcode": 20
+        "status": 1,
+        "date": "2017-11-07 06:12:00",
+        "upstream": "archive.ubuntu.com::ubuntu//",
+        "schedule": "2017-11-07 16:12:00"
     },
     "ubuntu-releases": {
         "status": 2,
-        "schedule": "2017-08-26 00:50:00",
+        "schedule": "2017-11-07 22:20:00",
         "upstream": "rsync.releases.ubuntu.com::releases//",
-        "date": "2017-08-25 00:54:16",
+        "date": "2017-11-06 22:20:17",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "videolan-ftp": {
-        "status": 0,
-        "schedule": "2017-08-25 20:05:00",
-        "upstream": "rsync.videolan.org::videolan-ftp//"
+        "status": 2,
+        "schedule": "2017-11-07 20:05:00",
+        "upstream": "rsync.videolan.org::videolan-ftp//",
+        "date": "2017-11-07 10:06:05",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "vim": {
-        "status": 0,
-        "schedule": "2017-08-25 18:05:00",
-        "upstream": "ftp.tsukuba.wide.ad.jp::vim//"
+        "status": 2,
+        "schedule": "2017-11-07 18:05:00",
+        "upstream": "ftp.nluug.nl::Vim//",
+        "date": "2017-11-07 12:05:21",
+        "message": "Sync succeed",
+        "exitcode": 0
     },
     "virtualbox": {
         "status": 2,
-        "date": "2017-08-25 15:36:12",
+        "date": "2017-11-07 04:49:45",
         "message": "Task finished",
-        "exitcode": 15,
-        "schedule": "2017-08-26 04:25:00"
+        "schedule": "2017-11-08 04:25:00",
+        "exitcode": 0
     },
     "wgetcleaner": {
-        "status": 1,
-        "date": "2017-08-25 08:00:00",
-        "schedule": "2017-08-26 08:00:00"
+        "status": 2,
+        "date": "2017-11-07 08:23:02",
+        "message": "Task finished",
+        "schedule": "2017-11-07 16:22:00",
+        "exitcode": 1
     },
     "zabbix": {
         "status": 2,
-        "schedule": "2017-08-25 23:25:00",
+        "schedule": "2017-11-07 23:25:00",
         "upstream": "repo.zabbix.com::mirror//",
-        "date": "2017-08-24 23:25:11",
+        "date": "2017-11-06 23:26:05",
         "message": "Sync succeed",
         "exitcode": 0
     },
     "zerotier": {
         "status": 2,
-        "date": "2017-08-25 04:07:51",
+        "date": "2017-11-07 03:23:44",
         "message": "Task finished",
-        "schedule": "2017-08-26 03:05:00",
+        "schedule": "2017-11-08 03:05:00",
         "exitcode": 0
     }
 }

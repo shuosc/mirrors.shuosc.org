@@ -11,12 +11,31 @@ body {
     margin: 0 auto;
 }
 
+.left{
+    width: 70%;
+    display: inline-block;
+    float: left;
+}
+
+.right{
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+
+.clear{ clear:both} 
+
 #menu{
     background-color: #eef1f6;
 }
 
 #menu .el-menu-item.is-active{
     color: #34495e;
+}
+
+.el-menu--horizontal .el-menu-item {
+    font-size: medium;
+    font-weight: 400;
 }
 
 #menu .title{
@@ -39,11 +58,41 @@ a {
 }
 
 #mirrors-list,#isos,#news,#links,#copyright {
-    padding: 20px 40px;
+    padding: 20px 20px;
+}
+
+.official {
+    background: #515151;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+.new {
+    background: #d9e8f7;
+    color: #20a0ff;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
 }
 
 #mirrors-list a:hover {
     text-decoration: underline;
+}
+
+#mirrors-list table {
+    font-size: 13px;
+}
+
+#mirrors-list table td{
+    height: 30px;
+    padding: 4px;
+}
+
+.el-tag{
+    line-height: 16px;
+    height: 20px;
 }
 
 .bar {
@@ -55,7 +104,23 @@ a {
     display: inline-block;
     font-size: 24px;
     line-height: 36px;
-    color: #435c70;
+    color: #307e6e;
+    margin-bottom: 10px;
+}
+#isos p{
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.el-button--info{
+    background-color: #22bc9e;
+    border-color: #22bc9e;
+}
+
+.el-button--info:hover{
+    background-color: #307e6e;
+    border-color: #307e6e;
 }
 
 .bar .search {
@@ -64,9 +129,14 @@ a {
     float: right;
     margin-right: 50px;
 }
-
+#news-lists{
+    padding-left: 0px;
+    margin: 5px 0;
+}
 #news li{
     line-height: 25px;
+    list-style: none;
+
 }
 
 #news a:hover,#links a:hover {
@@ -74,9 +144,11 @@ a {
 }
 
 #news a,#links a{
-    margin:5px 10px;
+    margin-bottom: 8px;
     color: #34495e;
+    display: block;
 }
+
 
 #copyright {
     background-color: #435c70;
@@ -117,6 +189,14 @@ a {
 
 @media screen and  (max-width: 1370px) {
     .container {
+        width: 98%;
+        margin: 0px 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left, .right {
         width: 100%;
+        display: block;
     }
 }

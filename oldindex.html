@@ -20,107 +20,94 @@
         <el-menu :default-active="activeIndex" mode="horizontal" >
             <div class="title">上海大学开源镜像站</div>
             <div class="navBar">
-                <el-menu-item index="1"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
-                <el-menu-item index="2"><a href="/news">News</a></el-menu-item>
-                <el-menu-item index="3"><a href="/status.html">Status</a></el-menu-item>
-                <el-menu-item index="4"><a href="https://help.shuosc.org">Help</a></el-menu-item>
-                <el-menu-item index="5"><a href="/news/atom.xml">RSS</a></el-menu-item>
-                <el-menu-item index="6"><a href="/">Mirrors</a></el-menu-item>
+                <el-menu-item index="1"><a href="#mirrors-list">源列表</a></el-menu-item>
+                <el-menu-item index="2"><a href="https://wiki.shuosc.org/help">使用帮助</a></el-menu-item>
+                <el-menu-item index="3"><a href="#isos">获取发行版</a></el-menu-item>
+                <el-menu-item index="4"><a href="#news">镜像站通知</a></el-menu-item>
             </div>
         </el-menu>
         </div>
     </div>
-    <div class="container">
-        <div class="left">
-            <div id="mirrors-list">
-                <div class="bar">
-                    <div class="title">源列表</div>
-                    <el-input v-model="search" placeholder="输入关键词筛选镜像" class="search"></el-input>
-                    <template>
-                        <el-table :data="searchData" stripe style="width: 100%" >
-                            <el-table-column prop="name" label="镜像名" min-width="35%">
-                                <template scope="scope">
-                                    <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
-                                    <span class="official" v-if="scope.row.official">官方</span>
-                                    <span class="new" v-if="scope.row.isNew">新</span>
-                                </template>
-                            </el-table-column>
-                            <el-table-column prop="updateTime" label="最近一次同步时间" min-width="25%">
-                                <template scope="scope">
-                                            <div v-if="scope.row.updateTime == ''">Unknow</div>
-                                            <div v-else>{{scope.row.updateTime}}</div>
-                                        </template>
-                            </el-table-column>
-                            <el-table-column prop="taskStatus" label="同步状态" min-width="15%">
-                                <template scope="scope">
-                                    <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
-                                    <el-tag v-else type="danger">同步出错</el-tag>
-                                </template>
-                            </el-table-column>
-                            <el-table-column prop="help" label="帮助" min-width="15%">
-                                <template scope="scope">
-                                            <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank">Help</a>
-                                        </template>
-                            </el-table-column>
-                        </el-table>
+    
+    <div id="mirrors-list">
+        <div class="container">
+        <div class="bar">
+            <div class="title">源列表</div>
+            <el-input v-model="search" placeholder="输入关键词筛选镜像" class="search"></el-input>
+        </div>
+        <template>
+            <el-table :data="searchData" stripe style="width: 100%" >
+                <el-table-column prop="name" label="镜像名" width="200" sortable>
+                    <template scope="scope">
+                        <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
+                        <el-tag v-if="scope.row.isNew" type="primary">新</el-tag>
                     </template>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div id="news">
-                <div class="container">
-                    <div class="bar">
-                        <div class="title">镜像站通知</div>
-                        <ul v-if="isNull" v-cloak>暂无通知</ul>
-                        <ul v-else id="news-lists">
-                            <li v-for="item in items" v-cloak><a :href="item.url" v-cloak>{{item.title}}</a></li>
-                        </ul>
-                    </div>                    
-                </div>
-            </div>
-            <div id="links">
-                <div class="container">
-                    <div class="bar">
-                        <div class="title">常用链接</div>
-                        <a :href="link.url" v-for="link in links" v-cloak>{{link.title}}</a>
-                            <script src="https://s13.cnzz.com/z_stat.php?id=1264366993&web_id=1264366993" language="JavaScript"></script>
-                    </div>
-                </div>
-            </div>
-            <div id="isos">
-                <div class="container">
-                    <div class="bar">
-                        <div class="title">获取发行版</div>
-                        <p>常用Linux发行版ISO和应用软件安装包快捷下载</p>
-                        <el-button type="info" icon="el-icon-download" @click="centerDialogVisible = true">获取下载链接</el-button>
-                        <el-dialog  title="获取发行版"  :visible.sync="centerDialogVisible"  width="30%" center>
-                            <template>
-                                <el-select v-model="linux" placeholder="请选择发行版类型" @change="changeReleases">
-                                    <el-option v-for="item in isos" :key="item.value" :label="item.label" :value="item.value">
-                                    </el-option>
-                                </el-select>
-                                <el-select v-model="url" placeholder="请选择版本号" @change="generateUrl">
-                                    <el-option v-for="item in releases"  :key="item.value" :label="item.label" :value="item.value">	
-                                    </el-option>
-                                </el-select>
-                                <a v-if="download" :href="url"><el-button type="primary">下载</el-button></a>
+                </el-table-column>
+                <el-table-column prop="sources" label="上游地址" width="360"></el-table-column>
+                <el-table-column prop="taskStatus" label="同步状态" width="120">
+                    <template scope="scope">
+                                <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>     
+                                <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
+                                <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
+                                <el-tag v-else type="danger">同步出错</el-tag>
                             </template>
-                      </el-dialog>
-                        
-                    </div>            
-                </div>
+                </el-table-column>
+                <el-table-column prop="updateTime" label="最近一次同步时间">
+                    <template scope="scope">
+                                <div v-if="scope.row.updateTime == ''">Unknow</div>
+                                <div v-else>{{scope.row.updateTime}}</div>
+                            </template>
+                </el-table-column>
+                <el-table-column prop="help" label="帮助" width="100" sortable>
+                    <template scope="scope">
+                                <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank">Help</a>
+                            </template>
+                </el-table-column>
+            </el-table>
+        </template>
+        </div>
+    </div>
+
+    <div id="news">
+        <div class="container">
+            <div class="bar">
+                <div class="title">镜像站通知</div>
+            </div>
+            <ul v-if="isNull" v-cloak>暂无通知</ul>
+            <ul v-else id="news-lists">
+                <li v-for="item in items" v-cloak><a :href="item.url" v-cloak>{{item.title}}</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="links">
+        <div class="container">
+            <div class="bar">
+                <div class="title">常用链接</div>
+                <p><a :href="link.url" v-for="link in links" v-cloak>{{link.title}}</a>
+                    <script src="https://s13.cnzz.com/z_stat.php?id=1264366993&web_id=1264366993" language="JavaScript"></script></p>
             </div>
         </div>
-        <div class="clear"></div> 
     </div>
+
+    <div id="isos">
+        <div class="container">
+            <div class="bar">
+                <div class="title">获取发行版</div>
+            </div>
+            <template>
+                <el-select v-model="linux" placeholder="请选择发行版类型" @change="changeReleases">
+                    <el-option v-for="item in isos" :key="item.value" :label="item.label" :value="item.value">
+                    </el-option>
+                </el-select>
+                <el-select v-model="url" placeholder="请选择版本号" @change="generateUrl">
+                    <el-option v-for="item in releases"  :key="item.value" :label="item.label" :value="item.value">	
+                    </el-option>
+                </el-select>
+                <a v-if="download" :href="url"><el-button type="primary">下载</el-button></a>
+            </template>
+        </div>
     </div>
-   
     
     <div id="copyright">
         <div class="container">
@@ -135,7 +122,6 @@
     <script src="/src/element-ui.js"></script>
     <script src="/src/axios.js"></script>
     <script>
-        
         var menu = new Vue({
             el: '#menu',
             data: {
@@ -162,6 +148,7 @@
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
+                            console.log(data);
                             item.taskStatus = data['status'];
                             if(typeof(data['date'])!== "undefined"){
                                 item.updateTime = data['date'];
@@ -202,8 +189,7 @@
                 releases: '',
                 url: '',
                 download: false,
-                isos: [],
-                centerDialogVisible: false
+                isos: []
             },
             created: function() {
                 this.loadIsos();
@@ -232,7 +218,6 @@
                 }
             }
         })
-
         var news = new Vue({
             el: '#news',
             data: {
@@ -265,15 +250,6 @@
             el: '#links',
             data: {
                 links:[{
-                    title: '系统状态 / Status',
-                    url: '/status.html'
-                },{
-                    title: '镜像通知 / News',
-                    url: '/news'
-                },{
-                    title: 'OSC@SHU',
-                    url: 'https://osc.shu.edu.cn'
-                },{
                     title: 'Github',
                     url: 'https://github.com/shuopensourcecommunity'
                 },{
@@ -283,17 +259,17 @@
                     title: 'SHUhelper',
                     url: 'https://www.shuhelper.cn'
                 },{
+                    title: '在线交流',
+                    url: 'https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww'
+                },{
                     title: 'Git@SHUOSC',
                     url: 'https://git.shuosc.org'
                 },{
+                    title: 'NPM镜像',
+                    url: 'https://npm.shuosc.org'
+                },{
                     title: 'Pypi镜像',
                     url: 'https://pypi.shuosc.org'
-                },{
-                    title: 'SHUER.LINK',
-                    url: 'https://shuer.link'
-                },{
-                    title: '在线交流 / IRC',
-                    url: 'https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww'
                 }]   
             }
         })
