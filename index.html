@@ -20,13 +20,14 @@
         <el-menu :default-active="activeIndex" mode="horizontal" >
             <div class="title">上海大学开源镜像站</div>
             <div class="navBar">
-                <el-menu-item index="1"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
+                <el-menu-item index="7"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
                 <el-menu-item index="2"><a href="/news">News</a></el-menu-item>
                 <el-menu-item index="3"><a href="/status.html">Status</a></el-menu-item>
                 <el-menu-item index="4"><a href="https://help.shuosc.org">Help</a></el-menu-item>
                 <el-menu-item index="5"><a href="/news/atom.xml">RSS</a></el-menu-item>
                 <el-menu-item index="6"><a href="/">Mirrors</a></el-menu-item>
             </div>
+            <div class="clear"></div>
         </el-menu>
         </div>
     </div>
@@ -37,7 +38,7 @@
                     <div class="title">源列表</div>
                     <el-input v-model="search" placeholder="输入关键词筛选镜像" class="search"></el-input>
                     <template>
-                        <el-table :data="searchData" stripe style="width: 100%" >
+                        <el-table :data="searchData" v-loading="loading" stripe style="width: 100%" v-if="isAll">
                             <el-table-column prop="name" label="镜像名" min-width="35%">
                                 <template scope="scope">
                                     <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
@@ -45,7 +46,7 @@
                                     <span class="new" v-if="scope.row.isNew">新</span>
                                 </template>
                             </el-table-column>
-                            <el-table-column prop="updateTime" label="最近一次同步时间" min-width="25%">
+                            <el-table-column prop="updateTime" label="最近一次同步完成时间" min-width="25%">
                                 <template scope="scope">
                                             <div v-if="scope.row.updateTime == ''">Unknow</div>
                                             <div v-else>{{scope.row.updateTime}}</div>
@@ -68,6 +69,31 @@
                                         </template>
                             </el-table-column>
                         </el-table>
+                        <el-table :data="searchData" v-loading="loading" stripe style="width: 100%" v-else>
+                            <el-table-column prop="name" label="镜像名" min-width="30%">
+                                <template scope="scope">
+                                    <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
+                                    <span class="official" v-if="scope.row.official">官方</span>
+                                    <span class="new" v-if="scope.row.isNew">新</span>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="taskStatus" label="同步状态" min-width="18%">
+                                <template scope="scope">
+                                    <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
+                                    <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
+                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
+                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
+                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
+                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
+                                    <el-tag v-else type="danger">同步出错</el-tag>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="help" label="" min-width="5%">
+                                <template scope="scope">
+                                    <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank"><i class="el-icon-info"></i></a>
+                                </template>
+                            </el-table-column>
+                        </el-table>
                     </template>
                 </div>
             </div>
@@ -79,7 +105,7 @@
                         <div class="title">镜像站通知</div>
                         <ul v-if="isNull" v-cloak>暂无通知</ul>
                         <ul v-else id="news-lists">
-                            <li v-for="item in items" v-cloak><a :href="item.url" v-cloak>{{item.title}}</a></li>
+                            <li v-for="item in items" v-cloak><a :href="item.url" v-text="item.title"><a></li>
                         </ul>
                     </div>                    
                 </div>
@@ -88,7 +114,7 @@
                 <div class="container">
                     <div class="bar">
                         <div class="title">常用链接</div>
-                        <a :href="link.url" v-for="link in links" v-cloak>{{link.title}}</a>
+                        <a :href="link.url" v-for="link in links" v-text="link.title"></a>
                             <script src="https://s13.cnzz.com/z_stat.php?id=1264366993&web_id=1264366993" language="JavaScript"></script>
                     </div>
                 </div>
@@ -99,7 +125,7 @@
                         <div class="title">获取发行版</div>
                         <p>常用Linux发行版ISO和应用软件安装包快捷下载</p>
                         <el-button type="info" icon="el-icon-download" @click="centerDialogVisible = true">获取下载链接</el-button>
-                        <el-dialog  title="获取发行版"  :visible.sync="centerDialogVisible"  width="30%" center>
+                        <el-dialog  title="获取发行版" min-width="100%" :visible.sync="centerDialogVisible"  width="30%" center modal="true">
                             <template>
                                 <el-select v-model="linux" placeholder="请选择发行版类型" @change="changeReleases">
                                     <el-option v-for="item in isos" :key="item.value" :label="item.label" :value="item.value">
@@ -109,7 +135,7 @@
                                     <el-option v-for="item in releases"  :key="item.value" :label="item.label" :value="item.value">	
                                     </el-option>
                                 </el-select>
-                                <a v-if="download" :href="url"><el-button type="primary">下载</el-button></a>
+                                <a v-if="download" :href="url"><el-button type="info" icon="el-icon-download">下载</el-button></a>
                             </template>
                       </el-dialog>
                         
@@ -119,9 +145,6 @@
         </div>
         <div class="clear"></div> 
     </div>
-    </div>
-   
-    
     <div id="copyright">
         <div class="container">
             <div class="content">
@@ -129,6 +152,7 @@
                 <p>上海大学开源社区（SHU Open Source Community）是由上海大学的开源技术爱好者于 2010 年自主发起成立的非营利性学生组织。上海大学开源社区的宗旨是：面向全校师生传播开源理念、分享技术知识；为上海大学的开源技术爱好者提供公共服务，建立开放友好的技术交流平台；弘扬自由软件精神，培养自由软件社区文化氛围，为开源事业做出贡献。    </p>
             </div>
             <div class="logo">上海大学开源社区</div>
+            <div class="clear"></div>
         </div>
     </div>
     <script src="/src/vue.min.js"></script>
@@ -146,7 +170,9 @@
             el: '#mirrors-list',
             data: {
                 search: '',
-                items: []
+                items: [],
+                isAll: true,
+                loading: true,
             },
             created: function() {
                 this.loadMirrors();
@@ -174,6 +200,11 @@
                             }
                         }
                     });
+                    var clientWidth = document.documentElement.clientWidth;
+                    if(clientWidth<768){
+                        this.isAll = false;
+                    }
+                    this.loading = false;
                 }
             },
             computed: {

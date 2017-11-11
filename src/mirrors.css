@@ -26,16 +26,23 @@ body {
 .clear{ clear:both} 
 
 #menu{
-    background-color: #eef1f6;
+    background-color: #455D6F;
 }
 
-#menu .el-menu-item.is-active{
-    color: #34495e;
+.el-menu--horizontal{
+    border: none;
+    background-color: #455D6F;
 }
 
 .el-menu--horizontal .el-menu-item {
     font-size: medium;
     font-weight: 400;
+    color: #dbdbdb;
+}
+
+.el-menu--horizontal .el-menu-item:hover {
+    background-color: #455D6F;
+    color: #ffffff;
 }
 
 #menu .title{
@@ -44,7 +51,7 @@ body {
     line-height: 60px;
     margin-left: 60px;
     font-size: 24px;
-    color: #34495e;
+    color: #ffffff;
 }
 
 .navBar {
@@ -57,7 +64,7 @@ a {
     text-decoration: none;
 }
 
-#mirrors-list,#isos,#news,#links,#copyright {
+#mirrors-list,#isos,#news,#links,#copyright,#servers-status {
     padding: 20px 20px;
 }
 
@@ -87,7 +94,7 @@ a {
 
 #mirrors-list table td{
     height: 30px;
-    padding: 4px;
+    padding: 4px 0;
 }
 
 .el-tag{
@@ -192,11 +199,68 @@ a {
         width: 98%;
         margin: 0px 5px;
     }
+    .el-dialog {
+        width: 60%!important;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .bar{
+        margin: 0;
+    }
     .left, .right {
         width: 100%;
         display: block;
+    }
+    .bar .search {
+        margin-right: 0;
+        width: 190px;
+    }
+    #copyright {
+        padding: 10px 20px;
+    }
+    #copyright .content{
+        width: 60%;
+    }
+    #copyright .logo {
+        margin-top: 60px;
+    }
+    #menu .title{
+        margin-left: 20px;;
+    }
+    .navBar{
+        margin-right: 0;
+    }
+    .el-dialog {
+        width: 80%!important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #copyright .content{
+        width: 100%;
+        margin: 10px 0;
+    }
+    #copyright .logo{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #menu .title{
+        display: block;
+        float: none;
+    }
+    #menu .navBar {
+        float: left;
+        margin-left: 15px;
+    }
+    .el-menu--horizontal .el-menu-item{
+        font-size: 14px;
+        line-height: 30px;
+        height: 36px;
+        padding: 0 5px;
+    }
+    .el-input--suffix .el-input__inner {
+        margin-bottom: 10px;
     }
 }
