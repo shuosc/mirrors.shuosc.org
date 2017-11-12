@@ -54,7 +54,7 @@
                             </el-table-column>
                             <el-table-column prop="taskStatus" label="同步状态" min-width="15%">
                                 <template scope="scope">
-                                    <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
+                                    <el-tag v-if="scope.row.taskStatus == '1'" type="warning">正在同步</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
@@ -79,7 +79,7 @@
                             </el-table-column>
                             <el-table-column prop="taskStatus" label="同步状态" min-width="18%">
                                 <template scope="scope">
-                                    <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
+                                    <el-tag v-if="scope.row.taskStatus == '1'" type="warning">正在同步</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
                                     <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
@@ -125,7 +125,7 @@
                         <div class="title">获取发行版</div>
                         <p>常用Linux发行版ISO和应用软件安装包快捷下载</p>
                         <el-button type="info" icon="el-icon-download" @click="centerDialogVisible = true">获取下载链接</el-button>
-                        <el-dialog  title="获取发行版" min-width="100%" :visible.sync="centerDialogVisible"  width="30%" center modal="true">
+                        <el-dialog  title="获取发行版" min-width="100%" :visible.sync="centerDialogVisible"  width="35%" center modal="true">
                             <template>
                                 <el-select v-model="linux" placeholder="请选择发行版类型" @change="changeReleases">
                                     <el-option v-for="item in isos" :key="item.value" :label="item.label" :value="item.value">
@@ -148,7 +148,7 @@
     <div id="copyright">
         <div class="container">
             <div class="content">
-                <p>上海大学开源镜像站是由<a href="http://www.its.shu.edu.cn" target="_blank">上海大学信息化办公室</a>提供基础设施支持，由<a href="https://nita.shu.edu.cn" target="_blank">上海大学NITA实验室</a>提供服务器支持，由<a href="https://osc.shu.edu.cn" target="_blank">上海大学开源社区</a>负责管理维护。</p>
+                <p>上海大学开源镜像站是由<a href="http://www.its.shu.edu.cn" target="_blank">上海大学信息化办公室</a>提供基础设施支持，由<a href="https://nita.shu.edu.cn" target="_blank">上海大学NITA实验室</a>提供服务器支持，由<a href="https://osc.shu.edu.cn" target="_blank">上海大学开源社区</a>负责管理维护。本站所有源均可通过HTTP、FTP和RSYNC方式访问，RSYNC的访问模块名为源的HTTP子目录名。</p>
                 <p>上海大学开源社区（SHU Open Source Community）是由上海大学的开源技术爱好者于 2010 年自主发起成立的非营利性学生组织。上海大学开源社区的宗旨是：面向全校师生传播开源理念、分享技术知识；为上海大学的开源技术爱好者提供公共服务，建立开放友好的技术交流平台；弘扬自由软件精神，培养自由软件社区文化氛围，为开源事业做出贡献。    </p>
             </div>
             <div class="logo">上海大学开源社区</div>

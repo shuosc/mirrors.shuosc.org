@@ -407,8 +407,8 @@
         },
         {
             "name": "parrot",
-            "isNew": true,
-            "official": false,
+            "isNew": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "rsync::archive.parrotsec.org/parrot",
             "updateTime": "2017-10-10 22:00:00",
@@ -540,7 +540,7 @@
         {
             "name": "kde",
             "isNew": false,
-            "official": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "mirror.math.princeton.edu::pub/kde",
             "updateTime": "2017-09-23 22:00:00",

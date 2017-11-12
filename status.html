@@ -35,82 +35,95 @@
         <div id="mirrors-list">
             <div class="bar">
                 <div class="title">同步状态</div>
-                <template>
-                    <el-table :data="searchData" stripe style="width: 100%" v-if="isAll">
-                        <el-table-column prop="name" label="镜像名" sortable min-width="20%">
-                            <template scope="scope">
-                                <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
-                            </template>
-                        </el-table-column>
-                        <el-table-column prop="sources" label="上游地址"  min-width="35%"></el-table-column>
-                        <el-table-column prop="taskStatus" label="同步状态"  min-width="10%">
-                            <template scope="scope">
-                                <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
-                                <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
-                                <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
-                                <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
-                                <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
-                                <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
-                                <el-tag v-else type="danger">同步出错</el-tag>
-                            </template>
-                        </el-table-column>
-                        <el-table-column prop="updateTime" label="最近同步完成时间" sortable min-width="15%">
-                            <template scope="scope">
-                                <div v-if="scope.row.updateTime == ''">Unknow</div>
-                                <div v-else>{{scope.row.updateTime}}</div>
-                            </template>
-                        </el-table-column>
-                        <el-table-column prop="nextTime" label="下次同步时间" sortable min-width="15%">
-                            <template scope="scope">
-                                <div v-if="scope.row.nextTime == ''">Unknow</div>
-                                <div v-else>{{scope.row.nextTime}}</div>
-                            </template>
-                        </el-table-column>
-                    </el-table>
-                    <el-table :data="searchData" stripe style="width: 200%; overflow:scroll" v-else>
-                            <el-table-column prop="name" label="镜像名" sortable min-width="30%">
-                                <template scope="scope">
-                                    <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
-                                </template>
-                            </el-table-column>
-                            <el-table-column prop="sources" label="上游地址" min-width="30%"></el-table-column>
-                            <el-table-column prop="taskStatus" label="同步状态" min-width="30%">
-                                <template scope="scope">
-                                    <el-tag v-if="scope.row.taskStatus == '1'">正在同步</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
-                                    <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
-                                    <el-tag v-else type="danger">同步出错</el-tag>
-                                </template>
-                            </el-table-column>
-                            <el-table-column prop="updateTime" label="最近同步完成时间" sortable min-width="30%">
-                                <template scope="scope">
-                                    <div v-if="scope.row.updateTime == ''">Unknow</div>
-                                    <div v-else>{{scope.row.updateTime}}</div>
-                                </template>
-                            </el-table-column>
-                            <el-table-column prop="nextTime" label="下次同步时间" sortable min-width="30%">
-                                <template scope="scope">
-                                    <div v-if="scope.row.nextTime == ''">Unknow</div>
-                                    <div v-else>{{scope.row.nextTime}}</div>
-                                </template>
-                            </el-table-column>
-                        </el-table>
-                </template>
+                <div class="list">
+                    <div class="content">
+                        <template>
+                            <el-table :data="searchData" stripe style="width: 100%" v-if="isAll">
+                                <el-table-column prop="name" label="镜像名" sortable min-width="20%">
+                                    <template scope="scope">
+                                        <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="sources" label="上游地址"  min-width="35%"></el-table-column>
+                                <el-table-column prop="taskStatus" label="同步状态"  min-width="10%">
+                                    <template scope="scope">
+                                        <el-tag v-if="scope.row.taskStatus == '1'" type="warning">正在同步</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
+                                        <el-tag v-else type="danger">同步出错</el-tag>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="updateTime" label="最近同步完成时间" sortable min-width="15%">
+                                    <template scope="scope">
+                                        <div v-if="scope.row.updateTime == ''">Unknow</div>
+                                        <div v-else>{{scope.row.updateTime}}</div>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="nextTime" label="下次同步时间" sortable min-width="15%">
+                                    <template scope="scope">
+                                        <div v-if="scope.row.nextTime == ''">Unknow</div>
+                                        <div v-else>{{scope.row.nextTime}}</div>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
+                            <el-table :data="searchData" stripe style="width: 1024px;" v-else>
+                                <el-table-column prop="name" label="镜像名" sortable min-width="20%">
+                                    <template scope="scope">
+                                        <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="sources" label="上游地址" min-width="35%"></el-table-column>
+                                <el-table-column prop="taskStatus" label="同步状态" min-width="10%">
+                                    <template scope="scope">
+                                        <el-tag v-if="scope.row.taskStatus == '1'" type="warning">正在同步</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '0'" type="primary">尚未同步</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '0'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '1'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '4'" type="success">同步完成</el-tag>
+                                        <el-tag v-else-if="scope.row.taskStatus == '2'&&scope.row.exitcode == '8'" type="success">同步完成</el-tag>
+                                        <el-tag v-else type="danger">同步出错</el-tag>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="updateTime" label="最近同步完成时间" sortable min-width="15%">
+                                    <template scope="scope">
+                                        <div v-if="scope.row.updateTime == ''">Unknow</div>
+                                        <div v-else>{{scope.row.updateTime}}</div>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="nextTime" label="下次同步时间" sortable min-width="15%">
+                                    <template scope="scope">
+                                        <div v-if="scope.row.nextTime == ''">Unknow</div>
+                                        <div v-else>{{scope.row.nextTime}}</div>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
+                        </template>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="servers-status">
             <div class="bar">
                 <div class="title">服务器状态</div>
+                <div class="graphs">
+                    <div class="g-cpu">
+                        <iframe src="https://monitor.shuosc.org/dashboard-solo/db/jing-xiang-fu-wu-qi?orgId=1&var-datasource=mirrors&var-group=Linux%20servers&var-host=langchao&var-netif=eth0&panelId=1&theme=light" width="100%" height="300" frameborder="0"></iframe>
+                    </div>
+                    <div class="g-net">
+                        <iframe src="https://monitor.shuosc.org/dashboard-solo/db/jing-xiang-fu-wu-qi?orgId=1&panelId=4&var-datasource=mirrors&var-group=Linux%20servers&var-host=langchao&var-netif=eth0&theme=light" width="100%" height="300" frameborder="0"></iframe>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
         </div>
     </div>
     <div id="copyright">
         <div class="container">
             <div class="content">
-                <p>上海大学开源镜像站是由<a href="http://www.its.shu.edu.cn" target="_blank">上海大学信息化办公室</a>提供基础设施支持，由<a href="https://nita.shu.edu.cn" target="_blank">上海大学NITA实验室</a>提供服务器支持，由<a href="https://osc.shu.edu.cn" target="_blank">上海大学开源社区</a>负责管理维护。</p>
+                <p>上海大学开源镜像站是由<a href="http://www.its.shu.edu.cn" target="_blank">上海大学信息化办公室</a>提供基础设施支持，由<a href="https://nita.shu.edu.cn" target="_blank">上海大学NITA实验室</a>提供服务器支持，由<a href="https://osc.shu.edu.cn" target="_blank">上海大学开源社区</a>负责管理维护。本站所有源均可通过HTTP、FTP和RSYNC方式访问，RSYNC的访问模块名为源的HTTP子目录名。</p>
                 <p>上海大学开源社区（SHU Open Source Community）是由上海大学的开源技术爱好者于 2010 年自主发起成立的非营利性学生组织。上海大学开源社区的宗旨是：面向全校师生传播开源理念、分享技术知识；为上海大学的开源技术爱好者提供公共服务，建立开放友好的技术交流平台；弘扬自由软件精神，培养自由软件社区文化氛围，为开源事业做出贡献。    </p>
             </div>
             <div class="logo">上海大学开源社区</div>
