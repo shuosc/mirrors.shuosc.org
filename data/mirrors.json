@@ -1,890 +1,789 @@
 {
-    "mirrors": [
-        {
-            "name": "debian",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::mirrors.ustc.edu.cn/debian",
-            "updateTime": "2017-09-23 19:00:00",
-            "url": "/debian",
-            "help": "https://help.shuosc.org/debian.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "deb-multimedia",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::www.deb-multimedia.org/deb",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/deb-multimedia",
-            "help": "https://help.shuosc.org/deb-multimedia.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "ubuntu-releases",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.releases.ubuntu.com/releases",
-            "updateTime": "2017-09-23 12:00:00",
-            "url": "/ubuntu-releases",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "homebrew-bottles",
-            "isNew": true,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::mirrors.ustc.edu.cn/homebrew-bottles",
-            "updateTime": "2017-09-23 12:00:00",
-            "url": "/homebrew-bottles",
-            "help": "https://help.shuosc.org/homebrew-bottles.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "pypi",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "http://pypi.python.org",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/pypi",
-            "help": "https://help.shuosc.org/pypi.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "node",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://nodejs.org/dist/",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/node",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "mongodb",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://repo.mongodb.org",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/mongodb",
-            "help": "https://help.shuosc.org/mongodb.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "mysql",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://repo.mysql.com",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/mysql",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "pritunl",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://repo.pritunl.com",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/pritunl",
-            "help": "https://help.shuosc.org/pritunl.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "zerotier",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://download.zerotier.com",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/zerotier",
-            "help": "https://help.shuosc.org/zerotier.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "ruby",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://cache.ruby-china.org",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/ruby",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "docker-ce",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://download.docker.com",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/docker-ce",
-            "help": "https://help.shuosc.org/docker-ce.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "anaconda",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://repo.continuum.io",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/anaconda",
-            "help": "https://help.shuosc.org/anaconda.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "virtualbox",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "http://download.virtualbox.org/virtualbox",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/virtualbox",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "archlinux",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "1",
-            "sources": "rsync::mirrors.ustc.edu.cn/archlinux",
-            "updateTime": "2017-09-23 19:00:00",
-            "url": "/archlinux",
-            "help": "https://help.shuosc.org/archlinux.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "ubuntu",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "0",
-            "sources": "rsync::archive.ubuntu.com/ubuntu",
-            "updateTime": "",
-            "url": "/ubuntu",
-            "help": "https://help.shuosc.org/ubuntu.html"
-        },
-        {
-            "name": "apache",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.apache.org/apache-dist",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/apache",
-            "help": "https://help.shuosc.org/apache.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "centos",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::mirrors.ustc.edu.cn/centos",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/centos",
-            "help": "https://help.shuosc.org/centos.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "kali",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "1",
-            "sources": "rsync::mirrors.ustc.edu.cn/kali",
-            "updateTime": "2017-09-23 18:00:00",
-            "url": "/kali",
-            "help": "https://help.shuosc.org/kali.html"
-        },
-        {
-            "name": "mariadb",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.osuosl.org/mariadb",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/mariadb",
-            "help": "https://help.shuosc.org/mariadb.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "postgresql",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.postgresql.org/pgsql-ftp",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/postgresql",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "CTAN",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.dante.ctan.org/CTAN",
-            "updateTime": "2017-09-23 21:00:00",
-            "url": "/CTAN",
-            "help": "https://help.shuosc.org/ctan.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "gentoo",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "0",
-            "sources": "rsync::ftp.iij.ad.jp/gentoo",
-            "updateTime": "",
-            "url": "/gentoo",
-            "help": "https://help.shuosc.org/gentoo.html",
-            "exitcode": "20"
-        },
-        {
-            "name": "opensuse",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::mirrors.ustc.edu.cn/opensuse",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/opensuse",
-            "help": "https://help.shuosc.org/opensuse.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "zabbix",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::repo.zabbix.com/mirror",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/zabbix",
-            "help": "https://help.shuosc.org/zabbix.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "CRAN",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::cran.r-project.org/CRAN",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/CRAN",
-            "help": "https://help.shuosc.org/cran.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "vim",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::ftp.tsukuba.wide.ad.jp/vim",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/vim",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "jenkins",
-            "isNew": true,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.osuosl.org/jenkins",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/jenkins",
-            "help": "https://jenkins.io",
-            "exitcode": "0"
-        },
-        {
-            "name": "debian-cd",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::mirrors.kernel.org/debian-cd",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/debian-cd",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "kali-images",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::ftp.nluug.nl/kali-images",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/kali-images",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "kali-security",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::ftp.nluug.nl/kali-security",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/kali-security",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "repoforge",
-            "isNew": true,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::ftp.nluug.nl/repoforge",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/repoforge",
-            "help": "https://help.shuosc.org/repoforge.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "elvish",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.elvish.io/elvish",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/elvish",
-            "help": "https://elvish.io",
-            "exitcode": "0"
-        },
-        {
-            "name": "videolan-ftp",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.videolan.org/videolan-ftp",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/videolan-ftp",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "alpine",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.alpinlinux.org/alpine",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/alpine",
-            "help": "https://help.shuosc.org/alpine.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "deepin",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.deepin.com/deepin",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/deepin",
-            "help": "https://help.shuosc.org/help/deepin.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "deepin-cd",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::rsync.deepin.com/release",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/deepin-cd",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "parrot",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "rsync::archive.parrotsec.org/parrot",
-            "updateTime": "2017-10-10 22:00:00",
-            "url": "/parrot",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "homebrew-core",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://github.com/Homebrew/homebrew-core.git",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/Homebrew/homebrew-core.git",
-            "help": "https://help.shuosc.org/homebrew-core.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "brew",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://github.com/Homebrew/brew.git",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/Homebrew/brew.git",
-            "help": "https://help.shuosc.org/brew.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "homebrew-cask",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://github.com/caskroom/homebrew-cask.git",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/caskroom/homebrew-cask.git",
-            "help": "https://help.shuosc.org/homebrew-cask.html",
-            "exitcode": "0"
-        },
-        {
-            "name": "CPAN",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/CPAN",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/CPAN",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "RFCs",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/RFCs",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/RFCs",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "ceph",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/ceph",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/ceph",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "cygwin",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/cygwin",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/cygwin",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "eclipse",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/eclipse",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/eclipse",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "gimp",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/gimp",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/gimp",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "gnu",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/gnu",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/gnu",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "gnome",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/gnome",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/gnome",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "kde",
-            "isNew": false,
-            "official": true,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/kde",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/kde",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "kernel",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/kernel",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/kernel",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "libreoffice",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/libreoffice",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/libreoffice",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "openwrt",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/openwrt",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/openwrt",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "putty",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "mirror.math.princeton.edu::pub/putty",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/putty",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "raspbian",
-            "isNew": true,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "archive.raspbian.org::archive/",
-            "updateTime": "2017-10-26 22:00:00",
-            "url": "/raspbian",
-            "help": "",
-            "exitcode": "0"
-        },
-        {
-            "name": "rubygems",
-            "isNew": true,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://rubygems.org",
-            "updateTime": "2017-10-26 22:00:00",
-            "url": "/rubygems",
-            "help": "https://help.shuosc.org/rubygems.html",
-            "exitcode": "0"
-        }
-    ],
-    "isos": [
-        {
-            "value": "Ubuntu",
-            "label": "Ubuntu",
-            "children": [
-                {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-amd64.iso",
-                    "label": "16.04-server-amd64"
-                },
-                {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-i386.iso",
-                    "label": "16.04-server-i386"
-                },
-                {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-amd64.iso",
-                    "label": "16.04-desktop-amd64"
-                },
-                {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-i386.iso",
-                    "label": "16.04-desktop-i386"
-                },
-                {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-server-amd64.iso",
-                    "label": "17.10-server-amd64"
-                },
-                {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-server-i386.iso",
-                    "label": "17.10-server-i386"
-                },
-                {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-amd64.iso",
-                    "label": "17.10-desktop-amd64"
-                },
-                {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-i386.iso",
-                    "label": "17.10-desktop-i386"
-                }
-            ]
-        },
-        {
-            "value": "Centos",
-            "label": "Centos",
-            "children": [
-                {
-                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso",
-                    "label": "7-livecd-amd64"
-                },
-                {
-                    "value": "/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-LiveDVD.iso",
-                    "label": "6.9-livecd-amd64"
-                },
-                {
-                    "value": "/centos/6.9/isos/i386/CentOS-6.9-i386-LiveDVD.iso",
-                    "label": "6.9-livecd-i386"
-                }
-            ]
-        },
-        {
-            "value": "Kali",
-            "label": "Kali",
-            "children": [
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-2017.1-amd64.iso",
-                    "label": "2017.1-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-2017.1-i386.iso",
-                    "label": "2017.1-i386"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-kde-2017.1-amd64.iso",
-                    "label": "2017.1-kde-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-mate-2017.1-amd64.iso",
-                    "label": "2017.1-mate-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-xfce-2017.1-amd64.iso",
-                    "label": "2017.1-xfce-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-amd64.iso",
-                    "label": "2017.1-light-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-i386.iso",
-                    "label": "2017.1-light-i386"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-lxde-2017.1-amd64.iso",
-                    "label": "2017.1-lxde-amd64"
-                },
-                {
-                    "value": "/kali-images/kali-2017.1/kali-linux-e17-2017.1-amd64.iso",
-                    "label": "2017.1-e17-amd64"
-                }
-            ]
-        },
-        {
-            "value": "Debian",
-            "label": "Debian",
-            "children": [
-                {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso",
-                    "label": "9.1-gnome-amd64"
-                },
-                {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-kde.iso",
-                    "label": "9.1-kde-amd64"
-                },
-                {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-mate.iso",
-                    "label": "9.1-mate-amd64"
-                },
-                {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-xfce.iso",
-                    "label": "9.1-xfce-amd64"
-                },
-                {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-cinnamon.iso",
-                    "label": "9.1-cinnamon-amd64"
-                }
-            ]
-        },
-        {
-            "value": "Archlinux",
-            "label": "Archlinux",
-            "children": [
-                {
-                    "value": "/archlinux/iso/2017.09.01/archlinux-2017.09.01-x86_64.iso",
-                    "label": "2017.09.01-amd64"
-                },
-                {
-                    "value": "/archlinux/iso/2017.08.01/archlinux-2017.08.01-x86_64.iso",
-                    "label": "2017.08.01-amd64"
-                },
-                {
-                    "value": "/archlinux/iso/2017.07.01/archlinux-2017.07.01-x86_64.iso",
-                    "label": "2017.07.01-amd64"
-                }
-            ]
-        },
-        {
-            "value": "Gentoo",
-            "label": "Gentoo",
-            "children": [
-                {
-                    "value": "/gentoo/releases/amd64/20170118/livedvd-amd64-hardened-nomultilib-20170118.iso",
-                    "label": "20170118-amd64"
-                },
-                {
-                    "value": "/gentoo/releases/amd64/20160704/livedvd-amd64-multilib-20160704.iso",
-                    "label": "20160704-amd64"
-                },
-                {
-                    "value": "/gentoo/releases/amd64/20160704/livedvd-x86-amd64-32ul-20160704.iso",
-                    "label": "20160704-amd64"
-                }
-            ]
-        },
-        {
-            "value": "Deepin",
-            "label": "Deepin",
-            "children": [
-                {
-                    "value": "/deepin-cd/15.4.1/deepin-15.4.1-amd64.iso",
-                    "label": "15.4.1-amd64"
-                },
-                {
-                    "value": "/deepin-cd/15.3/deepin-15.3-amd64.iso",
-                    "label": "15.3-amd64"
-                },
-                {
-                    "value": "/deepin-cd/15.3/deepin-15.3-i386.iso",
-                    "label": "15.3-i386"
-                }
-            ]
-        },
-        {
-            "value": "Opensuse",
-            "label": "Opensuse",
-            "children": [
-                {
-                    "value": "/opensuse/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso",
-                    "label": "42.3-amd64"
-                },
-                {
-                    "value": " /opensuse/distribution/leap/42.2/iso/openSUSE-Leap-42.2-DVD-x86_64.iso",
-                    "label": "42.2-amd64"
-                },
-                {
-                    "value": "/opensuse/distribution/leap/42.1/iso/openSUSE-Leap-42.1-DVD-x86_64.iso",
-                    "label": "42.1-amd64"
-                }
-            ]
-        },
-        {
-            "value": "CTAN",
-            "label": "CTAN",
-            "children": [
-                {
-                    "value": "/CTAN/systems/mac/mactex/MacTeX.pkg",
-                    "label": "MacTex"
-                },
-                {
-                    "value": "/CTAN/systems/texlive/Images/texlive.iso",
-                    "label": "Texlive-linux&&win"
-                },
-                {
-                    "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361-x64.exe",
-                    "label": "miktex-win64"
-                },
-                {
-                    "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361.exe",
-                    "label": "miktex-win32"
-                }
-            ]
-        },
-        {
-            "value": "Virtualbox",
-            "label": "Virtualbox",
-            "children": [
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Win.exe",
-                    "label": "5.2.0-win64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Linux_amd64.run",
-                    "label": "5.2.0-linux-amd64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_openSUSE132-1.x86_64.rpm",
-                    "label": "5.2.0-opensuse-amd64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-OSX.dmg",
-                    "label": "5.2.0-mac-amd64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el7-1.x86_64.rpm",
-                    "label": "5.2.0-centos7-amd64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el6-1.x86_64.rpm ",
-                    "label": "5.2.0-centos6-amd64"
-                },
-                {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_fedora26-1.x86_64.rpm",
-                    "label": "5.2.0-fedora-amd64"
-                }
-            ]
-        },
-        {
-            "value": "Node",
-            "label": "Node",
-            "children": [
-                {
-                    "value": "/node/latest/node-v9.0.0-x64.msi",
-                    "label": "9.0.0-win64"
-                },
-                {
-                    "value": " /node/latest/node-v9.0.0-linux-x64.tar.gz",
-                    "label": "9.0.0-linux-amd64"
-                },
-                {
-                    "value": "/node/latest/node-v9.0.0.pkg",
-                    "label": "9.0.0-mac-amd64"
-                }
-            ]
-        }
-    ]
+    "mirrors": [ {
+        "name": "debian",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/debian",
+        "updateTime": "2017-09-23 19:00:00",
+        "url": "/debian",
+        "help": "https://help.shuosc.org/debian.html",
+        "exitcode": "0"
+    }, {
+        "name": "deb-multimedia",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::www.deb-multimedia.org/deb",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/deb-multimedia",
+        "help": "https://help.shuosc.org/deb-multimedia.html",
+        "exitcode": "0"
+    }, {
+        "name": "ubuntu-releases",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.releases.ubuntu.com/releases",
+        "updateTime": "2017-09-23 12:00:00",
+        "url": "/ubuntu-releases",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "homebrew-bottles",
+        "isNew": true,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/homebrew-bottles",
+        "updateTime": "2017-09-23 12:00:00",
+        "url": "/homebrew-bottles",
+        "help": "https://help.shuosc.org/homebrew-bottles.html",
+        "exitcode": "0"
+    }, {
+        "name": "pypi",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "http://pypi.python.org",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/pypi",
+        "help": "https://help.shuosc.org/pypi.html",
+        "exitcode": "0"
+    }, {
+        "name": "node",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://nodejs.org/dist/",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/node",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "mongodb",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://repo.mongodb.org",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/mongodb",
+        "help": "https://help.shuosc.org/mongodb.html",
+        "exitcode": "0"
+    }, {
+        "name": "mysql",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://repo.mysql.com",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/mysql",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "pritunl",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://repo.pritunl.com",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/pritunl",
+        "help": "https://help.shuosc.org/pritunl.html",
+        "exitcode": "0"
+    }, {
+        "name": "zerotier",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://download.zerotier.com",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/zerotier",
+        "help": "https://help.shuosc.org/zerotier.html",
+        "exitcode": "0"
+    }, {
+        "name": "ruby",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://cache.ruby-china.org",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/ruby",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "docker-ce",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://download.docker.com",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/docker-ce",
+        "help": "https://help.shuosc.org/docker-ce.html",
+        "exitcode": "0"
+    }, {
+        "name": "anaconda",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://repo.continuum.io",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/anaconda",
+        "help": "https://help.shuosc.org/anaconda.html",
+        "exitcode": "0"
+    }, {
+        "name": "virtualbox",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "http://download.virtualbox.org/virtualbox",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/virtualbox",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "archlinux",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "1",
+        "sources": "rsync::mirrors.ustc.edu.cn/archlinux",
+        "updateTime": "2017-09-23 19:00:00",
+        "url": "/archlinux",
+        "help": "https://help.shuosc.org/archlinux.html",
+        "exitcode": "0"
+    },{
+        "name": "ubuntu",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "0",
+        "sources": "rsync::archive.ubuntu.com/ubuntu",
+        "updateTime": "",
+        "url": "/ubuntu",
+        "help": "https://help.shuosc.org/ubuntu.html"
+    }, {
+        "name": "apache",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.apache.org/apache-dist",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/apache",
+        "help": "https://help.shuosc.org/apache.html",
+        "exitcode": "0"
+    }, {
+        "name": "centos",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/centos",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/centos",
+        "help": "https://help.shuosc.org/centos.html",
+        "exitcode": "0"
+    }, {
+        "name": "kali",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "1",
+        "sources": "rsync::mirrors.ustc.edu.cn/kali",
+        "updateTime": "2017-09-23 18:00:00",
+        "url": "/kali",
+        "help": "https://help.shuosc.org/kali.html"
+    }, {
+        "name": "mariadb",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.osuosl.org/mariadb",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/mariadb",
+        "help": "https://help.shuosc.org/mariadb.html",
+        "exitcode": "0"
+    }, {
+        "name": "postgresql",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.postgresql.org/pgsql-ftp",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/postgresql",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "CTAN",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.dante.ctan.org/CTAN",
+        "updateTime": "2017-09-23 21:00:00",
+        "url": "/CTAN",
+        "help": "https://help.shuosc.org/ctan.html",
+        "exitcode": "0"
+    }, {
+        "name": "gentoo",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "0",
+        "sources": "rsync::ftp.iij.ad.jp/gentoo",
+        "updateTime": "",
+        "url": "/gentoo",
+        "help": "https://help.shuosc.org/gentoo.html",
+        "exitcode": "20"
+    }, {
+        "name": "opensuse",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.ustc.edu.cn/opensuse",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/opensuse",
+        "help": "https://help.shuosc.org/opensuse.html",
+        "exitcode": "0"
+    }, {
+        "name": "zabbix",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::repo.zabbix.com/mirror",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/zabbix",
+        "help": "https://help.shuosc.org/zabbix.html",
+        "exitcode": "0"
+    }, {
+        "name": "CRAN",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::cran.r-project.org/CRAN",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/CRAN",
+        "help": "https://help.shuosc.org/cran.html",
+        "exitcode": "0"
+    }, {
+        "name": "vim",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.tsukuba.wide.ad.jp/vim",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/vim",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "jenkins",
+        "isNew": true,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.osuosl.org/jenkins",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/jenkins",
+        "help": "https://jenkins.io",
+        "exitcode": "0"
+    }, {
+        "name": "debian-cd",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::mirrors.kernel.org/debian-cd",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/debian-cd",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kali-images",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/kali-images",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/kali-images",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kali-security",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/kali-security",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/kali-security",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "repoforge",
+        "isNew": true,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::ftp.nluug.nl/repoforge",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/repoforge",
+        "help": "https://help.shuosc.org/repoforge.html",
+        "exitcode": "0"
+    }, {
+        "name": "elvish",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.elvish.io/elvish",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/elvish",
+        "help": "https://elvish.io",
+        "exitcode": "0"
+    }, {
+        "name": "videolan-ftp",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.videolan.org/videolan-ftp",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/videolan-ftp",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "alpine",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.alpinlinux.org/alpine",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/alpine",
+        "help": "https://help.shuosc.org/alpine.html",
+        "exitcode": "0"
+    }, {
+        "name": "deepin",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.deepin.com/deepin",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/deepin",
+        "help": "https://help.shuosc.org/help/deepin.html",
+        "exitcode": "0"
+    }, {
+        "name": "deepin-cd",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::rsync.deepin.com/release",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/deepin-cd",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "parrot",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "rsync::archive.parrotsec.org/parrot",
+        "updateTime": "2017-10-10 22:00:00",
+        "url": "/parrot",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "homebrew-core",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://github.com/Homebrew/homebrew-core.git",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "https://git.shuosc.org/Homebrew/homebrew-core.git",
+        "help": "https://help.shuosc.org/homebrew-core.html",
+        "exitcode": "0"
+    }, {
+        "name": "brew",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://github.com/Homebrew/brew.git",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "https://git.shuosc.org/Homebrew/brew.git",
+        "help": "https://help.shuosc.org/brew.html",
+        "exitcode": "0"
+    }, {
+        "name": "homebrew-cask",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://github.com/caskroom/homebrew-cask.git",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "https://git.shuosc.org/caskroom/homebrew-cask.git",
+        "help": "https://help.shuosc.org/homebrew-cask.html",
+        "exitcode": "0"
+    }, {
+        "name": "CPAN",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/CPAN",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/CPAN",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "RFCs",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/RFCs",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/RFCs",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "ceph",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/ceph",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/ceph",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "cygwin",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/cygwin",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/cygwin",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "eclipse",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/eclipse",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/eclipse",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "gimp",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/gimp",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/gimp",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "gnu",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/gnu",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/gnu",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "gnome",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/gnome",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/gnome",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kde",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/kde",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/kde",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "kernel",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/kernel",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/kernel",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "libreoffice",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/libreoffice",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/libreoffice",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "openwrt",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/openwrt",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/openwrt",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "putty",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirror.math.princeton.edu::pub/putty",
+        "updateTime": "2017-09-23 22:00:00",
+        "url": "/putty",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "raspbian",
+        "isNew": false,
+        "official": true,
+        "taskStatus": "2",
+        "sources": "archive.raspbian.org::archive/",
+        "updateTime": "2017-10-26 22:00:00",
+        "url": "/raspbian",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "rubygems",
+        "isNew": false,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "https://rubygems.org",
+        "updateTime": "2017-10-26 22:00:00",
+        "url": "/rubygems",
+        "help": "https://help.shuosc.org/rubygems.html",
+        "exitcode": "0"
+    }, {
+        "name": "iina",
+        "isNew": true,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "link-start.iina.io::iina/",
+        "updateTime": "2017-10-26 22:00:00",
+        "url": "/iina",
+        "help": "https://lhc70000.github.io/iina/zh-cn/",
+        "exitcode": "0"
+    }, {
+        "name": "manjaro",
+        "isNew": true,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "ftp.tsukuba.wide.ad.jp::manjaro/",
+        "updateTime": "2017-10-26 22:00:00",
+        "url": "/manjaro",
+        "help": "",
+        "exitcode": "0"
+    }, {
+        "name": "manjaro-cd",
+        "isNew": true,
+        "official": false,
+        "taskStatus": "2",
+        "sources": "mirrorservice.org::downloads.sourceforge.net/m/ma/manjarolinux//",
+        "updateTime": "2017-10-26 22:00:00",
+        "url": "/manjaro-cd",
+        "help": "",
+        "exitcode": "0"
+    }],
+    "isos": [{
+        "value": "Ubuntu",
+        "label": "Ubuntu",
+        "children": [{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-amd64.iso",
+            "label": "16.04-server-amd64"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-i386.iso",
+            "label": "16.04-server-i386"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-amd64.iso",
+            "label": "16.04-desktop-amd64"
+        },{
+            "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-i386.iso",
+            "label": "16.04-desktop-i386"
+        },{
+            "value": "/ubuntu-releases/artful/ubuntu-17.10-server-amd64.iso",
+            "label": "17.10-server-amd64"
+        },{
+            "value": "/ubuntu-releases/artful/ubuntu-17.10-server-i386.iso",
+            "label": "17.10-server-i386"
+        },{
+            "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-amd64.iso",
+            "label": "17.10-desktop-amd64"
+        },{
+            "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-i386.iso",
+            "label": "17.10-desktop-i386"
+        }]
+    },{
+        "value": "Centos",
+        "label": "Centos",
+        "children": [{
+            "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso",
+            "label": "7-livecd-amd64"
+        },{
+            "value": "/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-LiveDVD.iso",
+            "label": "6.9-livecd-amd64"
+        },{
+            "value": "/centos/6.9/isos/i386/CentOS-6.9-i386-LiveDVD.iso",
+            "label": "6.9-livecd-i386"
+        }]
+    },{
+        "value": "Kali",
+        "label": "Kali",
+        "children": [{
+            "value": "/kali-images/kali-2017.1/kali-linux-2017.1-amd64.iso",
+            "label": "2017.1-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-2017.1-i386.iso",
+            "label": "2017.1-i386"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-kde-2017.1-amd64.iso",
+            "label": "2017.1-kde-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-mate-2017.1-amd64.iso",
+            "label": "2017.1-mate-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-xfce-2017.1-amd64.iso",
+            "label": "2017.1-xfce-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-amd64.iso",
+            "label": "2017.1-light-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-i386.iso",
+            "label": "2017.1-light-i386"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-lxde-2017.1-amd64.iso",
+            "label": "2017.1-lxde-amd64"
+        },{
+            "value": "/kali-images/kali-2017.1/kali-linux-e17-2017.1-amd64.iso",
+            "label": "2017.1-e17-amd64"
+        }]
+    },{
+        "value": "Debian",
+        "label": "Debian",
+        "children": [{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso",
+            "label": "9.1-gnome-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-kde.iso",
+            "label": "9.1-kde-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-mate.iso",
+            "label": "9.1-mate-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-xfce.iso",
+            "label": "9.1-xfce-amd64"
+        },{
+            "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-cinnamon.iso",
+            "label": "9.1-cinnamon-amd64"
+        }]
+    },{
+        "value": "Archlinux",
+        "label": "Archlinux",
+        "children": [{
+            "value": "/archlinux/iso/2017.09.01/archlinux-2017.09.01-x86_64.iso",
+            "label": "2017.09.01-amd64"
+        },{
+            "value": "/archlinux/iso/2017.08.01/archlinux-2017.08.01-x86_64.iso",
+            "label": "2017.08.01-amd64"
+        },{
+            "value": "/archlinux/iso/2017.07.01/archlinux-2017.07.01-x86_64.iso",
+            "label": "2017.07.01-amd64"
+        }]
+    },{
+        "value": "Gentoo",
+        "label": "Gentoo",
+        "children": [{
+            "value": "/gentoo/releases/amd64/20170118/livedvd-amd64-hardened-nomultilib-20170118.iso",
+            "label": "20170118-amd64"
+        },{
+            "value": "/gentoo/releases/amd64/20160704/livedvd-amd64-multilib-20160704.iso",
+            "label": "20160704-amd64"
+        },{
+            "value": "/gentoo/releases/amd64/20160704/livedvd-x86-amd64-32ul-20160704.iso",
+            "label": "20160704-amd64"
+        }]
+    },{
+        "value": "Deepin",
+        "label": "Deepin",
+        "children": [{
+            "value": "/deepin-cd/15.4.1/deepin-15.4.1-amd64.iso",
+            "label": "15.4.1-amd64"
+        },{
+            "value": "/deepin-cd/15.3/deepin-15.3-amd64.iso",
+            "label": "15.3-amd64"
+        },{
+            "value": "/deepin-cd/15.3/deepin-15.3-i386.iso",
+            "label": "15.3-i386"
+        }]
+    },{
+        "value": "Opensuse",
+        "label": "Opensuse",
+        "children": [{
+            "value": "/opensuse/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso",
+            "label": "42.3-amd64"
+        },{
+            "value":" /opensuse/distribution/leap/42.2/iso/openSUSE-Leap-42.2-DVD-x86_64.iso",
+            "label": "42.2-amd64"
+        },{
+            "value": "/opensuse/distribution/leap/42.1/iso/openSUSE-Leap-42.1-DVD-x86_64.iso",
+            "label": "42.1-amd64"
+        }]
+    },{
+        "value": "CTAN",
+        "label": "CTAN",
+        "children": [{
+            "value": "/CTAN/systems/mac/mactex/MacTeX.pkg",
+            "label": "MacTex"
+        },{
+            "value":"/CTAN/systems/texlive/Images/texlive.iso",
+            "label": "Texlive-linux&&win"
+        },{
+            "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361-x64.exe",
+            "label": "miktex-win64"
+        },{
+            "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361.exe",
+            "label": "miktex-win32"
+        }]
+    },{
+        "value": "Virtualbox",
+        "label": "Virtualbox",
+        "children": [{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Win.exe",
+            "label": "5.2.0-win64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Linux_amd64.run",
+            "label": "5.2.0-linux-amd64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_openSUSE132-1.x86_64.rpm",
+            "label": "5.2.0-opensuse-amd64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-OSX.dmg",
+            "label": "5.2.0-mac-amd64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el7-1.x86_64.rpm",
+            "label": "5.2.0-centos7-amd64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el6-1.x86_64.rpm ",
+            "label": "5.2.0-centos6-amd64"
+        },{
+            "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_fedora26-1.x86_64.rpm",
+            "label": "5.2.0-fedora-amd64"
+        }]
+    },{
+        "value": "Node",
+        "label": "Node",
+        "children": [{
+            "value": "/node/latest/node-v9.0.0-x64.msi",
+            "label": "9.0.0-win64"
+        },{
+            "value":" /node/latest/node-v9.0.0-linux-x64.tar.gz",
+            "label": "9.0.0-linux-amd64"
+        },{
+            "value": "/node/latest/node-v9.0.0.pkg",
+            "label": "9.0.0-mac-amd64"
+        }]
+    }]
 }

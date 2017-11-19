@@ -103,10 +103,10 @@
                 <div class="container">
                     <div class="bar">
                         <div class="title">镜像站通知</div>
-                        <ul v-if="isNull" v-cloak>暂无通知</ul>
-                        <ul v-else id="news-lists">
-                            <li v-for="item in items" v-cloak><a :href="item.url" v-text="item.title"><a></li>
-                        </ul>
+                        <p v-if="isNull" v-cloak>暂无通知</p>
+                        <div v-else id="news-lists">
+                            <p v-for="item in items" v-cloak><a :href="item.url" v-text="item.title"><a></p>
+                        </div>
                     </div>                    
                 </div>
             </div>
@@ -114,8 +114,16 @@
                 <div class="container">
                     <div class="bar">
                         <div class="title">常用链接</div>
-                        <a :href="link.url" v-for="link in links" v-text="link.title"></a>
-                            <script src="https://s13.cnzz.com/z_stat.php?id=1264366993&web_id=1264366993" language="JavaScript"></script>
+                        <p v-for="link in links"><a :href="link.url"  v-text="link.title"></a></p>
+                        <a href='http://ipv6-test.com/validate.php?url=referer'><img src='/button-ipv6-80x15.png' alt='ipv6 ready' title='ipv6 ready' border='0' /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="domains">
+                <div class="container">
+                    <div class="bar">
+                        <div class="title">域名选择</div>
+                        <p v-for="domain in domains"><a :href="domain.url"  v-text="domain.url"></a>{{domain.title}}</p>
                     </div>
                 </div>
             </div>
@@ -137,8 +145,7 @@
                                 </el-select>
                                 <a v-if="download" :href="url"><el-button type="info" icon="el-icon-download">下载</el-button></a>
                             </template>
-                      </el-dialog>
-                        
+                        </el-dialog>
                     </div>            
                 </div>
             </div>
@@ -292,12 +299,30 @@
                 }
             }
         })
+        var domains = new Vue({
+            el: '#domains',
+            data: {
+                domains:[{
+                    title: '自动解析',
+                    url: 'https://mirrors.shuosc.org'
+                },{
+                    title: '只解析IPv4',
+                    url: 'https://mirrors4.shuosc.org'
+                },{
+                    title: '只解析IPv6',
+                    url: 'https://mirrors6.shuosc.org'
+                }]   
+            }
+        })
         var links = new Vue({
             el: '#links',
             data: {
                 links:[{
                     title: '系统状态 / Status',
                     url: '/status.html'
+                },{
+                    title: '访问监控 / Visitor',
+                    url: '/visitor'
                 },{
                     title: '镜像通知 / News',
                     url: '/news'

@@ -64,8 +64,8 @@ a {
     text-decoration: none;
 }
 
-#mirrors-list,#isos,#news,#links,#copyright,#servers-status {
-    padding: 20px 20px;
+#mirrors-list,#isos,#news,#domains,#links,#copyright,#servers-status {
+    padding: 20px 20px 0 20px;
 }
 
 .official {
@@ -114,6 +114,28 @@ a {
     color: #307e6e;
     margin-bottom: 10px;
 }
+
+#news p,#links p{
+	line-height: 30px;
+    margin: 0;
+}
+
+#domains p{
+	line-height: 25px;
+    margin: 0;
+    font-size: 12px;
+}
+
+#domains p a{
+	margin-right: 5px;
+	color: #307e6e;
+}
+
+#domains p a:hover{
+	text-decoration: underline;
+}
+
+
 #isos p{
     line-height: 25px;
     margin: 0;
@@ -154,7 +176,6 @@ a {
 #news a,#links a{
     margin-bottom: 8px;
     color: #34495e;
-    display: block;
 }
 
 .g-cpu, .g-net{
