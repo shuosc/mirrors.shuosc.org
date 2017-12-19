@@ -23,7 +23,7 @@
                 <el-menu-item index="7"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
                 <el-menu-item index="2"><a href="/news">News</a></el-menu-item>
                 <el-menu-item index="3"><a href="/status.html">Status</a></el-menu-item>
-                <el-menu-item index="4"><a href="https://help.shuosc.org">Help</a></el-menu-item>
+                <el-menu-item index="4"><a href="/help">Help</a></el-menu-item>
                 <el-menu-item index="5"><a href="/news/atom.xml">RSS</a></el-menu-item>
                 <el-menu-item index="6"><a href="/">Mirrors</a></el-menu-item>
             </div>
@@ -110,15 +110,6 @@
                     </div>                    
                 </div>
             </div>
-            <div id="links">
-                <div class="container">
-                    <div class="bar">
-                        <div class="title">常用链接</div>
-                        <p v-for="link in links"><a :href="link.url"  v-text="link.title"></a></p>
-                        <a href='http://ipv6-test.com/validate.php?url=referer'><img src='/button-ipv6-80x15.png' alt='ipv6 ready' title='ipv6 ready' border='0' /></a>
-                    </div>
-                </div>
-            </div>
             <div id="domains">
                 <div class="container">
                     <div class="bar">
@@ -149,6 +140,23 @@
                     </div>            
                 </div>
             </div>
+			<div id="links">
+                <div class="container">
+                    <div class="bar">
+                        <div class="title">常用链接</div>
+                        <p v-for="link in links"><a :href="link.url"  v-text="link.title"></a></p>
+                        <a href='http://ipv6-test.com/validate.php?url=referer'><img src='/button-ipv6-80x15.png' alt='ipv6 ready' title='ipv6 ready' border='0' /></a>
+                    </div>
+                </div>
+            </div>
+			<div id="others">
+				<div class="container">
+					<div class="bar">
+						<div class="title">友情链接</div>
+						<p v-for="link in links"><a :href="link.url"  v-text="link.title"></a></p>
+					</div>
+				</div>
+			</div>
         </div>
         <div class="clear"></div> 
     </div>
@@ -190,19 +198,27 @@
                     .then(function (response) {
                         mirrors.items = response.data.mirrors;
                     });
-                    axios.get('/data/task_status.json')
+                    axios.get('/status/task_status.json')
                     .then(function (response) {
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
-                            item.taskStatus = data['status'];
-                            if(typeof(data['date'])!== "undefined"){
+                            if(typeof(data['date'])!= "undefined"){
                                 item.updateTime = data['date'];
-                            }
-                            if(typeof(data['exitcode'])!== "undefined"){
+                            }else{
+								item.updateTime = '2017-12-17 10:00:00';
+							}
+                            if(typeof(data['exitcode'])!= "undefined"){
                                 item.exitcode = data['exitcode'];
                             }
-                            if(typeof(data['upstream'])!== "undefined"){
+							if(data['status'] != "0"){
+                                item.taskStatus = data['status'];
+                            }else{
+                                item.taskStatus = "2";
+								item.exitcode = "0";
+                            }
+							console.log(item);
+                            if(typeof(data['upstream'])!= "undefined"){
                                 item.sources = data['upstream'];
                             }
                         }
@@ -342,18 +358,50 @@
                     title: 'Git@SHUOSC',
                     url: 'https://git.shuosc.org'
                 },{
-                    title: 'Pypi镜像',
-                    url: 'https://pypi.shuosc.org'
-                },{
-                    title: 'SHUER.LINK',
+                    title: '上大导航 / LINK',
                     url: 'https://shuer.link'
                 },{
-                    title: '在线交流 / IRC',
+                    title: '社区维基 / Wiki',
+                    url: 'https://wiki.shuosc.org'
+                },{
+                    title: '在线交流 / Telegram',
                     url: 'https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww'
                 }]   
             }
         })
-
+		var others = new Vue({
+			el: '#others',
+			data : {
+				links:[{
+					title: '清华大学TUNA开源镜像站',
+					url: 'https://mirrors.tuna.tsinghua.edu.cn'
+				}, {
+                    title: '中国科学技术大学开源镜像站',
+                    url: 'https://mirrors.ustc.edu.cn'
+                }, {
+                    title: '上海交通大学开源镜像站',
+                    url: 'https://ftp.sjtu.edu.cn'
+                }, {
+                    title: '上海科技大学开源镜像站',
+                    url: 'https://mirrors.geekpie.org'
+                }, {
+                    title: '浙江大学开源镜像站',
+                    url: 'https://mirrors.zju.edu.cn'
+                }, {
+                    title: '兰州大学开源镜像站',
+                    url: 'https://mirror.lzu.edu.cn'
+                }, {
+                    title: '华中科技大学开源镜像站',
+                    url: 'http://mirrors.hust.edu.cn'
+                }, {
+                    title: '东软信息学院开源镜像站',
+                    url: 'https://mirrors.neusoft.edu.cn/'
+                }, {
+                    title: '北京理工大学开源镜像站',
+                    url: 'http://mirror.bit.edu.cn'
+                }]
+			}
+		})
     </script>
 </body>
 

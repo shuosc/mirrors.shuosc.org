@@ -158,22 +158,28 @@
                     .then(function (response) {
                         mirrors.items = response.data.mirrors;
                     });
-                    axios.get('/data/task_status.json')
+                    axios.get('/status/task_status.json')
                     .then(function (response) {
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
-                            item.taskStatus = data['status'];
-                            if(typeof(data['date'])!== "undefined"){
+                            if(typeof(data['date'])!= "undefined"){
                                 item.updateTime = data['date'];
-                            }
-                            if(typeof(data['exitcode'])!== "undefined"){
+                            }else{
+								item.updateTime = "2017-12-17 10:00:00";
+							}
+                            if(typeof(data['exitcode']) != "undefined"){
                                 item.exitcode = data['exitcode'];
                             }
-                            if(typeof(data['upstream'])!== "undefined"){
+							if(data['status']!= "0"){
+                                item.taskStatus = data['status'];
+                            }else{
+                                item.taskStatus = "2";
+                            }
+                            if(typeof(data['upstream']) != "undefined"){
                                 item.sources = data['upstream'];
                             }
-                            if(typeof(data['schedule'])!== "undefined"){
+                            if(typeof(data['schedule']) != "undefined"){
                                 item.nextTime = data['schedule'];
                             }
                         }
