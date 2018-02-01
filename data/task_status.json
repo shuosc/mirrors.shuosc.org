@@ -1,0 +1,385 @@
+{
+    "CPAN": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/CPAN//",
+        "schedule": "2017-12-17 20:15:00"
+    },
+    "CRAN": {
+        "status": 0,
+        "upstream": "cran.r-project.org::CRAN//",
+        "schedule": "2017-12-17 20:15:00"
+    },
+    "CTAN": {
+        "status": 0,
+        "schedule": "2017-12-18 00:47:00",
+        "upstream": "rsync.dante.ctan.org::CTAN//"
+    },
+    "RFCs": {
+        "status": 0,
+        "schedule": "2017-12-18 00:22:00",
+        "upstream": "mirror.math.princeton.edu::pub/RFCs//"
+    },
+    "alpine": {
+        "status": 0,
+        "upstream": "rsync.alpinelinux.org::alpine//",
+        "schedule": "2017-12-18 00:35:00"
+    },
+    "anaconda": {
+        "status": 0,
+        "schedule": "2017-12-18 04:05:00"
+    },
+    "anthon": {
+        "status": 0,
+        "schedule": "2017-12-17 21:13:00",
+        "upstream": "mirror.anthonos.org::anthon//"
+    },
+    "apache": {
+        "status": 0,
+        "schedule": "2017-12-18 00:40:00",
+        "upstream": "rsync.apache.org::apache-dist//"
+    },
+    "archlinux": {
+        "status": 0,
+        "upstream": "mirrors.rit.edu::archlinux//",
+        "schedule": "2017-12-18 00:30:00"
+    },
+    "archlinuxarm": {
+        "status": 2,
+        "schedule": "Unknown",
+        "upstream": "ftp.halifax.rwth-aachen.de::archlinux-arm//",
+        "date": "2017-12-17 19:56:15",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "archlinuxcn": {
+        "status": 2,
+        "schedule": "2017-12-18 00:28:00",
+        "upstream": "mirrors.tuna.tsinghua.edu.cn::archlinuxcn//",
+        "date": "2017-12-17 18:44:45",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "brew": {
+        "status": 0,
+        "schedule": "2017-12-18 00:23:00"
+    },
+    "centos": {
+        "status": 2,
+        "schedule": "2017-12-18 00:23:00",
+        "upstream": "msync.centos.org::CentOS//",
+        "date": "2017-12-17 18:35:03",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "centos-altarch": {
+        "status": 2,
+        "schedule": "2017-12-18 00:07:00",
+        "upstream": "us-msync.centos.org::altarch//",
+        "date": "2017-12-17 18:09:08",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "ceph": {
+        "status": 0,
+        "schedule": "2017-12-17 20:16:00",
+        "upstream": "mirror.math.princeton.edu::pub/ceph//"
+    },
+    "cygwin": {
+        "status": 0,
+        "schedule": "2017-12-17 20:33:00",
+        "upstream": "mirror.math.princeton.edu::pub/cygwin//"
+    },
+    "deb-multimedia": {
+        "status": 0,
+        "upstream": "www.deb-multimedia.org::deb//",
+        "schedule": "2017-12-18 00:46:00"
+    },
+    "debian": {
+        "status": 1,
+        "date": "2017-12-17 18:12:00",
+        "schedule": "2017-12-18 18:12:00"
+    },
+    "debian-cd": {
+        "status": 0,
+        "upstream": "mirrors.kernel.org::debian-cd//",
+        "schedule": "2017-12-17 20:10:00"
+    },
+    "deepin": {
+        "status": 0,
+        "upstream": "rsync.deepin.com::deepin//",
+        "schedule": "2017-12-18 00:45:00"
+    },
+    "deepin-cd": {
+        "status": 0,
+        "upstream": "rsync.deepin.com::releases//",
+        "schedule": "2017-12-18 01:48:00"
+    },
+    "docker-ce": {
+        "status": 0,
+        "schedule": "2017-12-18 03:45:00"
+    },
+    "eclipse": {
+        "status": 1,
+        "date": "2017-12-17 18:42:00",
+        "schedule": "2017-12-18 04:42:00",
+        "upstream": "mirror.math.princeton.edu::pub/eclipse//"
+    },
+    "elvish": {
+        "status": 0,
+        "schedule": "2017-12-18 00:45:00",
+        "upstream": "mirrors.tuna.tsinghua.edu.cn::elvish//"
+    },
+    "epel": {
+        "status": 0,
+        "schedule": "2017-12-17 21:14:00",
+        "upstream": "mirror.de.leaseweb.net::epel//"
+    },
+    "fedora": {
+        "status": 0,
+        "upstream": "dl.fedoraproject.org::fedora-enchilada/linux//",
+        "schedule": "2017-12-17 21:16:00"
+    },
+    "gentoo": {
+        "status": 1,
+        "date": "2017-12-17 18:52:00",
+        "schedule": "2017-12-18 04:52:00",
+        "upstream": "mirrors.rit.edu::gentoo//"
+    },
+    "gimp": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/gimp//",
+        "schedule": "2017-12-18 01:32:00"
+    },
+    "gnome": {
+        "status": 0,
+        "schedule": "2017-12-18 01:55:00",
+        "upstream": "mirror.math.princeton.edu::pub/gnome//"
+    },
+    "gnu": {
+        "status": 0,
+        "schedule": "2017-12-17 20:56:00",
+        "upstream": "mirror.math.princeton.edu::pub/gnu//"
+    },
+    "homebrew-bottles": {
+        "status": 0,
+        "upstream": "mirrors.ustc.edu.cn::homebrew-bottles//",
+        "schedule": "2017-12-17 20:42:00"
+    },
+    "homebrew-cask": {
+        "status": 0,
+        "schedule": "2017-12-18 00:24:00"
+    },
+    "homebrew-core": {
+        "status": 0,
+        "schedule": "2017-12-18 00:22:00"
+    },
+    "iina": {
+        "status": 0,
+        "upstream": "link-start.iina.io::iina//",
+        "schedule": "2017-12-18 07:32:00"
+    },
+    "jenkins": {
+        "status": 0,
+        "schedule": "2017-12-18 00:08:00",
+        "upstream": "rsync.osuosl.org::jenkins//"
+    },
+    "kali": {
+        "status": 2,
+        "schedule": "2017-12-18 00:35:00",
+        "upstream": "mirrors.ustc.edu.cn::kali//",
+        "date": "2017-12-17 18:50:05",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "kali-images": {
+        "status": 0,
+        "upstream": "ftp.nluug.nl::kali-images//",
+        "schedule": "2017-12-17 20:11:00"
+    },
+    "kali-security": {
+        "status": 0,
+        "upstream": "ftp.nluug.nl::kali-security//",
+        "schedule": "2017-12-18 00:20:00"
+    },
+    "kde": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/kde//",
+        "schedule": "2017-12-18 01:58:00"
+    },
+    "kernel": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/kernel//",
+        "schedule": "2017-12-17 20:12:00"
+    },
+    "lede": {
+        "status": 0,
+        "upstream": "downloads.lede-project.org::downloads//",
+        "schedule": "2017-12-17 20:37:00"
+    },
+    "libreoffice": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/libreoffice//",
+        "schedule": "2017-12-18 02:12:00"
+    },
+    "linuxmint": {
+        "status": 2,
+        "schedule": "2017-12-18 00:13:00",
+        "upstream": "rsync-packages.linuxmint.com::packages//",
+        "date": "2017-12-17 18:13:17",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "linuxmint-cd": {
+        "status": 0,
+        "upstream": "ftp.heanet.ie::mirror/linuxmint.com//",
+        "schedule": "2017-12-18 02:27:00"
+    },
+    "macports": {
+        "status": 0,
+        "upstream": "rsync-origin.macports.org::macports//",
+        "schedule": "2017-12-17 21:18:00"
+    },
+    "manjaro": {
+        "status": 1,
+        "date": "2017-12-17 18:22:00",
+        "schedule": "2017-12-18 04:22:00",
+        "upstream": "repo.manjaro.org::repos//"
+    },
+    "manjaro-cd": {
+        "status": 0,
+        "schedule": "2017-12-17 20:38:00",
+        "upstream": "mirrorservice.org::downloads.sourceforge.net/m/ma/manjarolinux//"
+    },
+    "mariadb": {
+        "status": 0,
+        "upstream": "rsync.osuosl.org::mariadb//",
+        "schedule": "2017-12-18 00:08:00"
+    },
+    "mongodb": {
+        "status": 0,
+        "schedule": "2017-12-18 02:05:00"
+    },
+    "msys2": {
+        "status": 2,
+        "schedule": "2017-12-18 00:37:00",
+        "upstream": "mirrors.tuna.tsinghua.edu.cn::msys2//",
+        "date": "2017-12-17 18:37:03",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "mysql": {
+        "status": 0,
+        "schedule": "2017-12-18 02:25:00"
+    },
+    "node": {
+        "status": 0,
+        "schedule": "2017-12-18 00:45:00"
+    },
+    "opensuse": {
+        "status": 1,
+        "date": "2017-12-17 18:05:00",
+        "schedule": "2017-12-18 04:05:00",
+        "upstream": "mirrors.kernel.org::opensuse//"
+    },
+    "openwrt": {
+        "status": 0,
+        "schedule": "2017-12-17 20:02:00",
+        "upstream": "mirror.math.princeton.edu::pub/openwrt//"
+    },
+    "parrot": {
+        "status": 1,
+        "date": "2017-12-17 18:12:00",
+        "schedule": "2017-12-18 04:12:00",
+        "upstream": "archive.parrotsec.org::parrot//"
+    },
+    "postgresql": {
+        "status": 0,
+        "upstream": "rsync.postgresql.org::pgsql-ftp//",
+        "schedule": "2017-12-18 00:23:00"
+    },
+    "pritunl": {
+        "status": 0,
+        "schedule": "2017-12-18 02:45:00"
+    },
+    "putty": {
+        "status": 0,
+        "schedule": "2017-12-18 02:32:00",
+        "upstream": "mirror.math.princeton.edu::pub/putty//"
+    },
+    "pypi": {
+        "status": 0,
+        "schedule": "2017-12-17 20:10:00"
+    },
+    "raspbian": {
+        "status": 1,
+        "date": "2017-12-17 18:30:00",
+        "schedule": "2017-12-18 04:30:00",
+        "upstream": "archive.raspbian.org::archive//"
+    },
+    "repoforge": {
+        "status": 0,
+        "schedule": "2017-12-17 20:25:00",
+        "upstream": "ftp.nluug.nl::repoforge//"
+    },
+    "ruby": {
+        "status": 0,
+        "schedule": "2017-12-18 03:25:00"
+    },
+    "rubygems": {
+        "status": 2,
+        "date": "2017-12-17 18:49:27",
+        "message": "Task finished",
+        "exitcode": 0,
+        "schedule": "2017-12-17 20:45:00"
+    },
+    "sleep": {
+        "status": 2,
+        "date": "2017-12-17 19:55:15",
+        "message": "Task finished",
+        "exitcode": 0,
+        "schedule": "2017-12-17 19:56:00"
+    },
+    "ubuntu": {
+        "status": 2,
+        "schedule": "Unknown",
+        "upstream": "archive.ubuntu.com::ubuntu//",
+        "date": "2017-12-17 19:55:52",
+        "message": "Partial transfer due to vanished source files",
+        "exitcode": 24
+    },
+    "ubuntu-releases": {
+        "status": 0,
+        "upstream": "rsync.releases.ubuntu.com::releases//",
+        "schedule": "2017-12-17 22:20:00"
+    },
+    "videolan-ftp": {
+        "status": 0,
+        "schedule": "2017-12-17 20:05:00",
+        "upstream": "rsync.videolan.org::videolan-ftp//"
+    },
+    "vim": {
+        "status": 2,
+        "schedule": "2017-12-18 00:05:00",
+        "upstream": "ftp.nluug.nl::Vim//",
+        "date": "2017-12-17 18:05:07",
+        "message": "Sync succeed",
+        "exitcode": 0
+    },
+    "virtualbox": {
+        "status": 0,
+        "schedule": "2017-12-18 04:25:00"
+    },
+    "wgetcleaner": {
+        "status": 0,
+        "schedule": "2017-12-18 00:22:00"
+    },
+    "zabbix": {
+        "status": 0,
+        "schedule": "2017-12-17 23:25:00",
+        "upstream": "repo.zabbix.com::mirror//"
+    },
+    "zerotier": {
+        "status": 0,
+        "schedule": "2017-12-18 03:05:00"
+    }
+}

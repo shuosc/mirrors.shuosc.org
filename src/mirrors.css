@@ -1,0 +1,309 @@
+body {
+    margin: 0px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.left{
+    width: 70%;
+    display: inline-block;
+    float: left;
+}
+
+.right{
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+
+.clear{ clear:both} 
+
+#menu{
+    background-color: #455D6F;
+}
+
+.el-menu--horizontal{
+    border: none;
+    background-color: #455D6F;
+}
+
+.el-menu--horizontal .el-menu-item {
+    font-size: medium;
+    font-weight: 400;
+    color: #dbdbdb;
+}
+
+.el-menu--horizontal .el-menu-item:hover {
+    background-color: #455D6F;
+    color: #ffffff;
+}
+
+#menu .title{
+    float: left;
+    display: inline-block;
+    line-height: 60px;
+    margin-left: 60px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.navBar {
+    float: right;
+    margin-right: 60px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#mirrors-list,#isos,#news,#domains,#links,#copyright,#servers-status {
+    padding: 20px 20px 0 20px;
+}
+
+.official {
+    background: #515151;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+.new {
+    background: #d9e8f7;
+    color: #20a0ff;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+#mirrors-list a:hover {
+    text-decoration: underline;
+}
+
+#mirrors-list table {
+    font-size: 13px;
+}
+
+#mirrors-list table td{
+    height: 30px;
+    padding: 4px 0;
+}
+
+.el-tag{
+    line-height: 16px;
+    height: 20px;
+}
+
+.bar {
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.bar .title {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #307e6e;
+    margin-bottom: 10px;
+}
+
+#news p,#links p{
+	line-height: 30px;
+    margin: 0;
+}
+
+#domains p{
+	line-height: 25px;
+    margin: 0;
+    font-size: 12px;
+}
+
+#domains p a{
+	margin-right: 5px;
+	color: #307e6e;
+}
+
+#domains p a:hover{
+	text-decoration: underline;
+}
+
+
+#isos p{
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.el-button--info{
+    background-color: #22bc9e;
+    border-color: #22bc9e;
+}
+
+.el-button--info:hover{
+    background-color: #307e6e;
+    border-color: #307e6e;
+}
+
+.bar .search {
+    display: inline-block;
+    width: 190px;
+    float: right;
+    margin-right: 0;
+}
+
+#news-lists{
+    padding-left: 0px;
+    margin: 5px 0;
+}
+#news li{
+    line-height: 25px;
+    list-style: none;
+
+}
+
+#news a:hover,#links a:hover {
+    text-decoration: underline;
+}
+
+#news a,#links a{
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.g-cpu, .g-net{
+    float: left;
+    width: 49%;
+    margin-right: 10px;
+}
+
+#copyright {
+    background-color: #435c70;
+    color: #dbdbdb;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 20px 40px;
+}
+
+#copyright a {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#copyright .content{
+    width: 72%;
+    margin: 10px;
+    display: inline-block;
+}
+
+#copyright p{
+    margin: 0;
+}
+
+#copyright .logo {
+    display: inline-block;
+    position: relative;
+    float: right;
+    background: url(/logo.png) no-repeat;
+    background-size: 70px 70px;
+    background-position: top;
+    margin-top: 8px;
+    padding-top: 85px;
+    font-size: 24px;
+    color: #fff;
+}
+
+@media screen and  (max-width: 1370px) {
+    .container {
+        width: 98%;
+        margin: 0px 5px;
+    }
+    .el-dialog {
+        width: 60%!important;
+    }
+}
+
+@media screen and (max-width: 1214px){
+	.g-cpu,.g-net{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bar{
+        margin: 0;
+    }
+    #mirrors-list .bar .list{
+        overflow: scroll;
+    }
+    #mirrors-list .bar .content{
+        width: 1024px;
+    }
+    .left, .right {
+        width: 100%;
+        display: block;
+    }
+    #copyright {
+        padding: 10px 20px;
+    }
+    #copyright .content{
+        width: 60%;
+    }
+    #copyright .logo {
+        margin-top: 60px;
+    }
+    #menu .title{
+        margin-left: 20px;;
+    }
+    .navBar{
+        margin-right: 0;
+    }
+    .el-dialog {
+        width: 80%!important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #copyright .content{
+        width: 100%;
+        margin: 10px 0;
+    }
+    #copyright .logo{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #menu .title{
+        display: block;
+        float: none;
+    }
+    #menu .navBar {
+        float: left;
+        margin-left: 15px;
+    }
+    .el-menu--horizontal .el-menu-item{
+        font-size: 14px;
+        line-height: 30px;
+        height: 36px;
+        padding: 0 5px;
+    }
+    .el-input--suffix .el-input__inner {
+        margin-bottom: 10px;
+    }
+    .g-cpu,.g-net{
+        overflow: scroll;
+    }
+    iframe {
+        min-width: 600px;
+    }
+}

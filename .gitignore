@@ -1,11 +1,4 @@
-/*
-!*.html
-!src
-!css
-!js
-!images
-!logo.png
-!favicon.ico
-!*.json
-!README.md
-
+node_modules/
+!hexo/themes/bubuzou/
+hexo/public
+hexo/db.json
