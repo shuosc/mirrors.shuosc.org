@@ -4,6 +4,21 @@
         "upstream": "mirror.math.princeton.edu::pub/CPAN//",
         "schedule": "2017-12-17 20:15:00"
     },
+    "centos-cloud": {
+        "status": 0,
+        "upstream": "https://cloud.centos.org",
+        "schedule": "2017-12-17 20:15:00"
+    },
+	"vscode": {
+        "status": 0,
+        "upstream": "https://packages.microsoft.com",
+        "schedule": "2017-12-17 20:15:00"
+    },
+	"saltstack": {
+        "status": 0,
+        "upstream": "repo.saltstack.com::saltstack_pkgrepo_full",
+        "schedule": "2017-12-17 20:15:00"
+    },
     "CRAN": {
         "status": 0,
         "upstream": "cran.r-project.org::CRAN//",
@@ -25,6 +40,14 @@
         "schedule": "2017-12-18 00:35:00"
     },
     "anaconda": {
+        "status": 0,
+        "schedule": "2017-12-18 04:05:00"
+    },
+	"ubuntu-cloud-images": {
+        "status": 0,
+        "schedule": "2017-12-18 04:05:00"
+    },
+	"ubuntu-cdimage": {
         "status": 0,
         "schedule": "2017-12-18 04:05:00"
     },
@@ -232,6 +255,11 @@
     "linuxmint-cd": {
         "status": 0,
         "upstream": "ftp.heanet.ie::mirror/linuxmint.com//",
+        "schedule": "2017-12-18 02:27:00"
+    },
+	"lyx": {
+        "status": 0,
+        "upstream": "ftp.lyx.org::ftp/pub/lyx",
         "schedule": "2017-12-18 02:27:00"
     },
     "macports": {

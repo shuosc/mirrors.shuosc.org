@@ -10,6 +10,46 @@
             "url": "/debian",
             "help": "/help/debian.html",
             "exitcode": "0"
+        },{
+            "name": "saltstack",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "repo.saltstack.com/saltstack_pkgrepo_full",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/saltstack",
+            "help": "/help/saltstack.html",
+            "exitcode": "0"
+        },{
+            "name": "lyx",
+            "isNew": true,
+            "official": true,
+            "taskStatus": "2",
+            "sources": "rsync://ftp.lyx.org/ftp/pub/lyx",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/lyx",
+            "help": "",
+            "exitcode": "0"
+        },{
+            "name": "centos-cloud",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "https://cloud.centos.org",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/centos-cloud",
+            "help": "",
+            "exitcode": "0"
+        },{
+            "name": "vscode",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "https://packages.microsoft.com",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/vscode",
+            "help": "/help/vscode.html",
+            "exitcode": "0"
         },
         {
             "name": "deb-multimedia",
@@ -118,7 +158,7 @@
             "sources": "http://cache.ruby-china.org",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/ruby",
-            "help": "",
+            "help": "/help/ruby.html",
             "exitcode": "0"
         },
         {
@@ -331,13 +371,24 @@
             "exitcode": "0"
         },
         {
-            "name": "kali-security",
-            "isNew": false,
+            "name": "ubuntu-cloud-images",
+            "isNew": true,
             "official": false,
             "taskStatus": "2",
-            "sources": "rsync::ftp.nluug.nl/kali-security",
+            "sources": "rsync::cloud-images.ubuntu.com/cloud-images/",
             "updateTime": "2017-09-23 22:00:00",
-            "url": "/kali-security",
+            "url": "/ubuntu-cloud-images",
+            "help": "",
+            "exitcode": "0"
+        },
+        {
+            "name": "ubuntu-cdimage",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "rsync::cdimage.ubuntu.com/cdimage/",
+            "updateTime": "2017-09-23 22:00:00",
+            "url": "/ubuntu-cdimage",
             "help": "",
             "exitcode": "0"
         },
@@ -901,16 +952,16 @@
             "label": "Archlinux",
             "children": [
                 {
-                    "value": "/archlinux/iso/2017.09.01/archlinux-2017.09.01-x86_64.iso",
-                    "label": "2017.09.01-amd64"
+                    "value": "/archlinux/iso/2017.12.01/archlinux-2017.12.01-x86_64.iso",
+                    "label": "2017.12.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2017.08.01/archlinux-2017.08.01-x86_64.iso",
-                    "label": "2017.08.01-amd64"
+                    "value": "/archlinux/iso/2017.11.01/archlinux-2017.11.01-x86_64.iso",
+                    "label": "2017.11.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2017.07.01/archlinux-2017.07.01-x86_64.iso",
-                    "label": "2017.07.01-amd64"
+                    "value": "/archlinux/iso/2017.10.01/archlinux-2017.10.01-x86_64.iso",
+                    "label": "2017.10.01-amd64"
                 }
             ]
         },

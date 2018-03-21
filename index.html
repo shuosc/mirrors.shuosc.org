@@ -12,14 +12,6 @@
     <link href="/src/element-ui.css" rel="stylesheet">
     <link href="/src/mirrors.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113238974-4"></script>
-    <script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-113238974-4');
-    </script>
 </head>
 
 <body>
@@ -154,6 +146,26 @@
                         <div class="title">常用链接</div>
                         <p v-for="link in links"><a :href="link.url"  v-text="link.title"></a></p>
                         <a href='http://ipv6-test.com/validate.php?url=referer'><img src='/button-ipv6-80x15.png' alt='ipv6 ready' title='ipv6 ready' border='0' /></a>
+                        <a class="github-button" href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org" data-show-count="true" aria-label="Star shuopensourcecommunity/mirrors.shuosc.org on GitHub">Star</a>
+                        <!-- IPv6-test.com widget BEGIN -->
+                        <script type="text/javascript">var _ipv6test_widget_style = {
+                            border: "solid 1px #000",
+                            font_size: "12px",
+                            show_country_flags: true,
+                            show_loading_anim: true,
+                            ipv4_label_color: "#393",
+                            ipv4_background_color: "#eee",
+                            ipv6_label_color: "#339",
+                            ipv6_background_color: "#ddd",
+                            stats_position: "bottom",
+                            stats_font_size: "10px",
+                            stats_color: "#eee",
+                            stats_color_v4: "#beb",
+                            stats_color_v6: "#bbe",
+                            stats_background_color: "#666"
+                            }</script>
+                            <div id="_ipv6test_widget" style="max-width:30em;display:none">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div><script type="text/javascript" src="/src/ip.js?domain=referer" async="async">
+                        </script>
                     </div>
                 </div>
             </div>
@@ -181,6 +193,17 @@
     <script src="/src/vue.min.js"></script>
     <script src="/src/element-ui.js"></script>
     <script src="/src/axios.js"></script>
+    <script src="/src/mirrors.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113238974-4"></script>
+    <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-113238974-4');
+    </script>
+    
     <script>
         
         var menu = new Vue({
@@ -206,26 +229,23 @@
                     .then(function (response) {
                         mirrors.items = response.data.mirrors;
                     });
-                    axios.get('/status/task_status.json')
+                    axios.get('/data/task_status.json')
                     .then(function (response) {
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
-                            if(typeof(data['date'])!= "undefined"){
-                                item.updateTime = data['date'];
+                            var date = new Date();
+                            if(date.getHours()>=2){
+                                item.updateTime = showTime(0)+" 02:00:00";
                             }else{
-								item.updateTime = '2017-12-17 10:00:00';
-							}
+                                item.updateTime = showTime(-1)+" 02:00:00";
+                            }
                             if(typeof(data['exitcode'])!= "undefined"){
                                 item.exitcode = data['exitcode'];
                             }
-							if(data['status'] != "0"){
-                                item.taskStatus = data['status'];
-                            }else{
                                 item.taskStatus = "2";
-								item.exitcode = "0";
-                            }
-							console.log(item);
+                                item.exitcode = "0";
+                            console.log(item);
                             if(typeof(data['upstream'])!= "undefined"){
                                 item.sources = data['upstream'];
                             }
@@ -331,10 +351,10 @@
                     url: 'https://mirrors.shuosc.org'
                 },{
                     title: '只解析IPv4',
-                    url: 'https://mirrors4.shuosc.org'
+                    url: 'https://mirrors.shu.edu.cn'
                 },{
                     title: '只解析IPv6',
-                    url: 'https://mirrors6.shuosc.org'
+                    url: 'https://mirrors.shu6.edu.cn'
                 }]   
             }
         })

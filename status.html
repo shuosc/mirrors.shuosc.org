@@ -133,6 +133,7 @@
     <script src="/src/vue.min.js"></script>
     <script src="/src/element-ui.js"></script>
     <script src="/src/axios.js"></script>
+    <script src="/src/mirrors.js"></script>
     <script>
         
         var menu = new Vue({
@@ -163,24 +164,18 @@
                         for(item of mirrors.items){
                             var name = item.name;
                             var data = response.data[name];
-                            if(typeof(data['date'])!= "undefined"){
-                                item.updateTime = data['date'];
+                            var date = new Date();
+                            if(date.getHours()>=2){
+                                item.updateTime = showTime(0)+" 02:00:00";
+                                item.nextTime = showTime(+1)+" 02:00:00";
                             }else{
-								item.updateTime = "2017-12-17 10:00:00";
-							}
-                            if(typeof(data['exitcode']) != "undefined"){
-                                item.exitcode = data['exitcode'];
+                                item.updateTime = showTime(-1)+" 02:00:00";
+                                item.nextTime = showTime(0)+" 02:00:00";
                             }
-							if(data['status']!= "0"){
-                                item.taskStatus = data['status'];
-                            }else{
-                                item.taskStatus = "2";
-                            }
+                            item.taskStatus = "2";
+                            item.exitcode = "0";
                             if(typeof(data['upstream']) != "undefined"){
                                 item.sources = data['upstream'];
-                            }
-                            if(typeof(data['schedule']) != "undefined"){
-                                item.nextTime = data['schedule'];
                             }
                         }
                     });
