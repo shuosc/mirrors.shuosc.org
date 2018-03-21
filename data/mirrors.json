@@ -828,35 +828,35 @@
             "label": "Ubuntu",
             "children": [
                 {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-amd64.iso",
+                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.4-server-amd64.iso",
                     "label": "16.04-server-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-server-i386.iso",
+                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.4-server-i386.iso",
                     "label": "16.04-server-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-amd64.iso",
+                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.4-desktop-amd64.iso",
                     "label": "16.04-desktop-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.3-desktop-i386.iso",
+                    "value": "/ubuntu-releases/xenial/ubuntu-16.04.4-desktop-i386.iso",
                     "label": "16.04-desktop-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-server-amd64.iso",
+                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-server-amd64.iso",
                     "label": "17.10-server-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-server-i386.iso",
+                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-server-i386.iso",
                     "label": "17.10-server-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-amd64.iso",
+                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-desktop-amd64.iso",
                     "label": "17.10-desktop-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10-desktop-i386.iso",
+                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-desktop-i386.iso",
                     "label": "17.10-desktop-i386"
                 }
             ]
@@ -884,40 +884,40 @@
             "label": "Kali",
             "children": [
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-2017.1-amd64.iso",
-                    "label": "2017.1-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-2018.1-amd64.iso",
+                    "label": "2018.1-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-2017.1-i386.iso",
-                    "label": "2017.1-i386"
+                    "value": "/kali-images/kali-2018.1/kali-linux-2018.1-i386.iso",
+                    "label": "2018.1-i386"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-kde-2017.1-amd64.iso",
-                    "label": "2017.1-kde-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-kde-2018.1-amd64.iso",
+                    "label": "2018.1-kde-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-mate-2017.1-amd64.iso",
-                    "label": "2017.1-mate-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-mate-2018.1-amd64.iso",
+                    "label": "2018.1-mate-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-xfce-2017.1-amd64.iso",
-                    "label": "2017.1-xfce-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-xfce-2018.1-amd64.iso",
+                    "label": "2018.1-xfce-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-amd64.iso",
-                    "label": "2017.1-light-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-light-2018.1-amd64.iso",
+                    "label": "2018.1-light-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-light-2017.1-i386.iso",
-                    "label": "2017.1-light-i386"
+                    "value": "/kali-images/kali-2018.1/kali-linux-light-2018.1-i386.iso",
+                    "label": "2018.1-light-i386"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-lxde-2017.1-amd64.iso",
-                    "label": "2017.1-lxde-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-lxde-2018.1-amd64.iso",
+                    "label": "2018.1-lxde-amd64"
                 },
                 {
-                    "value": "/kali-images/kali-2017.1/kali-linux-e17-2017.1-amd64.iso",
-                    "label": "2017.1-e17-amd64"
+                    "value": "/kali-images/kali-2018.1/kali-linux-e17-2018.1-amd64.iso",
+                    "label": "2018.1-e17-amd64"
                 }
             ]
         },
@@ -926,24 +926,24 @@
             "label": "Debian",
             "children": [
                 {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso",
-                    "label": "9.1-gnome-amd64"
+                    "value": "/debian-cd/9.4.0-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-gnome.iso",
+                    "label": "9.4-gnome-amd64"
                 },
                 {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-kde.iso",
-                    "label": "9.1-kde-amd64"
+                    "value": "/debian-cd/9.4.0-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-kde.iso",
+                    "label": "9.4-kde-amd64"
                 },
                 {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-mate.iso",
-                    "label": "9.1-mate-amd64"
+                    "value": "/debian-cd/9.4.0-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-mate.iso",
+                    "label": "9.4-mate-amd64"
                 },
                 {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-xfce.iso",
-                    "label": "9.1-xfce-amd64"
+                    "value": "/debian-cd/9.4.0-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-xfce.iso",
+                    "label": "9.4-xfce-amd64"
                 },
                 {
-                    "value": "/debian-cd/9.1.0-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-cinnamon.iso",
-                    "label": "9.1-cinnamon-amd64"
+                    "value": "/debian-cd/9.4.0-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-cinnamon.iso",
+                    "label": "9.4-cinnamon-amd64"
                 }
             ]
         },
@@ -952,16 +952,16 @@
             "label": "Archlinux",
             "children": [
                 {
-                    "value": "/archlinux/iso/2017.12.01/archlinux-2017.12.01-x86_64.iso",
-                    "label": "2017.12.01-amd64"
+                    "value": "/archlinux/iso/2018.03.01/archlinux-2018.03.01-x86_64.iso",
+                    "label": "2018.03.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2017.11.01/archlinux-2017.11.01-x86_64.iso",
-                    "label": "2017.11.01-amd64"
+                    "value": "/archlinux/iso/2018.02.01/archlinux-2018.02.01-x86_64.iso",
+                    "label": "2018.02.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2017.10.01/archlinux-2017.10.01-x86_64.iso",
-                    "label": "2017.10.01-amd64"
+                    "value": "/archlinux/iso/2018.01.01/archlinux-2018.01.01-x86_64.iso",
+                    "label": "2018.01.01-amd64"
                 }
             ]
         },
@@ -987,6 +987,10 @@
             "value": "Deepin",
             "label": "Deepin",
             "children": [
+                {
+                    "value": "/deepin-cd/15.5/deepin-15.5-amd64.iso",
+                    "label": "15.5-amd64"
+                },
                 {
                     "value": "/deepin-cd/15.4.1/deepin-15.4.1-amd64.iso",
                     "label": "15.4.1-amd64"
@@ -1032,11 +1036,11 @@
                     "label": "Texlive-linux&&win"
                 },
                 {
-                    "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361-x64.exe",
+                    "value": "/CTAN/systems/win32/miktex/setup/windows-x64/basic-miktex-x64.exe",
                     "label": "miktex-win64"
                 },
                 {
-                    "value": "/CTAN/systems/win32/miktex/setup/basic-miktex-2.9.6361.exe",
+                    "value": "/CTAN/systems/win32/miktex/setup/windows-x86/basic-miktex.exe",
                     "label": "miktex-win32"
                 }
             ]
@@ -1046,32 +1050,32 @@
             "label": "Virtualbox",
             "children": [
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Win.exe",
-                    "label": "5.2.0-win64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Win.exe",
+                    "label": "5.2.4-win64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-Linux_amd64.run",
-                    "label": "5.2.0-linux-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Linux_amd64.run",
+                    "label": "5.2.4-linux-amd64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_openSUSE132-1.x86_64.rpm",
-                    "label": "5.2.0-opensuse-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2-5.2.4_1197851_openSUSE132-1.x86_64.rpm",
+                    "label": "5.2.4-opensuse-amd64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2.0-118431-OSX.dmg",
-                    "label": "5.2.0-mac-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2.4-119785-OSX.dmg",
+                    "label": "5.2.4-mac-amd64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el7-1.x86_64.rpm",
-                    "label": "5.2.0-centos7-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2-5.2.4_119785_el7-1.x86_64.rpm",
+                    "label": "5.2.4-centos7-amd64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_el6-1.x86_64.rpm ",
-                    "label": "5.2.0-centos6-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2-5.2.4_119785_el6-1.x86_64.rpm ",
+                    "label": "5.2.4-centos6-amd64"
                 },
                 {
-                    "value": "/virtualbox/5.2.0/VirtualBox-5.2-5.2.0_118431_fedora26-1.x86_64.rpm",
-                    "label": "5.2.0-fedora-amd64"
+                    "value": "/virtualbox/5.2.4/VirtualBox-5.2-5.2.4_119785_fedora26-1.x86_64.rpm",
+                    "label": "5.2.4-fedora-amd64"
                 }
             ]
         },
@@ -1080,16 +1084,29 @@
             "label": "Node",
             "children": [
                 {
-                    "value": "/node/latest/node-v9.0.0-x64.msi",
-                    "label": "9.0.0-win64"
+                    "value": "/node/latest/node-v9.7.0-x64.msi",
+                    "label": "9.7.0-win64"
                 },
                 {
-                    "value": " /node/latest/node-v9.0.0-linux-x64.tar.gz",
-                    "label": "9.0.0-linux-amd64"
+                    "value": " /node/latest/node-v9.7.0-linux-x64.tar.gz",
+                    "label": "9.7.0-linux-amd64"
                 },
                 {
-                    "value": "/node/latest/node-v9.0.0.pkg",
-                    "label": "9.0.0-mac-amd64"
+                    "value": "/node/latest/node-v9.7.0.pkg",
+                    "label": "9.7.0-mac-amd64"
+                }
+            ]
+        },{
+            "value": "Lyx",
+            "label": "Lyx",
+            "children": [
+                {
+                    "value": "/lyx/bin/2.3.0/LyX-2.3.0+qt5-x86_64-cocoa.dmg",
+                    "label": "LyX-2.3.0-mac"
+                },
+                {
+                    "value": "/lyx/bin/2.3.0/lyx-2.3.0-cygwin.tar.gz",
+                    "label": "Lyx-2.3.0-win"
                 }
             ]
         }
