@@ -105,7 +105,10 @@
                         <div class="title">镜像站通知</div>
                         <p v-if="isNull" v-cloak>暂无通知</p>
                         <div v-else id="news-lists">
-                            <p v-for="item in items" v-cloak><a :href="item.url" v-text="item.title"><a></p>
+                            <p v-for="item in items" v-cloak>
+                                <span class="new" v-if="item.day<3">新</span>
+                                <a :href="item.url" v-text="item.title"><a>
+                            </p>
                         </div>
                     </div>                    
                 </div>
@@ -163,9 +166,9 @@
                             stats_color_v4: "#beb",
                             stats_color_v6: "#bbe",
                             stats_background_color: "#666"
-                            }</script>
-                            <div id="_ipv6test_widget" style="max-width:30em;display:none">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div><script type="text/javascript" src="/src/ip.js?domain=referer" async="async">
+                            }
                         </script>
+                        <div id="_ipv6test_widget" style="max-width:30em;display:none">loading <a href="http://ipv6-test.com/">IPv6 connection test</a> ...</div> 
                     </div>
                 </div>
             </div>
@@ -194,6 +197,7 @@
     <script src="/src/element-ui.js"></script>
     <script src="/src/axios.js"></script>
     <script src="/src/mirrors.js"></script>
+    <script type="text/javascript" src="/src/ip.js?domain=referer" async="async"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113238974-4"></script>
@@ -334,6 +338,10 @@
                             vm.items = response.data;
                             for(var item of vm.items){
                                 item.url = "/news/p/"+item.abbrlink+".html";
+                                s1 = new Date(item.date.slice(0,10).replace(/-/g, "/"));
+                                s2 = new Date();
+                                var days = s2.getTime() - s1.getTime();
+                                item.day = parseInt(days / (1000 * 60 * 60 * 24));
                             }
                         }                   
                     })

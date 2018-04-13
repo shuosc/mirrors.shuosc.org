@@ -31,6 +31,16 @@
             "help": "",
             "exitcode": "0"
         },{
+            "name": "virtio",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "rsync://fedorapeople.org/groups/virt",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/virtio",
+            "help": "",
+            "exitcode": "0"
+        },{
             "name": "centos-cloud",
             "isNew": true,
             "official": false,
@@ -476,7 +486,7 @@
             "taskStatus": "2",
             "sources": "https://github.com/Homebrew/homebrew-core.git",
             "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/Homebrew/homebrew-core.git",
+            "url": "/homebrew-core",
             "help": "/help/homebrew-core.html",
             "exitcode": "0"
         },
@@ -487,8 +497,19 @@
             "taskStatus": "2",
             "sources": "https://github.com/Homebrew/brew.git",
             "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/Homebrew/brew.git",
+            "url": "/brew",
             "help": "/help/homebrew.html",
+            "exitcode": "0"
+        },
+        {
+            "name": "CocoaPods",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "https://github.com/CocoaPods/Specs.git",
+            "updateTime": "2017-09-23 22:00:00",
+            "url": "/CocoaPods",
+            "help": "/help/cocoapods.html",
             "exitcode": "0"
         },
         {
@@ -498,7 +519,7 @@
             "taskStatus": "2",
             "sources": "https://github.com/caskroom/homebrew-cask.git",
             "updateTime": "2017-09-23 22:00:00",
-            "url": "https://git.shuosc.org/caskroom/homebrew-cask.git",
+            "url": "/homebrew-cask",
             "help": "/help/homebrew-cask.html",
             "exitcode": "0"
         },
@@ -1108,6 +1129,23 @@
                     "value": "/lyx/bin/2.3.0/lyx-2.3.0-cygwin.tar.gz",
                     "label": "Lyx-2.3.0-win"
                 }
+            ]
+        },{
+            "value": "virtio",
+            "label": "virtio",
+            "children": [
+                {
+                    "value": "/virtio/virtio-win/direct-downloads/latest-virtio/virtio-win.iso",
+                    "label": "virtio-win.iso"
+                },
+                {
+                    "value": "/virtio/virtio-win/direct-downloads/latest-virtio/virtio-win_amd64.vfd",
+                    "label": "virtio-win_amd64.vfd"
+                },
+				{
+					"value": "/virtio/virtio-win/direct-downloads/latest-virtio/virtio-win_x86.vfd",
+					"label": "virtio-win_x86.vfd"
+				}
             ]
         }
     ]

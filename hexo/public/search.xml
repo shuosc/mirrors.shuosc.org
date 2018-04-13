@@ -3,131 +3,723 @@
   
     
     <entry>
-      <title><![CDATA[镜像站V2正式上线了！]]></title>
-      <url>/news/p/72c2d2b9.html</url>
-      <content type="html"><![CDATA[<h1 id="镜像站更新日志20170907"><a href="#镜像站更新日志20170907" class="headerlink" title="镜像站更新日志20170907"></a>镜像站更新日志20170907</h1><p>本次镜像站经过不懈努力终于成功从原来的<code>V1.0</code>升级到<code>V2.0</code>，更新的地方主要有以下几点：</p>
-<ul>
-<li>同步Linux镜像源数和开源软件源数大幅度增加：从<code>13</code>种增加到<code>37</code>种，由于目前服务器硬盘空间已近极限，现正在设法通过NFS增加服务器空间以期后续增加更多镜像。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">原来支持镜像源</th>
-<th style="text-align:center">现在增加镜像源</th>
-<th style="text-align:center">原来支持软件源</th>
-<th style="text-align:center">现在增加软件源</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Ubuntu</td>
-<td style="text-align:center">Alpine</td>
-<td style="text-align:center">Apache</td>
-<td style="text-align:center">Anaconda</td>
-</tr>
-<tr>
-<td style="text-align:center">Centos</td>
-<td style="text-align:center">Debian</td>
-<td style="text-align:center">Mongodb</td>
-<td style="text-align:center">CTAN</td>
-</tr>
-<tr>
-<td style="text-align:center">Gentoo</td>
-<td style="text-align:center">Debian-cd</td>
-<td style="text-align:center">Mysql</td>
-<td style="text-align:center">elvish</td>
-</tr>
-<tr>
-<td style="text-align:center">Archlinux</td>
-<td style="text-align:center">Debian-multimedia</td>
-<td style="text-align:center">Postgresql</td>
-<td style="text-align:center">homebrew-bottles</td>
-</tr>
-<tr>
-<td style="text-align:center">OpenSUSE</td>
-<td style="text-align:center">Deepin</td>
-<td style="text-align:center">CRAN</td>
-<td style="text-align:center">jenkins</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Deepin-cd</td>
-<td style="text-align:center">Zabbix</td>
-<td style="text-align:center">mariadb</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Kali</td>
-<td style="text-align:center">Pypi</td>
-<td style="text-align:center">node</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Kali-images</td>
-<td style="text-align:center">Virtualbox</td>
-<td style="text-align:center">pritunl</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Kali-security</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ruby</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">repoforge</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">vim</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ubuntu-releases</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">videolan-ftp</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">zerotier</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>镜像站主页页面进行了升级：<ul>
-<li>将<code>镜像同步状态</code>、<code>镜像帮助</code>整合成了完整的镜像列表，用户可以在一张表上获取有关于镜像站运行和使用帮助的所有信息。</li>
-<li>主页新增获取发行版的功能：主要涵盖的发行版有各Linux发行版的镜像下载、<code>CTAN</code>、<code>Virtualbox</code>、<code>Node</code>的应用程序下载地址，方便用户使用。</li>
-<li>新增镜像站通知：采用<a href="https://heox.io" target="_blank" rel="external">Hexo</a>和<a href="https://github.com/bulandent/hexo-theme-bubuzou" target="_blank" rel="external">bubuzou</a>(稍作了修改)构建，方便用户了解镜像站所发布的一些通知。</li>
-<li>新增常用链接：<ul>
-<li>上海大学开源社区Github地址</li>
-<li>对于上海大学开源镜像站提交问题或者建议，如果校内人员需要新增镜像也请从此入口进入</li>
-<li>SHUhelper是由开源社区的<code>赵逸群</code>(大lao)开发的，上大同学出门居家必备之良品</li>
-<li>在线交流是开源社区的Telegram群，如有兴趣可点击邀请链接加入</li>
-<li>Git@SHUOSC是开源社区采用<a href="https://github.com/sameersbn/docker-gitlab" target="_blank" rel="external">docker-gitlab</a>搭建的，有需要可以注册使用，该项目目前处于<code>试用</code>阶段，一般来说校内访问速度快得飞起</li>
-<li>NPM镜像是采用<a href="https://github.com/cnpm/cnpmjs.org" target="_blank" rel="external">cnpm</a>搭建的，与阿里云提供的<a href="https://npm.taobao.org" target="_blank" rel="external">NPM镜像</a>是一致的，唯一的不同就是限于空间原因，本站所提供的NPM镜像的npm库属于部分同步，使用时如没有镜像会直接从<a href="https://registry.npmjs.org" target="_blank" rel="external">源站</a>拉取，在校内使用速度绝对有保障</li>
-<li>Pypi镜像是采用Python官方提供的<code>bangersnatch</code>工具构建的全量镜像，所有python第三方库均可直接使用<code>pip install</code>下载安装</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>镜像站基本知识：<ul>
-<li>本镜像站的服务器来自于<a href="https://nita.shu.edu.cn" target="_blank" rel="external">上海大学NITA实验室</a>，服务器托管于<a href="http://www.its.shu.edu.cn" target="_blank" rel="external">上海大学信息化办公室</a>托管机房，共有两台，分别承担<code>主站镜像任务</code>和<code>NPM镜像任务</code></li>
-<li>本镜像站是由<a href="https://osc.shu.edu.cn" target="_blank" rel="external">上海大学开源社区</a>负责管理维护，主要是为了满足上海大学校内的开源镜像源和开源软件使用需求，同时也是为了弘扬自由软件精神、培养自由软件社区文化氛围</li>
-<li>本镜像站主站镜像任务采用的是bjtu的<code>ideal</code>开源的<a href="https://github.com/ideal/mirror" target="_blank" rel="external">mirror</a>工具，此次将<code>rsync</code>和<code>wget</code>做了一个整合，重新配置了<code>mirror</code></li>
-<li>本镜像站原来命名为<code>上海大学开源社区镜像站</code>，现在正在向学校信息办申请成为学校官方的开源镜像站（即<a href="https://mirrors.shu.edu.cn" target="_blank" rel="external">https://mirrors.shu.edu.cn</a>），故而V2版主页已提前命名为<code>上海大学开源镜像站</code>，希望能得到学校方面的认可</li>
-<li>本镜像站目前主页暂不适用于移动端观看（相信大部分人是用PC访问镜像站的吧！）</li>
-</ul>
-</li>
-</ul>
-]]></content>
+      <title>新增CocoaPods镜像</title>
+      <link href="/news/p/e64fa433.html"/>
+      <content type="html"><![CDATA[<p>本站新增 <code>CocoaPods</code> 镜像。<code>CocoaPods</code> 是一个 Cocoa 和 Cocoa Touch 框架的依赖管理器，从 Github 下载索引，然后根据索引下载依赖的源代码。本站现在调整了所有 github 仓库镜像的访问方式，直接在主页可以访问到源码，不过使用的 git 地址不是HTTP访问地址，具体使用请根据帮助文档进行设置。另外，Gitlab 访问方式依然保留。</p><p>目前，包括 <code>CocoaPods</code>、<code>brew</code>、<code>homebrew-core</code>、<code>homebrew-cask</code> 四个 Git 仓库镜像同步频率均调整为 <strong>每四个小时同步一次</strong> 。</p>]]></content>
       
-        <categories>
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
-            <category> 站内事务 </category>
+            <tag> 镜像 </tag>
             
-        </categories>
-        
-        
+            <tag> 新增 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站界面上新</title>
+      <link href="/news/p/466ccd3.html"/>
+      <content type="html"><![CDATA[<p>本站新接入 <code>Nginx-FancyIndex</code> 插件，并加以调整以适应镜像站整体风格。随机点进一个镜像源目录可以看到美美的目录列表哦（虽然在布局上很大部分借鉴了老大哥<a href="https://mirrors.tuna.tsinghua.edu.cn" target="_blank" rel="noopener">tuna</a>，但是还是有点不同的地方，比如说实现<code>保持footer在底部</code>的方式就不一样哈。）</p><h2 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h2><ul><li><a href="https://github.com/aperezdc/ngx-fancyindex" target="_blank" rel="noopener">Nginx-FancyIndex</a></li><li><a href="https://github.com/lanffy/Nginx-Fancyindex-Theme" target="_blank" rel="noopener">FancyIndex-Theme</a></li><li><a href="https://www.jianshu.com/p/4896e6936ce3" target="_blank" rel="noopener">footer保持底部方法</a></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> 界面 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站故障维护完成通知</title>
+      <link href="/news/p/4239d424.html"/>
+      <content type="html"><![CDATA[<p>本站于2018年4月10日0时左右远程存储服务器失联，经检查判断为远程存储服务器未能正常联网。4月10日上午8时30分左右，检查网线插拔和交换机配置，确认是网线性能不好，更换新网线之后远程存储服务器恢复网络，故障解决。本站目前已启动<code>UptimeRobot</code>外部监控，可以通过访问<a href="https://status.shuosc.org" target="_blank" rel="noopener">https://status.shuosc.org</a>来确认社区所提供的各项服务状态。对于本故障给您带来的不便之处，敬请理解。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 故障 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>virtio镜像新增通知</title>
+      <link href="/news/p/bd578aa.html"/>
+      <content type="html"><![CDATA[<p>本镜像站现新增<code>virtio</code>镜像，该镜像主要用于在虚拟化技术中支持增强windows操作系统的硬盘I/O驱动、网络驱动等，特别适合基于KVM、Xen等虚拟化技术使用。</p><p>本镜像来源于 <code>fedorapeople.org</code> 提供的镜像服务。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 新增 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站服务故障通知</title>
+      <link href="/news/p/b5ae48eb.html"/>
+      <content type="html"><![CDATA[<p>由于镜像站远程存储服务器今天在18时左右从机房中进行迁移，在迁移之后因交换机未能正常连入校内网导致存储服务中断，届时已将镜像站暂停服务处理。在21时左右，发现问题并重新接入校园网，存储服务恢复正常。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 故障 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站恢复24小时校外访问</title>
+      <link href="/news/p/c2f89d04.html"/>
+      <content type="html"><![CDATA[<p>截止到今天为止，镜像站已恢复24小时正常校外访问。</p><p>镜像站主页今日上新，增加了IP自动检测小工具，帮助用户了解自身的网络地址状况。该工具基于<a href="http://ipv6-test.com" target="_blank" rel="noopener">ipv6-test</a>提供的展示样式和部分js代码（本来可以一步到位的，奈何ipv6-test居然不支持https）、<a href="https://ip.sb" target="_blank" rel="noopener">ip.sb</a>提供的<strong>geoip</strong> API 来实现的客户端IPv4和IPv6地址识别，其中国别图标使用的是<a href="http://www.awstas.org" target="_blank" rel="noopener">awstats</a>提供的国别图标。</p><p>另外，镜像站主页也新增了一个项目<strong>star</strong>按钮，如果你在使用我们提供的开源镜像服务and你有一个github账号，不如<strong>star</strong>一下吧。</p><p>获取发行版中的获取下载链接已更新到最新状态，由于暂时还是手动维护方式所以存在更新延后的状况，有发现的用户可以通过<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交issue</a>或者<a href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww" target="_blank" rel="noopener">联系我们</a>。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 恢复 </tag>
+            
+            <tag> 对外访问 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>IPv6访问方式问题通知</title>
+      <link href="/news/p/e1355c18.html"/>
+      <content type="html"><![CDATA[<p>由于本校将于近期进入考试周，校内IPv6可能会出现间断性失常，请各位尽量使用IPv4来访问本镜像站。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IPv6 </tag>
+            
+            <tag> 访问 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站校外限时访问通知</title>
+      <link href="/news/p/8a1ac1bb.html"/>
+      <content type="html"><![CDATA[<p>根据有关部门的要求，为了保障校内服务器的网络信息安全，<a href="https://mirrors.shu.edu.cn" target="_blank" rel="noopener">镜像站</a>将会在3月2日~3月20日期间限制在7:00~22:00允许校外访问，请各位有需要使用本站提供资源的用户在校内使用。上海大学师生如在校外使用，请使用由上海大学信息办提供的VPN接入服务( <a href="http://vpn.shu.edu.cn" target="_blank" rel="noopener">http://vpn.shu.edu.cn</a> )来访问。非上海大学用户可以同时使用其他高校兄弟镜像增强可靠性。对此给大家带来的不便敬请谅解。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 限时 </tag>
+            
+            <tag> 校外访问 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>IP封禁通知</title>
+      <link href="/news/p/32831a3.html"/>
+      <content type="html"><![CDATA[<p>经网络检测和核对得知，本站受到了来自僵尸网络的DDOS攻击，攻击规模不大，现已通过列入黑名单的方式来避免该攻击的危害。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IP </tag>
+            
+            <tag> 封禁 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站寒假维护通知</title>
+      <link href="/news/p/f1de879c.html"/>
+      <content type="html"><![CDATA[<p>接学院通知，自2018年2月5日起将进入寒假，实验室放置服务器不能长期在无人情况下运行。因此，镜像站一台远程NFS存储服务器将在今天下午2点左右迁移至学院托管机房。</p><p>接信息办通知，学校将于2月4日至2月18日对宝山的供电进行更新改造，信息办托管机房将会出现短暂停电，届时镜像站将会出现短暂性无法访问，大约会在几分钟左右。</p><ul><li>下午3点12分，镜像站迁移远程NFS存储完成，各项服务均已恢复正常。</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 维护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像新增及修复通知</title>
+      <link href="/news/p/9b1cd7d1.html"/>
+      <content type="html"><![CDATA[<h2 id="镜像新增"><a href="#镜像新增" class="headerlink" title="镜像新增"></a>镜像新增</h2><p>本站现增加<code>centos-cloud</code>、<code>saltstack</code>、<code>vscode</code>三种开源镜像。</p><ul><li><code>centos-cloud</code>主要是用于云主机模板，非常小巧、精致，本站仅对<code>centos 7</code>的镜像做了完整同步，其他atomic、vagrant目录均未同步，<code>centos 6</code>也是如此。</li><li><code>saltstack</code>是一个自动化运维工具，一般可以理解为简化版的puppet和加强版的func，其基于python语言编写，非常适合与Python类型的模块进行整合构建，该部分全量镜像，帮助文档后期补充。</li><li><code>vscode</code>是微软公司的一款非常简洁、高效的跨平台开发工具，非常适合开发者使用，本站支持<code>Debian</code>系列、<code>Centos</code>系列、<code>Opensuse</code>系列的源。</li></ul><h2 id="镜像修复"><a href="#镜像修复" class="headerlink" title="镜像修复"></a>镜像修复</h2><ul><li><code>Anaconda</code>镜像业已恢复完整同步，通过观察该部分同步任务周期较长，具体同步频率待定。如需使用最新的该镜像，请转至清华大学TUNA或其他高校友站。</li><li><code>Virtualbox</code>已更新至最新版本<code>5.2.4</code>，该镜像为<code>deb安装包</code>和<code>rpm安装包</code>，直接下载即可使用。</li><li>经反馈得知，在浏览器访问Apache镜像或其他以Apache服务器作为后端展示页面的镜像出现访问不响应的情况，现已增加后端Apache服务的允许最大连接数和最大进程资源限制，该问题应该得到解决。</li></ul><h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>目前本站已经使用上海大学域名正常运行两周以上，大致没有什么使用上的问题。现经上海大学开源社区内部讨论决定，之后将逐步将本站域名过渡到学校域名上，各开源软件镜像列表中也在逐步更改域名。请各位使用者尽快转到 <a href="https://mirrors.shu.edu.cn" target="_blank" rel="noopener">https://mirrors.shu.edu.cn</a> 或者 <a href="https://mirrors.shu6.edu.cn" target="_blank" rel="noopener">https://mirrors.shu6.edu.cn</a> 上来，再次感谢大家的理解和支持。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 新增 </tag>
+            
+            <tag> 修复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>RSYNC限制通知</title>
+      <link href="/news/p/6f54efb3.html"/>
+      <content type="html"><![CDATA[<p>近期通过zabbix监控发现在每天都有一段时间处于高I/O状态，导致后端Apache和Nginx服务均出现响应延时，经调查发现是对外RSYNC任务过多造成。现为了给广大的本站镜像源使用用户更好的体验，已对RSYNC作出限制，每个IP最多同时可以有4个连接数，请使用本站对外RSYNC服务的各位见谅。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rsync </tag>
+            
+            <tag> 限制 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Pypi源恢复正常使用通知</title>
+      <link href="/news/p/6d7ba8c9.html"/>
+      <content type="html"><![CDATA[<p>通过向清华大学TUNA镜像站的pypi源请求同步之后，经过2天左右，<code>Pypi</code>镜像目前已经完成了所有同步，并已将<code>pypi</code>同步任务加入到<code>crontab</code>列表中，各位pypi用户可以按照<a href="https://mirrors.shu.edu.cn/help/pypi.html" target="_blank" rel="noopener">使用帮助</a>切换至本站<code>Pypi</code>源。另外<code>Anaconda</code>源目前已开启计划恢复同步，请各位用户耐心等待。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 恢复 </tag>
+            
+            <tag> pypi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>服务器所在机房停电通知</title>
+      <link href="/news/p/cabf8914.html"/>
+      <content type="html"><![CDATA[<p>接上海大学信息化办公室通知，1月7日凌晨1:30~2:30，1月7日晚上23:00~1月8日凌晨1:00宝山校区停电，另外东区三期1月7日凌晨1:30~1月8日凌晨1:00停电，届时将会影响到信息办主机房供电以及东区托管机房供电。本站镜像服务器和联想服务器托管于信息办托管机房，远程NFS存储服务器托管于东区机房，均受本次停电影响，因此会在停电期间前后造成站点可能无法访问的情况。另外在今天上午8点半至13点左右远程NFS存储服务器因为未设置断电之后来电自启动而处于关机状态，从而造成浪潮服务器I/O过大，目前已经恢复。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 机房 </tag>
+            
+            <tag> 停电 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站失联恢复通知</title>
+      <link href="/news/p/7be47aa7.html"/>
+      <content type="html"><![CDATA[<p>本站于2018年1月5日凌晨3点半左右～上午12点左右出现了短暂性失联，目前已经恢复访问。</p><p>失联原因目前已经调查清楚，主要是由于在凌晨3点左右同步镜像的任务太多，对于NFS存储的I/O过大，从而使得Zerotier虚拟出来的网卡出现假死，无法连接远程NFS存储。这一问题导致了包括同步任务、Nginx服务、Rsync、FTP服务在内的多个服务出现宕机状态。通过重新启动远程NFS服务器和浪潮服务器的Zerotier虚拟网卡，NFS存储恢复通信，其他服务恢复正常使用。</p><p>究其原因，本站目前出现的失联情况大多是由于存储的问题，原计划由高性能计算中心提供的集中式存储本来预计在本月内到，但是由于集中式存储所需的GPFS尚未购买的缘故，集中式存储到货时间推迟。计划256T集中式存储会在3月份到货并开始使用，预计可以大大降低本站的不稳定因素。</p><p>同时，本站也在尝试基于<code>ideal</code>大佬的<code>mirror</code>工具和其他镜像工具来构建符合上大开源镜像站实际现状的镜像同步管理工具，希望能在软件上尽量避免同一时间过多同步任务的执行，达到降低本站不稳定因素的目的。</p><blockquote><p>特别申明：本站是在上海大学多方组织、机构和开源社区的努力下建立的，最初仅是想要服务于上海大学师生科研，至今已向大众开放并成为了多家开源产品的官方镜像站点。在正式开放后，我们也收到了来自上大师生、其他高校镜像友站、社会开源爱好者的鼓励、支持和帮助，为我们进一步扩大上海大学开源镜像站提供了不可或缺的推动力量。但是也是在发展的过程中慢慢地发现了不少原来可能没有的问题，我们也在尽力改善和解决问题，希望大家能够理解维护镜像站的艰辛。如果在使用过程中，你发现了问题，可以通过<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交问题或建议</a>、<a href="https://t.me/joinchat/ErK1eQ6s9-axpVr75Oiwww" target="_blank" rel="noopener">在线交流</a>、<a href="https://groups.google.com/forum/#!forum/shuos" target="_blank" rel="noopener">邮件群组</a>(查看有小惊喜哦)等方式来向我们反馈问题。我们仍然强烈建议大家在我们尚未解决以上两个大问题之前，在使用上大源的同时加入其他高校友站源，以保障正常使用。最后，请各位本站的使用者再次体谅开源社区的难处，请不要无端是非！！！</p></blockquote><p>上海大学开源社区<br>二〇一八年一月五日</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像站 </tag>
+            
+            <tag> 恢复 </tag>
+            
+            <tag> 失联 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站同步工具过渡通知</title>
+      <link href="/news/p/87c4d214.html"/>
+      <content type="html"><![CDATA[<p>致各位使用上海大学开源镜像站的用户：</p><p>由于本镜像站在最近一个月以来新增了不少镜像，原来采用的由<a href="https://github.com/ideal" target="_blank" rel="noopener">ideal</a>大佬开发的<a href="https://github.com/ideal/mirror" target="_blank" rel="noopener">mirror</a>工具在平衡多项任务同步时发生了异常。该异常并非<code>mirror</code>工具的内部原因，可能是由于多项同步任务和过大I/O（本镜像站为了提供更大存储使用了多机NFS存储）造成了系统中断<code>mirror</code>的主进程，从而造成工具无法控制同步任务的继续进行。结合目前的服务器和存储情况，经过开源社区管理团队的内部讨论决定，在2017年12月19~20日对镜像站主服务器进行重装操作（已完成），同时暂停使用<code>mirror</code>工具实现对镜像站的同步，暂时采用<code>crontab</code>的系统定时任务，因此本站的同步完成时间将会在很长一段时间内不会发生改变，但是实质上内容是保持最新，请各位放心使用。另外，我们决定基于<code>ideal</code>大佬的<code>mirror</code>工具，加入对于<code>git-mirror</code>、<code>wget-mirror</code>、<code>repo</code>、<code>gem mirror</code>、<code>bandersnatch</code>等的支持，构建一个Docker化的镜像站同步工具，目前已开启该项目<a href="https://github.com/shuopensourcecommunity/mirror" target="_blank" rel="noopener">https://github.com/shuopensourcecommunity/mirror</a>。由于社区人手有限，如有意愿和时间的大佬欢迎加入我们一起开发哦。</p><p>由于在迁移过程中<code>pypi</code>库未全部备份，目前的<code>pypi</code>库属于不完整状态，请各位用户暂时转至兄弟镜像站。</p><p>上海大学开源社区<br>二〇一七年十二月二十四日</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 同步 </tag>
+            
+            <tag> 工具 </tag>
+            
+            <tag> 开源招募 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>正式启用上海大学域名</title>
+      <link href="/news/p/8158a8c2.html"/>
+      <content type="html"><![CDATA[<p>在信息办领导、学院领导和沈文枫老师、周时强老师的大力支持和帮助下，本镜像站现已正式接入上海大学官方域名，如下：</p><ul><li><code>IPv4</code>: <a href="https://mirrors.shu.edu.cn" target="_blank" rel="noopener">https://mirrors.shu.edu.cn</a></li><li><code>IPv6</code>: <a href="https://mirrors.shu6.edu.cn" target="_blank" rel="noopener">https://mirrors.shu6.edu.cn</a></li></ul><p>由于上海大学在接入Cernet的IPv6网络时的某些历史原因，本校在IPv4和IPv6域名解析上分别采用<code>shu.edu.cn</code>和<code>shu6.edu.cn</code>完成，不存在一个域名同时解析<code>A记录</code>和<code>AAAA记录</code>的办法，所以自即日起将原有IPv4和IPv6单独解析域名替代为以上域名。建议只具有IPv4地址的操作系统使用<code>mirrors.shu.edu.cn</code>来访问本镜像站，建议只具有IPv6地址的操作系统使用<code>mirrors.shu6.edu.cn</code>来访问本镜像站，若为高校用户可以在三种域名中任选一个。</p><blockquote><p>小贴士：本校用户使用有线直接连接到校园网络端口可以获取到IPv6地址，如果无法访问纯IPv6站点，请尝试在使用前<strong>ping</strong>一下所分配的IPv6地址网关即可打通通道。例如<code>2001:da8:8006:126:8c93:ed6d:f5c2:d0bd/64</code>的网关地址为<code>2001:da8:8006:126::1</code>。</p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 域名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站主服务器升级通知</title>
+      <link href="/news/p/81efa3d.html"/>
+      <content type="html"><![CDATA[<p>由于镜像站主服务器使用的<code>CentOS 6.9</code>经过多次尝试都无法升级到<code>CentOS 7</code>以上，造成无法使用<code>Docker</code>等先进工具来进行各项维护工作。</p><p>现经过开源社区内部讨论决定，在2017年12月19日20点30分左右将镜像站主域名<code>mirrors.shuosc.org</code>解析到联想服务器，并暂停https访问和ipv6解析。（<code>https://mirrors4.shuosc.org</code>在未重装系统之前仍可访问）另，计划于2017年12月20日上午8时~下午6时对浪潮服务器重装系统并重新部署镜像站主站。在此期间，请各位用户使用 <a href="http://mirrors.shuosc.org" target="_blank" rel="noopener">http://mirrors.shuosc.org</a> （切勿https）对镜像站进行访问或者转至TUNA等其他国内软件源,FTP和RSYNC方式均暂时停用，预计在20日晚些时候恢复浪潮服务器镜像站的HTTPS、FTP、RSYNC三种方式的访问。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 维护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站维护通知</title>
+      <link href="/news/p/a1b4ea84.html"/>
+      <content type="html"><![CDATA[<p>由于镜像服务器存储空间不足，现计划于2017年12月4日上午9时至12时左右增加硬盘，部分镜像会受到影响，暂时无法访问。</p><p>其次，Git服务自迁移之后单独观察发现Gitlab是由于Specs（一直在后台镜像尚未公开使用）的同步推送占用了服务器所有的内存，之后系统由于OOM（内存溢出）自动限制所有其他进程，造成进程不断杀死、不断重新开启新进程，现在已就该镜像做出了暂时同步的决定。</p><p>目前镜像的大部分源都能正常同步，有少部分源由于level设置比较低造成了近日一直排不上，所以已启用后台定时任务进行同步。对于在使用过程中发现的包不完整等问题，我们建议大家除本镜像站外添加一下友情链接中的其他镜像源，这样能够最大限度容错。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 维护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>恢复FTP访问通知</title>
+      <link href="/news/p/7841ee2e.html"/>
+      <content type="html"><![CDATA[<h1 id="恢复FTP访问通知"><a href="#恢复FTP访问通知" class="headerlink" title="恢复FTP访问通知"></a>恢复FTP访问通知</h1><p>经迁移Gitlab服务至其他非信息办托管服务器后，原Git服务器（即联想RD640）未发生内存不足、失联等现象，现已判定前几天发生的服务器宕机原因并非NFS共享占用过多I/O，所以现重新开放FTP访问方式。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ftp </tag>
+            
+            <tag> 恢复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>迁移Gitlab服务通知</title>
+      <link href="/news/p/cffc0fc1.html"/>
+      <content type="html"><![CDATA[<h1 id="迁移Gitlab服务通知"><a href="#迁移Gitlab服务通知" class="headerlink" title="迁移Gitlab服务通知"></a>迁移Gitlab服务通知</h1><p>最近两天Git服务器在大约20点左右开始发生失联，直至凌晨0点左右自动恢复了。经过调查，可能是由于Gitlab服务的某个任务造成内存不足，因此系统采取了安全策略，与此受到影响的有部分后期同步的镜像出现无法访问、镜像任务有误。经开源社区事务执行小组内部讨论决定，将于今日16点左右将Gitlab进行迁移，迁移预计在20点之前完成。</p><p>由此给您带来的不便敬请谅解！</p><ul><li>2017年16时50分，迁移完成</li><li>Gitlab服务地址统一为<code>https://git.shuosc.org</code>，目前<code>https://git.shuosc.cn</code>已失效</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gitlab </tag>
+            
+            <tag> 迁移 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>暂停FTP访问通知</title>
+      <link href="/news/p/1e33d91e.html"/>
+      <content type="html"><![CDATA[<h1 id="暂停FTP访问通知"><a href="#暂停FTP访问通知" class="headerlink" title="暂停FTP访问通知"></a>暂停FTP访问通知</h1><p>在2017年11月28日20时左右至29日12时左右，由于NFS出现I/O负载过大，Git服务器出现失联状况。目前Git服务器已经恢复与镜像站服务器的正常通信，但由于之前的NFS挂载出现错误，系统发出了很多挂载自动请求，加大了镜像站的无端I/O负载。因此，开源社区决定将FTP访问方式暂时关闭，HTTP和RSYNC均正常使用。</p><p>另外，连带受到影响的还有镜像工具<code>mirror</code>，因此同步状态会出现与实际状态不一致的问题。不过已经采用<code>CRON</code>定时同步的方式来规避<code>mirror</code>的影响，各镜像源可以正常使用。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FTP </tag>
+            
+            <tag> 暂停 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>新增anthon、archlinuxcn等镜像</title>
+      <link href="/news/p/7de363a.html"/>
+      <content type="html"><![CDATA[<p>本次新增开源镜像列表如下：</p><table><thead><tr><th style="text-align:center">编程语言类</th><th style="text-align:center">系统相关</th><th style="text-align:center">开源工具类</th></tr></thead><tbody><tr><td style="text-align:center"></td><td style="text-align:center">anthon</td><td style="text-align:center">macports</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">archlinuxarm</td><td style="text-align:center">msys2</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">archlinuxcn</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">centos-altarch</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">epel</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">fedora</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">lede</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">linuxmint</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"></td><td style="text-align:center">linuxmint-cd</td></tr></tbody></table><p>另外，由于镜像同步工具<code>mirror</code>的问题，本站的同步状态和同步时间出现与实际不一致的现象。目前，已经根据镜像同步工具作者<code>@ideal</code>大佬的建议和帮助，对<code>mirror</code>的某些配置进行了调整。同时，在昨天（2017年11月27日）下午6点半左右对镜像服务器进行了重启操作，由于开机出现挂载NFS的问题，在6点半～8点左右处于离线状态，之后正常开启。并于今天中午12点左右修复了<code>FTP</code>访问方式。</p><p>相关帮助使用文档陆续更新中，如在使用中有问题，请移步<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交问题或建议</a>，感谢大家的支持和关注！</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 新增 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像状态不准确声明</title>
+      <link href="/news/p/c97ba319.html"/>
+      <content type="html"><![CDATA[<p>由于最近在<code>V2ex</code>发了个帖子，开源社区突然之间火了一把，镜像站也得到更多高校师生、社会开源爱好者的了解和认可。同时，也在<code>Github</code>上收到了有关<code>msys2</code>、<code>archlinuxarm</code>、<code>altarch</code>、<code>lede</code>等多个镜像源新增请求，为了满足这一需求，开源社区在原有的两台服务器机器上增加了第三台服务器增加存储容量，目前总的存储容量约为23T左右。大致能够在一周之内完成对该部分新增镜像的完全同步一次，但是由于在镜像过程中发现所使用的<code>mirror</code>工具的资源限制策略会影响到镜像任务的并发执行，导致某些源从19日起便无法正常同步（比如<code>anaconda</code>）。<br>另外，<code>mirror</code>工具在使用过程中还存在中断时未修改<code>task_status.json</code>中受影响的任务状态，因此出现像<code>debian</code>、<code>ubuntu</code>等镜像源状态长期处于<code>正在同步</code>，与实际镜像状态不符。这个Bug对于目前镜像的同步任务影响不大，预计两天之内就能恢复正常。等到新增镜像同步完成之后，开源社区事务小组会对本站采用的镜像工具作出调整，请大家放心使用。如果在恢复正常后使用时有问题，请移步<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交问题或建议</a>。<br>再次感谢大家对上海大学开源社区的关心和支持，希望开源社区能够为更多有需要的师生和开源爱好者提供力所能及的帮助！</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 不准确 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>新增iina、manjaro等镜像</title>
+      <link href="/news/p/cf780f55.html"/>
+      <content type="html"><![CDATA[<h3 id="新增iina、manjaro等镜像"><a href="#新增iina、manjaro等镜像" class="headerlink" title="新增iina、manjaro等镜像"></a>新增iina、manjaro等镜像</h3><ul><li>iina是目前在mac平台上非常流行的开源音视频播放器，基于MPV、采用swift语言开发，具有简洁、使用体验好等优点，本站目前提供的镜像为二进制安装包镜像。</li><li>manjaro是一款优秀的基于Archlinux的桌面级Linux操作系统，使用方便，易于安装、上手，想要尝试Archlinux的开发者不如就从manjaro开始，本站目前提供的是manjaro的cd光盘安装源和软件源，archlinux的软件源也适用。i</li><li>本站目前新增<code>videolan-ftp</code>、<code>jenkins</code>、<code>parrot</code>、<code>kde</code>官方源认证，因此新增了不少下载流量，镜像站也相应提升了服务资源限制。如果您在使用本站提供的镜像源过程中有任何问题，请移步<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交您的问题或建议</a></li><li>本站近期已对原镜像站V2做个改进，现已增加了多端适配功能，在手机、平板上也可以非常美观地查看本站内容。同时本站也将镜像站的使用监控提上了日程，目前的改版中已通过zabbix对服务器的CPU和流量进行监控、通过awstats对流量使用进行了分析，可以直接访问<a href="/status.html">系统状态</a>、<a href="/visitor">访问监控</a>进行查看。欢迎大家对镜像站的新版页面提出问题和建议。</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 新增 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>新增raspbian、rubygems镜像</title>
+      <link href="/news/p/a6cbe54a.html"/>
+      <content type="html"><![CDATA[<h3 id="新增raspbian、rubygems镜像"><a href="#新增raspbian、rubygems镜像" class="headerlink" title="新增raspbian、rubygems镜像"></a>新增raspbian、rubygems镜像</h3><p>本站经过为期一个月的同步、测试，现开放使用raspbian树莓派软件源、ruby依赖管理工具gem源rubygems。请各位开发者大佬们随意使用，有啥问题直接<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提问</a>。</p><p>Happy Coding!</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> raspbian </tag>
+            
+            <tag> rubygems </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>服务器维护通知</title>
+      <link href="/news/p/bf673f25.html"/>
+      <content type="html"><![CDATA[<h3 id="服务器维护通知"><a href="#服务器维护通知" class="headerlink" title="服务器维护通知"></a>服务器维护通知</h3><ul><li>由于Git服务器需要添加了一块4T硬盘以及修复之前内核升级的错误，Git服务器自即日起进入维护状态，预计在10月28日0点前可以完成系统恢复、数据恢复工作。</li><li>同时，由于镜像服务器目前已经接近硬盘容量，前段时间一直通过其他服务器提供的NFS服务来进一步增加镜像，现Git服务器已经添加了硬盘，所以计划将NFS中的镜像文件迁移至Git服务器。预计在10月26日中午1点左右切换NFS服务的短时间内会出现部分镜像无法访问的现象，切换操作会在10分钟之内完成。</li></ul><h3 id="维护状态更新"><a href="#维护状态更新" class="headerlink" title="维护状态更新"></a>维护状态更新</h3><ul><li><code>2017年10月26日19时15分</code>，<strong>Git服务</strong>（访问地址为<a href="https://git.shuosc.cn" target="_blank" rel="noopener">https://git.shuosc.cn</a>或者<a href="https://git.shuosc.org" target="_blank" rel="noopener">https://git.shuosc.org</a>）已经完全恢复正常运作，可以直接在校内外访问；<strong>NPM服务</strong>（访问地址为<a href="https://npm.shuosc.org" target="_blank" rel="noopener">https://npm.shuosc.org</a>）也完全恢复正常运作，暂时只能校内访问。</li><li><code>2017年10月26日20时50分</code>，鉴于当前Git服务器的空间大部分用于给镜像服务器提供空间，本NPM镜像将暂时停止服务，等待有新的硬盘空间资源加入后，NPM镜像再行恢复正常全量镜像。请各位有需要的NPM开发者选择NPM官方源或者由阿里提供的NPM镜像源作为上级源。</li><li><code>2017年10月26日21时50分</code>，据<strong>Git服务</strong>反馈得知，本站提供的Git服务出现了<code>无法正常push</code>以及<code>page</code>无法生成的问题,目前已修复<code>push</code>功能，<code>page</code>生成暂时未修复。</li><li><code>2017年10月28日13时</code>，镜像服务器的nfs部分源已完整移动到Git服务器硬盘中，现已能正常使用。</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 维护 </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Git服务器维护通知</title>
+      <link href="/news/p/61042953.html"/>
+      <content type="html"><![CDATA[<p>由于git服务器升级系统内核版本，现暂时停止服务，同时停止的服务还有<code>NPM镜像</code>。我们将在今日之内完成对于服务器的维护工作，请各位使用者见谅。</p><p><strong>服务器维护状态更新</strong></p><ul><li>截止至2017年9月30日3时，git服务器由于发生硬盘自动挂载出错无法正常启动，现已检修完成。但是由于系统重启造成原有的一些系统软件冲突问题显现，直接致使LNMPA服务出现故障，目前正在重新部署新的LNMPA服务。在未完成修复之前，GIT@SHUOSC、wiki帮助站点仍处于无法访问状态。</li><li>截止至2017年10月1日23时，git服务器由于信息办转上海市教委漏洞扫描结果，git服务是采用<code>sameersbn/docker-gitlab</code>提供的容器部署的，鉴于容器中使用基础系统是<code>ubuntu 14.04</code>以及安装的<code>OpenSSH</code>版本为<code>6.6</code>，存在安全性漏洞。经开源社区事务执行小组讨论决定，在上海市教委要求的十一至十九大召开期间，暂停git服务。待十九大召开完毕，git服务重新恢复正常运作。对此给使用本站提供的git服务的开发者带来的不便，致以诚挚的歉意！</li><li>截止至2017年10月6日13时，git服务器已经正式完成了转移，现已将服务对外接入转为阿里云服务器，使用域名为<code>git.shuosc.cn</code>，用户登录仍使用以前用户名和密码登录即可，所有项目与之前没有发生变化。另外，本次转移服务之后，<code>git</code>的<code>ssh</code>端口改为<code>22</code>端口，本站将提供github账户第三方绑定登录和免费的<code>gitlab-page</code>服务（暂不提供自定义域名功能）。请各位有需要的小伙伴可以尝试起来，在使用过程中遇到什么问题或者困难请邮件<code>zhonger#live.cn</code>（请将<code>#</code>换成<code>@</code>）。</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> 维护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像服务器维护通知</title>
+      <link href="/news/p/4c68fcaa.html"/>
+      <content type="html"><![CDATA[<h1 id="镜像服务器维护通知"><a href="#镜像服务器维护通知" class="headerlink" title="镜像服务器维护通知"></a>镜像服务器维护通知</h1><p>昨日（2017年9月30日）接上海大学信息化办公室通知，上海市教委漏洞扫描结果显示镜像服务器存在安全风险，自即日起镜像服务器会进入漏洞修复服务器维护（主要是升级原有的<code>apache2.2</code>至<code>apache2.4</code>版本），目前估计会受到影响的主要有<code>apache</code>基金会旗下的开源软件，预计维护时间在10月1日至10月2日凌晨。如果上海市教委再次扫描到高危漏洞，本站将会被信息办在十一至十九大期间进行断网处理，希望在维护时间内能将所有漏洞修复完成，争取不影响到大家的正常使用。</p><h4 id="维护更新"><a href="#维护更新" class="headerlink" title="维护更新"></a>维护更新</h4><p>2017-10-01 13:49:55 镜像服务器被扫描出的漏洞已经修复完成，等待上海市教委再次漏洞扫描结果。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 信息办 </tag>
+            
+            <tag> 维护 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>新增CPAN等13个开源镜像</title>
+      <link href="/news/p/c6703ce.html"/>
+      <content type="html"><![CDATA[<h1 id="新增CPAN等13个开源镜像"><a href="#新增CPAN等13个开源镜像" class="headerlink" title="新增CPAN等13个开源镜像"></a>新增CPAN等13个开源镜像</h1><p>本次新增开源镜像列表如下：</p><table><thead><tr><th style="text-align:center">编程语言类</th><th style="text-align:center">系统相关</th><th style="text-align:center">开源工具类</th></tr></thead><tbody><tr><td style="text-align:center">CPAN</td><td style="text-align:center">gnu</td><td style="text-align:center">RFCs</td></tr><tr><td style="text-align:center">ceph</td><td style="text-align:center">gnome</td><td style="text-align:center">cygwin</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">kde</td><td style="text-align:center">eclipse</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">kernel</td><td style="text-align:center">gimp</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">openwrt</td><td style="text-align:center">libreoffice</td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">putty</td></tr></tbody></table><p>请各位有需求的先可以试用起来，有问题请<a href="https://github.com/shuopensourcecommunity/mirrors.shuosc.org/issues/new" target="_blank" rel="noopener">提交</a>，至于文档嘛陆续完善中…</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 镜像 </tag>
+            
+            <tag> 新增 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>开源镜像站已成为Apache等多家官方源</title>
+      <link href="/news/p/b773a88a.html"/>
+      <content type="html"><![CDATA[<h1 id="开源镜像官方认证"><a href="#开源镜像官方认证" class="headerlink" title="开源镜像官方认证"></a>开源镜像官方认证</h1><p>为了进一步向开源产品使用人群推广使用上海大学开源镜像源，社区决定向各开源镜像源提交官方源申请。截止到目前为止，上海大学开源镜像站已经成为包括<a href="http://www.apache.org/dyn/closer.cgi" target="_blank" rel="noopener">Apache</a>、<a href="https://launchpad.net/ubuntu/+mirror/mirrors.shuosc.org-archive" target="_blank" rel="noopener">Ubuntu</a>、<a href="http://mirror-status.centos.org/#cn" target="_blank" rel="noopener">Centos</a>、<a href="https://www.archlinux.org/mirrors/shuosc.org/" target="_blank" rel="noopener">Archlinux</a>、<a href="https://ctan.org/mirrors/mirmon#cn" target="_blank" rel="noopener">CTAN</a>、<a href="https://www.deepin.org/mirrors/packages/" target="_blank" rel="noopener">Deepin</a>在内的多家官方认证源，其他像<code>Eclipse基金会</code>、<code>Debian</code>、<code>Gentoo</code>、<code>Pypi</code>、<code>GNU Project</code>、<code>CRAN</code>、<code>Vim</code>等开源镜像源也正在与官方沟通中，不久之后也会相继完成官方认证。</p><p>为了提高镜像站点的使用安全，全站已开启HTTPS，建议开源开发者使用HTTPS访问上海大学开源镜像站。本站的HTTPS证书使用的是由Lets Encryrt提供的免费证书，每三个月自动申请一次证书更新。</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTTPS </tag>
+            
+            <tag> 官方源 </tag>
+            
+            <tag> 认证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>新增Homebrew系列Git镜像</title>
+      <link href="/news/p/89632856.html"/>
+      <content type="html"><![CDATA[<h1 id="新增Homebrew系列Git鏡像"><a href="#新增Homebrew系列Git鏡像" class="headerlink" title="新增Homebrew系列Git鏡像"></a>新增Homebrew系列Git鏡像</h1><p>Homebrew系列一直都是Mac开发者用户非常喜欢的工具，其主要包括<code>Homebrew/brew</code>、<code>Homebrew/homebrew-core</code>、<code>Homebrew/homebrew-bottles</code>、<code>caskroom/homebrew-cask</code>四项。其中<code>homebrew-bottles</code>已经从<a href="https://mirrors.ustc.edu.cn" target="_blank" rel="noopener">ustclug</a>通过<code>rsync</code>方式进行同步，现在新增的三个镜像均是从Github通过git的方式进行拉取的（由于这一需求，写了个小shell程序<a href="https://git.shuosc.org/snippets/8" target="_blank" rel="noopener">git-mirror</a>，该脚本可以用来主动将github代码同步到其他git服务商，当然其他git服务商同步到github仓库也是可以的哦）。 欢迎Mac coder体验使用哦！</p>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> homebrew </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>镜像站V2正式上线了！</title>
+      <link href="/news/p/72c2d2b9.html"/>
+      <content type="html"><![CDATA[<h1 id="镜像站更新日志20170907"><a href="#镜像站更新日志20170907" class="headerlink" title="镜像站更新日志20170907"></a>镜像站更新日志20170907</h1><p>本次镜像站经过不懈努力终于成功从原来的<code>V1.0</code>升级到<code>V2.0</code>，更新的地方主要有以下几点：</p><ul><li>同步Linux镜像源数和开源软件源数大幅度增加：从<code>13</code>种增加到<code>37</code>种，由于目前服务器硬盘空间已近极限，现正在设法通过NFS增加服务器空间以期后续增加更多镜像。</li></ul><table><thead><tr><th style="text-align:center">原来支持镜像源</th><th style="text-align:center">现在增加镜像源</th><th style="text-align:center">原来支持软件源</th><th style="text-align:center">现在增加软件源</th></tr></thead><tbody><tr><td style="text-align:center">Ubuntu</td><td style="text-align:center">Alpine</td><td style="text-align:center">Apache</td><td style="text-align:center">Anaconda</td></tr><tr><td style="text-align:center">Centos</td><td style="text-align:center">Debian</td><td style="text-align:center">Mongodb</td><td style="text-align:center">CTAN</td></tr><tr><td style="text-align:center">Gentoo</td><td style="text-align:center">Debian-cd</td><td style="text-align:center">Mysql</td><td style="text-align:center">elvish</td></tr><tr><td style="text-align:center">Archlinux</td><td style="text-align:center">Debian-multimedia</td><td style="text-align:center">Postgresql</td><td style="text-align:center">homebrew-bottles</td></tr><tr><td style="text-align:center">OpenSUSE</td><td style="text-align:center">Deepin</td><td style="text-align:center">CRAN</td><td style="text-align:center">jenkins</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Deepin-cd</td><td style="text-align:center">Zabbix</td><td style="text-align:center">mariadb</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Kali</td><td style="text-align:center">Pypi</td><td style="text-align:center">node</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Kali-images</td><td style="text-align:center">Virtualbox</td><td style="text-align:center">pritunl</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Kali-security</td><td style="text-align:center"></td><td style="text-align:center">ruby</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">repoforge</td><td style="text-align:center"></td><td style="text-align:center">vim</td></tr><tr><td style="text-align:center"></td><td style="text-align:center">Ubuntu-releases</td><td style="text-align:center"></td><td style="text-align:center">videolan-ftp</td></tr><tr><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">zerotier</td></tr></tbody></table><ul><li>镜像站主页页面进行了升级：<ul><li>将<code>镜像同步状态</code>、<code>镜像帮助</code>整合成了完整的镜像列表，用户可以在一张表上获取有关于镜像站运行和使用帮助的所有信息。</li><li>主页新增获取发行版的功能：主要涵盖的发行版有各Linux发行版的镜像下载、<code>CTAN</code>、<code>Virtualbox</code>、<code>Node</code>的应用程序下载地址，方便用户使用。</li><li>新增镜像站通知：采用<a href="https://heox.io" target="_blank" rel="noopener">Hexo</a>和<a href="https://github.com/bulandent/hexo-theme-bubuzou" target="_blank" rel="noopener">bubuzou</a>(稍作了修改)构建，方便用户了解镜像站所发布的一些通知。</li><li>新增常用链接：<ul><li>上海大学开源社区Github地址</li><li>对于上海大学开源镜像站提交问题或者建议，如果校内人员需要新增镜像也请从此入口进入</li><li>SHUhelper是由开源社区的<code>赵逸群</code>(大lao)开发的，上大同学出门居家必备之良品</li><li>在线交流是开源社区的Telegram群，如有兴趣可点击邀请链接加入</li><li>Git@SHUOSC是开源社区采用<a href="https://github.com/sameersbn/docker-gitlab" target="_blank" rel="noopener">docker-gitlab</a>搭建的，有需要可以注册使用，该项目目前处于<code>试用</code>阶段，一般来说校内访问速度快得飞起</li><li>NPM镜像是采用<a href="https://github.com/cnpm/cnpmjs.org" target="_blank" rel="noopener">cnpm</a>搭建的，与阿里云提供的<a href="https://npm.taobao.org" target="_blank" rel="noopener">NPM镜像</a>是一致的，唯一的不同就是限于空间原因，本站所提供的NPM镜像的npm库属于部分同步，使用时如没有镜像会直接从<a href="https://registry.npmjs.org" target="_blank" rel="noopener">源站</a>拉取，在校内使用速度绝对有保障</li><li>Pypi镜像是采用Python官方提供的<code>bandersnatch</code>工具构建的全量镜像，所有python第三方库均可直接使用<code>pip install</code>下载安装</li></ul></li></ul></li><li>镜像站基本知识：<ul><li>本镜像站的服务器来自于<a href="https://nita.shu.edu.cn" target="_blank" rel="noopener">上海大学NITA实验室</a>，服务器托管于<a href="http://www.its.shu.edu.cn" target="_blank" rel="noopener">上海大学信息化办公室</a>托管机房，共有两台，分别承担<code>主站镜像任务</code>和<code>NPM镜像任务</code></li><li>本镜像站是由<a href="https://osc.shu.edu.cn" target="_blank" rel="noopener">上海大学开源社区</a>负责管理维护，主要是为了满足上海大学校内的开源镜像源和开源软件使用需求，同时也是为了弘扬自由软件精神、培养自由软件社区文化氛围</li><li>本镜像站主站镜像任务采用的是bjtu的<code>ideal</code>开源的<a href="https://github.com/ideal/mirror" target="_blank" rel="noopener">mirror</a>工具，此次将<code>rsync</code>和<code>wget</code>做了一个整合，重新配置了<code>mirror</code></li><li>本镜像站原来命名为<code>上海大学开源社区镜像站</code>，现在正在向学校信息办申请成为学校官方的开源镜像站（即<a href="https://mirrors.shu.edu.cn" target="_blank" rel="noopener">https://mirrors.shu.edu.cn</a>），故而V2版主页已提前命名为<code>上海大学开源镜像站</code>，希望能得到学校方面的认可</li><li>本镜像站目前主页暂不适用于移动端观看（相信大部分人是用PC访问镜像站的吧！）</li></ul></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 站内通知 </category>
+          
+      </categories>
+      
+      
         <tags>
             
             <tag> 镜像站 </tag>
@@ -135,7 +727,7 @@
             <tag> 更新 </tag>
             
         </tags>
-        
+      
     </entry>
     
   

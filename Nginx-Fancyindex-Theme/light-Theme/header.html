@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="上海大学开源镜像站，致力于为上大校内提供高质量的开源软件镜像、Linux镜像源服务，帮助校内用户更方便地获取开源软件。本镜像站由上海大学开源社区负责维护">
+	    <meta name="keywords" content="镜像站,镜像源,Linux,开源,软件源"> 
+	    <meta name="author" content="SHUOSC">
+	    <title>上海大学开源镜像站</title>
+	    <link href="/src/element-ui.css" rel="stylesheet">
+	    <link href="/src/mirrors.css" rel="stylesheet">
+	    <link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/Nginx-Fancyindex-Theme/light-Theme/styles.css">
+    </head>
+<body>
+<div id="menu">
+        <div class="container">
+        <el-menu :default-active="activeIndex" mode="horizontal" >
+            <div class="title">上海大学开源镜像站</div>
+            <div class="navBar">
+                <el-menu-item index="7"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
+                <el-menu-item index="2"><a href="/news">News</a></el-menu-item>
+                <el-menu-item index="3"><a href="/status.html">Status</a></el-menu-item>
+                <el-menu-item index="4"><a href="/help">Help</a></el-menu-item>
+                <el-menu-item index="5"><a href="/news/atom.xml">RSS</a></el-menu-item>
+                <el-menu-item index="6"><a href="/">Mirrors</a></el-menu-item>
+            </div>
+            <div class="clear"></div>
+        </el-menu>
+        </div>
+    </div>
+<div id="filelist">
+	<div class="container">
+		<h1><i class="el-icon-info"></i>当前所在的目录是:
+			<span id="path"><script>document.write(location.pathname)</script></span>
+		</h1>
