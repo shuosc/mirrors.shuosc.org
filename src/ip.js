@@ -70,7 +70,7 @@ function _ipv6test_run() {
 				var s = "";
 				if (resp.country_code && _ipv6test_style.show_country_flags){
                     var country_code=resp.country_code;
-                    s += "<img src='https://mirrors.shu.edu.cn/icon/flags/" + country_code.toLowerCase() + ".png' alt='" + resp.country + "' title='" + resp.country + "' width='15' height='10' />&nbsp;";
+                    s += "<img src='https://mirrors.shu.edu.cn/visitor/icon/flags/" + country_code.toLowerCase() + ".png' alt='" + resp.country + "' title='" + resp.country + "' width='15' height='10' />&nbsp;";
                 } 
                 s += resp.ip;
 				$("#_ipv6test_addr_v4").hide().html(s).fadeIn();
@@ -92,7 +92,7 @@ function _ipv6test_run() {
 				var s = "";
 				if (resp.country_code && _ipv6test_style.show_country_flags){
                     var country_code=resp.country_code;
-                    s += "<img src='https://mirrors.shu.edu.cn/icon/flags/" + country_code.toLowerCase() + ".png' alt='" + resp.country + "' title='" + resp.country + "' width='15' height='10' />&nbsp;";
+                    s += "<img src='https://mirrors.shu.edu.cn/visitor/icon/flags/" + country_code.toLowerCase() + ".png' alt='" + resp.country + "' title='" + resp.country + "' width='15' height='10' />&nbsp;";
                 }
 				s += resp.ip;
 				$("#_ipv6test_addr_v6").hide().html(s).fadeIn();
