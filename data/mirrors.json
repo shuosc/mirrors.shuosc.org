@@ -21,6 +21,16 @@
             "help": "/help/saltstack.html",
             "exitcode": "0"
         },{
+            "name": "opnsense",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "rrsync.opnsense.org::opnsense",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/opnsense",
+            "help": "",
+            "exitcode": "0"
+        },{
             "name": "lyx",
             "isNew": true,
             "official": true,
@@ -88,7 +98,7 @@
             "isNew": true,
             "official": false,
             "taskStatus": "2",
-            "sources": "rsync::mirrors.ustc.edu.cn/homebrew-bottles",
+            "sources": "https://homebrew.bintray.com/",
             "updateTime": "2017-09-23 12:00:00",
             "url": "/homebrew-bottles",
             "help": "/help/homebrew-bottles.html",
@@ -328,7 +338,7 @@
         {
             "name": "CRAN",
             "isNew": false,
-            "official": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "rsync::cran.r-project.org/CRAN",
             "updateTime": "2017-09-23 22:00:00",
@@ -702,7 +712,7 @@
         {
             "name": "archlinuxcn",
             "isNew": true,
-            "official": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
@@ -723,8 +733,8 @@
         },
         {
             "name": "linuxmint",
-            "isNew": true,
-            "official": false,
+            "isNew": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
@@ -767,8 +777,8 @@
         },
         {
             "name": "linuxmint-cd",
-            "isNew": true,
-            "official": false,
+            "isNew": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
@@ -865,29 +875,29 @@
                     "label": "16.04-desktop-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-server-amd64.iso",
-                    "label": "17.10-server-amd64"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04-server-amd64.iso",
+                    "label": "18.04-server-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-server-i386.iso",
-                    "label": "17.10-server-i386"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04-server-i386.iso",
+                    "label": "18.04-server-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-desktop-amd64.iso",
-                    "label": "17.10-desktop-amd64"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04-desktop-amd64.iso",
+                    "label": "18.04-desktop-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/artful/ubuntu-17.10.1-desktop-i386.iso",
-                    "label": "17.10-desktop-i386"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04-desktop-i386.iso",
+                    "label": "18.04-desktop-i386"
                 }
             ]
         },
         {
-            "value": "Centos",
-            "label": "Centos",
+            "value": "CentOS",
+            "label": "CentOS",
             "children": [
                 {
-                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1708.iso",
+                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso",
                     "label": "7-livecd-amd64"
                 },
                 {
@@ -973,16 +983,16 @@
             "label": "Archlinux",
             "children": [
                 {
+                    "value": "/archlinux/iso/2018.05.01/archlinux-2018.05.01-x86_64.iso",
+                    "label": "2018.05.01-amd64"
+                },
+                {
+                    "value": "/archlinux/iso/2018.04.01/archlinux-2018.04.01-x86_64.iso",
+                    "label": "2018.04.01-amd64"
+                },
+                {
                     "value": "/archlinux/iso/2018.03.01/archlinux-2018.03.01-x86_64.iso",
                     "label": "2018.03.01-amd64"
-                },
-                {
-                    "value": "/archlinux/iso/2018.02.01/archlinux-2018.02.01-x86_64.iso",
-                    "label": "2018.02.01-amd64"
-                },
-                {
-                    "value": "/archlinux/iso/2018.01.01/archlinux-2018.01.01-x86_64.iso",
-                    "label": "2018.01.01-amd64"
                 }
             ]
         },
@@ -1027,8 +1037,8 @@
             ]
         },
         {
-            "value": "Opensuse",
-            "label": "Opensuse",
+            "value": "OpenSUSE",
+            "label": "OpenSUSE",
             "children": [
                 {
                     "value": "/opensuse/distribution/leap/42.3/iso/openSUSE-Leap-42.3-DVD-x86_64.iso",

@@ -58,7 +58,7 @@ function _ipv6test_run() {
 		if (_ipv6test_style.stats_color != null) $("._ipv6test_stats").css("color", _ipv6test_style.stats_color);
 		if (_ipv6test_style.stats_color_v4 != null) $("._ipv6test_stats_v4").css("color", _ipv6test_style.stats_color_v4);
 		if (_ipv6test_style.stats_color_v6 != null) $("._ipv6test_stats_v6").css("color", _ipv6test_style.stats_color_v6);
-		if (_ipv6test_style.show_loading_anim) $("#_ipv6test_corner").html("<img src='/img/widget-loading.gif' alt='running' title='running' />");
+		if (_ipv6test_style.show_loading_anim) $("#_ipv6test_corner").html("<img src='/src/img/widget-loading.gif' alt='running' title='running' />");
 		$("#_ipv6test_widget").show();
 		setTimeout(_ipv6test_run, 0);
 		break;
@@ -108,8 +108,8 @@ function _ipv6test_run() {
 		break;
 
 		case 3:
-		if (_ipv6test_cs > 1) $("._ipv6test_proto.ipv4").append("&nbsp;<img src='/img/widget-prefer.png' alt='preferred' title='preferred' />");
-		$("#_ipv6test_corner").html("<a href='http://ipv6-test.com'><img src='/img/widget-logo.png' alt='ipv6-test.com' title='ipv6-test.com' border='0' /></a>");
+		if (_ipv6test_cs > 1) $("._ipv6test_proto.ipv4").append("&nbsp;<img src='/src/img/widget-prefer.png' alt='preferred' title='preferred' />");
+		$("#_ipv6test_corner").html("<a href='http://ipv6-test.com'><img src='/src/img/widget-logo.png' alt='ipv6-test.com' title='ipv6-test.com' border='0' /></a>");
 		break;
 	}
 	_ipv6test_state++;

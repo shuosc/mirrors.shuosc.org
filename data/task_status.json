@@ -1,7 +1,7 @@
 {
     "CPAN": {
         "status": 0,
-        "upstream": "mirror.math.princeton.edu::pub/CPAN//",
+        "upstream": "cpan-rsync.perl.org::CPAN",
         "schedule": "2017-12-17 20:15:00"
     },	
     "CocoaPods": {
@@ -26,7 +26,12 @@
     },
 	"saltstack": {
         "status": 0,
-        "upstream": "repo.saltstack.com::saltstack_pkgrepo_full",
+        "upstream": "repo.saltstack.com::saltstack_pkgrepo_full//",
+        "schedule": "2017-12-17 20:15:00"
+    },
+	"opnsense": {
+        "status": 0,
+        "upstream": "rsync.opnsense.org::opnsense//",
         "schedule": "2017-12-17 20:15:00"
     },
     "CRAN": {
@@ -87,7 +92,7 @@
     "archlinuxcn": {
         "status": 2,
         "schedule": "2017-12-18 00:28:00",
-        "upstream": "mirrors.tuna.tsinghua.edu.cn::archlinuxcn//",
+        "upstream": "sync.repo.archlinuxcn.org::repo",
         "date": "2017-12-17 18:44:45",
         "message": "Sync succeed",
         "exitcode": 0
@@ -195,7 +200,7 @@
     },
     "homebrew-bottles": {
         "status": 0,
-        "upstream": "mirrors.ustc.edu.cn::homebrew-bottles//",
+        "upstream": "https://homebrew.bintray.com/",
         "schedule": "2017-12-17 20:42:00"
     },
     "homebrew-cask": {
@@ -217,7 +222,7 @@
         "upstream": "rsync.osuosl.org::jenkins//"
     },
     "kali": {
-        "status": 2,
+        "status": 0,
         "schedule": "2017-12-18 00:35:00",
         "upstream": "mirrors.ustc.edu.cn::kali//",
         "date": "2017-12-17 18:50:05",
@@ -255,7 +260,7 @@
         "schedule": "2017-12-18 02:12:00"
     },
     "linuxmint": {
-        "status": 2,
+        "status": 0,
         "schedule": "2017-12-18 00:13:00",
         "upstream": "rsync-packages.linuxmint.com::packages//",
         "date": "2017-12-17 18:13:17",
@@ -264,7 +269,7 @@
     },
     "linuxmint-cd": {
         "status": 0,
-        "upstream": "ftp.heanet.ie::mirror/linuxmint.com//",
+        "upstream": "pub.linuxmint.com::pub",
         "schedule": "2017-12-18 02:27:00"
     },
 	"lyx": {

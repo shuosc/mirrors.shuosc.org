@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('') {
       steps {
-        sh '''cp -R ./ .public
-rm -rf ~/public/mirrors
-mv .public ~/public/mirrors'''
+        sh '''rm -rf ~/public/mirrors
+mv ../mirrors.shuosc.org ~/public/mirrors'''
       }
     }
   }

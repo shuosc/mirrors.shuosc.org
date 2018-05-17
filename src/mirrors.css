@@ -213,7 +213,7 @@ a {
     display: inline-block;
     position: relative;
     float: right;
-    background: url(/logo.png) no-repeat;
+    background: url(/src/img/logo.png) no-repeat;
     background-size: 70px 70px;
     background-position: top;
     margin-top: 8px;
