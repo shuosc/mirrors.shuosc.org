@@ -38,7 +38,7 @@
                     <div class="title">源列表</div>
                     <el-input v-model="search" placeholder="输入关键词筛选镜像" class="search"></el-input>
                     <template>
-                        <el-table :data="searchData" v-loading="loading" stripe style="width: 100%" v-if="isAll">
+                        <el-table :data="searchData" v-loading="loading" style="width: 100%" v-if="isAll">
                             <el-table-column prop="name" label="镜像名" min-width="35%">
                                 <template scope="scope">
                                     <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
@@ -48,9 +48,9 @@
                             </el-table-column>
                             <el-table-column prop="updateTime" label="最近一次同步完成时间" min-width="25%">
                                 <template scope="scope">
-                                            <div v-if="scope.row.updateTime == ''">Unknow</div>
-                                            <div v-else>{{scope.row.updateTime}}</div>
-                                        </template>
+                                    <div v-if="scope.row.updateTime == ''">Unknow</div>
+                                    <div v-else>{{scope.row.updateTime}}</div>
+                                </template>
                             </el-table-column>
                             <el-table-column prop="taskStatus" label="同步状态" min-width="15%">
                                 <template scope="scope">

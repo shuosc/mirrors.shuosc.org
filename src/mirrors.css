@@ -94,8 +94,8 @@ a {
 }
 
 #mirrors-list table td{
-    height: 30px;
-    padding: 4px 0;
+    height: 28px;
+    padding: 0;
 }
 
 .el-tag{
