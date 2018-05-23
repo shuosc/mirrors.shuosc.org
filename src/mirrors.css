@@ -136,6 +136,9 @@ a {
 	text-decoration: underline;
 }
 
+.btn-link {
+    margin: 10px 0!important;
+}
 
 #isos p{
     line-height: 25px;
@@ -220,6 +223,23 @@ a {
     padding-top: 85px;
     font-size: 24px;
     color: #fff;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: #22bc9e;
+}
+
+.el-radio__input.is-checked .el-radio__inner{
+    border-color: #22bc9e;
+    background: #22bc9e; 
+}
+
+.el-select-dropdown__item.selected {
+    color: #22bc9e;
+}
+
+.el-select .el-input.is-focus .el-input__inner{
+    border-color: #22bc9e;
 }
 
 @media screen and  (max-width: 1370px) {

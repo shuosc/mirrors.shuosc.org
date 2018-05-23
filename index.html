@@ -127,7 +127,7 @@
                         <div class="title">获取发行版</div>
                         <p>常用Linux发行版ISO和应用软件安装包快捷下载</p>
                         <el-button type="info" icon="el-icon-download" @click="centerDialogVisible = true">获取下载链接</el-button>
-                        <el-button type="info" icon="el-icon-download" href="/repos">源快捷配置工具</el-button>
+                        <a type="button" class="el-button el-button--info btn-link" icon="el-icon-download" href="/repos">源快捷配置工具</a>
                         <el-dialog  title="获取发行版" min-width="100%" :visible.sync="centerDialogVisible"  width="35%" center modal="true">
                             <template>
                                 <el-select v-model="linux" placeholder="请选择发行版类型" @change="changeReleases">
