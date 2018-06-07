@@ -788,8 +788,8 @@
         },
         {
             "name": "macports",
-            "isNew": true,
-            "official": false,
+            "isNew": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
