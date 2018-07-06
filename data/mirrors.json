@@ -70,6 +70,16 @@
             "url": "/vscode/",
             "help": "/help/vscode.html",
             "exitcode": "0"
+        },{
+            "name": "kaoslinux",
+            "isNew": true,
+            "official": false,
+            "taskStatus": "2",
+            "sources": "mirror.math.princeton.edu",
+            "updateTime": "2017-09-23 19:00:00",
+            "url": "/kaoslinux/",
+            "help": "",
+            "exitcode": "0"
         },
         {
             "name": "deb-multimedia",

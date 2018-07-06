@@ -14,6 +14,11 @@
         "upstream": "fedorapeople.org::groups/virt",
         "schedule": "2017-12-17 20:15:00"
     },
+    "kaoslinux": {
+        "status": 0,
+        "upstream": "mirror.math.princeton.edu::pub/kaoslinux",
+        "schedule": "2017-12-17 20:15:00"
+    },
     "centos-cloud": {
         "status": 0,
         "upstream": "https://cloud.centos.org",
