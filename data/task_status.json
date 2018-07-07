@@ -29,6 +29,11 @@
         "upstream": "https://packages.microsoft.com",
         "schedule": "2017-12-17 20:15:00"
     },
+	"hbcd": {
+        "status": 0,
+        "upstream": "rsync.hirensbootcd.org::mirror",
+        "schedule": "2017-12-17 20:15:00"
+    },
 	"saltstack": {
         "status": 0,
         "upstream": "repo.saltstack.com::saltstack_pkgrepo_full//",
