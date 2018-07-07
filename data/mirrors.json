@@ -73,7 +73,7 @@
         },{
             "name": "kaoslinux",
             "isNew": true,
-            "official": false,
+            "official": true,
             "taskStatus": "2",
             "sources": "mirror.math.princeton.edu",
             "updateTime": "2017-09-23 19:00:00",
