@@ -935,40 +935,40 @@
             "label": "Kali",
             "children": [
                 {
-                    "value": "/kali-images/current/kali-linux-2018.2-amd64.iso",
-                    "label": "2018.2-amd64"
+                    "value": "/kali-images/current/kali-linux-2018.3a-amd64.iso",
+                    "label": "2018.3a-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-2018.2-i386.iso",
-                    "label": "2018.2-i386"
+                    "value": "/kali-images/current/kali-linux-2018.3a-i386.iso",
+                    "label": "2018.3a-i386"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-kde-2018.2-amd64.iso",
-                    "label": "2018.2-kde-amd64"
+                    "value": "/kali-images/current/kali-linux-kde-2018.3a-amd64.iso",
+                    "label": "2018.3a-kde-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-mate-2018.2-amd64.iso",
-                    "label": "2018.2-mate-amd64"
+                    "value": "/kali-images/current/kali-linux-mate-2018.3a-amd64.iso",
+                    "label": "2018.3a-mate-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-xfce-2018.2-amd64.iso",
-                    "label": "2018.2-xfce-amd64"
+                    "value": "/kali-images/current/kali-linux-xfce-2018.3a-amd64.iso",
+                    "label": "2018.3a-xfce-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-light-2018.2-amd64.iso",
-                    "label": "2018.2-light-amd64"
+                    "value": "/kali-images/current/kali-linux-light-2018.3a-amd64.iso",
+                    "label": "2018.3a-light-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-light-2018.2-i386.iso",
-                    "label": "2018.2-light-i386"
+                    "value": "/kali-images/current/kali-linux-light-2018.3a-i386.iso",
+                    "label": "2018.3a-light-i386"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-lxde-2018.2-amd64.iso",
-                    "label": "2018.2-lxde-amd64"
+                    "value": "/kali-images/current/kali-linux-lxde-2018.3a-amd64.iso",
+                    "label": "2018.3a-lxde-amd64"
                 },
                 {
-                    "value": "/kali-images/current/kali-linux-e17-2018.2-amd64.iso",
-                    "label": "2018.2-e17-amd64"
+                    "value": "/kali-images/current/kali-linux-e17-2018.3a-amd64.iso",
+                    "label": "2018.3a-e17-amd64"
                 }
             ]
         },
@@ -1003,16 +1003,16 @@
             "label": "Archlinux",
             "children": [
                 {
-                    "value": "/archlinux/iso/2018.05.01/archlinux-2018.05.01-x86_64.iso",
-                    "label": "2018.05.01-amd64"
+                    "value": "/archlinux/iso/2018.10.01/archlinux-2018.10.01-x86_64.iso",
+                    "label": "2018.10.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2018.06.01/archlinux-2018.06.01-x86_64.iso",
-                    "label": "2018.06.01-amd64"
+                    "value": "/archlinux/iso/2018.09.01/archlinux-2018.09.01-x86_64.iso",
+                    "label": "2018.09.01-amd64"
                 },
                 {
-                    "value": "/archlinux/iso/2018.07.01/archlinux-2018.07.01-x86_64.iso",
-                    "label": "2018.07.01-amd64"
+                    "value": "/archlinux/iso/2018.08.01/archlinux-2018.08.01-x86_64.iso",
+                    "label": "2018.08.01-amd64"
                 }
             ]
         },
@@ -1039,20 +1039,8 @@
             "label": "Deepin",
             "children": [
                 {
-                    "value": "/deepin-cd/15.6/deepin-15.6-amd64.iso",
-                    "label": "15.6-amd64"
-                },
-                {
-                    "value": "/deepin-cd/15.5/deepin-15.5-amd64.iso",
-                    "label": "15.5-amd64"
-                },
-                {
-                    "value": "/deepin-cd/15.4.1/deepin-15.4.1-amd64.iso",
-                    "label": "15.4.1-amd64"
-                },
-                {
-                    "value": "/deepin-cd/15.4/deepin-15.4-amd64.iso",
-                    "label": "15.4-amd64"
+                    "value": "/deepin-cd/15.7/deepin-15.7-amd64.iso",
+                    "label": "15.7-amd64"
                 }
             ]
         },
@@ -1156,12 +1144,12 @@
             "label": "Lyx",
             "children": [
                 {
-                    "value": "/lyx/bin/2.3.0/LyX-2.3.0+qt5-x86_64-cocoa.dmg",
-                    "label": "LyX-2.3.0-mac"
+                    "value": "/lyx/bin/2.3.1/LyX-2.3.1-1+qt5-x86_64-cocoa.dmg",
+                    "label": "LyX-2.3.1-mac"
                 },
                 {
-                    "value": "/lyx/bin/2.3.0/lyx-2.3.0-cygwin.tar.gz",
-                    "label": "Lyx-2.3.0-win"
+                    "value": "/lyx/bin/2.3.1/LyX-231-Installer-5.exe",
+                    "label": "Lyx-2.3.1-win"
                 }
             ]
         },{
