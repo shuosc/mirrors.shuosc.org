@@ -405,6 +405,16 @@
         "upstream": "rsync.releases.ubuntu.com::releases//",
         "schedule": "2017-12-17 22:20:00"
     },
+    "ubuntu-ports": {
+        "status": 0,
+        "upstream": "ports.ubuntu.com::ubuntu-ports",
+        "schedule": "2017-12-17 22:20:00"
+    },
+    "ubuntu-security": {
+        "status": 0,
+        "upstream": "security.ubuntu.com::ubuntu",
+        "schedule": "2017-12-17 22:20:00"
+    },
     "videolan-ftp": {
         "status": 0,
         "schedule": "2017-12-17 20:05:00",
