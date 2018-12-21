@@ -927,11 +927,11 @@
             "label": "CentOS",
             "children": [
                 {
-                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1804.iso",
+                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso",
                     "label": "7-livecd-amd64"
                 },
                 {
-                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso",
+                    "value": "/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso",
                     "label": "7-minimal-amd64"
                 }
             ]
