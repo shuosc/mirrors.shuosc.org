@@ -1,4 +1,4 @@
-# robots.txt for https://mirrors.shuosc.org
+# robots.txt for https://mirrors.shu.edu.cn
 User-agent: *
 
 Disallow: /alpine
