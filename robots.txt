@@ -1,6 +1,17 @@
 # robots.txt for https://mirrors.shu.edu.cn
 User-agent: *
 
+Disallow: /ppa
+Disallow: /dart
+Disallow: /dart-pub
+Disallow: /fultter_infra
+Disallow: /google-fonts
+Disallow: /google-ajax
+Disallow: /gstatic
+Disallow: /google-themes
+Disallow: /google-packages
+Disallow: /maven
+
 Disallow: /alpine
 Disallow: /anaconda
 Disallow: /anthon
@@ -32,6 +43,7 @@ Disallow: /gentoo
 Disallow: /gimp
 Disallow: /gnome
 Disallow: /gnu
+Disallow: /hbcd
 Disallow: /homebrew-bottles
 Disallow: /homebrew-cask
 Disallow: /homebrew-core
@@ -39,6 +51,7 @@ Disallow: /iina
 Disallow: /jenkins
 Disallow: /kali
 Disallow: /kali-images
+Disallow: /kaoslinux
 Disallow: /kde
 Disallow: /kernel
 Disallow: /lede
@@ -70,6 +83,7 @@ Disallow: /rubygems
 Disallow: /saltstack
 Disallow: /ubuntu
 Disallow: /ubuntu-cdimage
+Disallow: /ubuntu-ports
 Disallow: /ubuntu-cloud-images
 Disallow: /ubuntu-releases
 Disallow: /videolan-ftp

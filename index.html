@@ -17,7 +17,7 @@
 <body>
     <div id="menu">
         <div class="container">
-        <el-menu :default-active="activeIndex" mode="horizontal" >
+        <el-menu :default-active="activeIndex" mode="horizontal">
             <div class="title">上海大学开源镜像站</div>
             <div class="navBar">
                 <el-menu-item index="7"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
@@ -33,6 +33,52 @@
     </div>
     <div class="container">
         <div class="left">
+            <div id="proxy-list">
+                <div class="bar">
+                    <div class="title" v-on:click="changeHidden">加速代理列表
+                        <div class="hidden_button">
+                            <template v-if="hidden">
+                                <i class="el-icon-arrow-right"></i>
+                            </template>
+                            <template v-else>
+                                <i class="el-icon-arrow-down"></i>
+                            </template>
+                        </div>
+                    </div>
+                    <template v-if="!hidden">
+                        <el-table :data="items" style="width: 100%" v-if="isAll">
+                            <el-table-column prop="name" label="镜像名" min-width="25%">
+                                <template scope="scope">
+                                    <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="origin_url" label="加速源地址" min-width="50%">
+                                <template scope="scope">
+                                    <a v-bind:href="[scope.row.sources]" target="_blank">{{scope.row.sources}}</a>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="help" label="帮助" min-width="15%">
+                                <template scope="scope">
+                                    <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank">Help</a>
+                                </template>
+                            </el-table-column>
+                        </el-table>
+                        <el-table :data="items" stripe style="width: 100%" v-else>
+                            <el-table-column prop="name" label="镜像名（加速源地址）" min-width="48%">
+                                <template scope="scope">
+                                        <a v-bind:href="[scope.row.url]">{{scope.row.name}}</a> 
+                                        <a v-bind:href="[scope.row.sources]" target="_blank">（{{scope.row.sources}}）</a>
+                                </template>
+                            </el-table-column>
+                            <el-table-column prop="help" label="" min-width="5%">
+                                <template scope="scope">
+                                    <a v-if="scope.row.help !== ''" :href="scope.row.help" target="_blank"><i class="el-icon-info"></i></a>
+                                </template>
+                            </el-table-column>
+                        </el-table>
+                    </template>
+                </div>
+            </div>
             <div id="mirrors-list">
                 <div class="bar">
                     <div class="title">源列表</div>
@@ -217,6 +263,38 @@
                 activeIndex: '1'
             }
         })
+        var proxy = new Vue({
+            el: '#proxy-list',
+            data: {
+                isAll: true,
+                loading: true,
+                items: [],
+                hidden: true
+            },
+            created: function() {
+                this.loadProxy();
+            },
+            methods: {
+                loadProxy: function () {
+                    axios.get('/data/mirrors.json')
+                    .then(function (response) {
+                        proxy.items = response.data.proxy;
+                    });
+                    var clientWidth = document.documentElement.clientWidth;
+                    if(clientWidth<768){
+                        this.isAll = false;
+                    }
+                    this.loading = false;
+                },
+                changeHidden: function () {
+                    if (this.hidden) {
+                        this.hidden = false;
+                    } else {
+                        this.hidden = true;
+                    }
+                }
+            }
+        })
         var mirrors = new Vue({
             el: '#mirrors-list',
             data: {
@@ -250,7 +328,7 @@
                             // }
                                 item.taskStatus = "2";
                                 item.exitcode = "0";
-                            console.log(item);
+                            // console.log(item);
                             // if(typeof(data['upstream'])!= "undefined"){
                                 item.sources = data['upstream'];
                             // }
@@ -327,7 +405,7 @@
                 items: []   
             },
             created: function() {
-                this.loadNews();
+                // this.loadNews();
             },
             methods: {
                 loadNews: function () {
@@ -356,14 +434,17 @@
             el: '#domains',
             data: {
                 domains:[{
-                    title: '自动解析',
-                    url: 'https://mirrors.shuosc.org'
-                },{
                     title: '只解析IPv4',
                     url: 'https://mirrors.shu.edu.cn'
                 },{
                     title: '只解析IPv6',
-                    url: 'https://mirrors.shu6.edu.cn'
+                    url: 'https://mirrors6.shu.edu.cn'
+                },{
+                    title: 'Docker Hub加速IPv4',
+                    url: 'https://docker.mirrors.shu.edu.cn'
+                },{
+                    title: 'Docker Hub加速IPv6',
+                    url: 'https://docker.mirrors6.shu.edu.cn'
                 }]   
             }
         })

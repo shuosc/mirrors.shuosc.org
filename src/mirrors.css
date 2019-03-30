@@ -55,6 +55,12 @@ body {
     color: #ffffff;
 }
 
+.el-table .cell {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
 .navBar {
     float: right;
     margin-right: 60px;
@@ -65,7 +71,7 @@ a {
     text-decoration: none;
 }
 
-#mirrors-list,#isos,#news,#domains,#links,#copyright,#servers-status,#others {
+#proxy-list,#mirrors-list,#isos,#news,#domains,#links,#copyright,#servers-status,#others {
     padding: 20px 20px 0 20px;
 }
 
@@ -85,17 +91,22 @@ a {
     border-radius: 3px;
 }
 
-#mirrors-list a:hover {
+#proxy-list a:hover, #mirrors-list a:hover {
     text-decoration: underline;
 }
 
-#mirrors-list table {
+#proxy-list table, #mirrors-list table {
     font-size: 13px;
 }
 
-#mirrors-list table td{
+#proxy-list table td, #mirrors-list table td{
     height: 28px;
     padding: 0;
+}
+
+.hidden_button {
+    display: inline-block;
+    float: right;
 }
 
 .el-tag{
@@ -114,6 +125,10 @@ a {
     line-height: 36px;
     color: #307e6e;
     margin-bottom: 10px;
+}
+
+#proxy-list .bar .title {
+    display: block;
 }
 
 #news p,#links p,#others p{
@@ -264,10 +279,10 @@ a {
     .bar{
         margin: 0;
     }
-    #mirrors-list .bar .list{
+    #proxy-list .bar .list, #mirrors-list .bar .list{
         overflow: scroll;
     }
-    #mirrors-list .bar .content{
+    #proxy-list .bar .content, #mirrors-list .bar .content{
         width: 1024px;
     }
     .left, .right {

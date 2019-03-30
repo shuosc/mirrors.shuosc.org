@@ -1,4 +1,66 @@
 {
+    "proxy": [
+        {
+            "name": "ppa",
+            "url": "/ppa",
+            "sources": "http://ppa.launchpad.net",
+            "help": "/help/ppa.html"
+        },
+        {
+            "name": "dart",
+            "url": "/dart",
+            "sources": "https://pub.dartlang.org",
+            "help": "/help/dart.html"
+        },
+        {
+            "name": "dart-pub",
+            "url": "/dart-pub",
+            "sources": "https://pub-packages.storage.googleapis.com",
+            "help": ""
+        },
+        {
+            "name": "flutter_infra",
+            "url": "/flutter_infra",
+            "sources": "https://flutter_infra.storage.googleapis.com",
+            "help": ""
+        },
+        {
+            "name": "google-fonts",
+            "url": "/google-fonts",
+            "sources": "https://fonts.googleapis.com",
+            "help": ""
+        },
+        {
+            "name": "google-ajax",
+            "url": "/google-ajax",
+            "sources": "https://ajax.googleapis.com",
+            "help": ""
+        },
+        {
+            "name": "gstatic",
+            "url": "/gstatic",
+            "sources": "https://fonts.gstatic.com",
+            "help": ""
+        },
+        {
+            "name": "google-themes",
+            "url": "/google-themes",
+            "sources": "https://themes.googleusercontent.com",
+            "help": ""
+        },
+        {
+            "name": "google-packages",
+            "url": "/google-packages",
+            "sources": "https://packages.cloud.google.com",
+            "help": ""
+        },
+        {
+            "name": "maven",
+            "url": "/maven",
+            "sources": "https://maven-central.storage.googleapis.com",
+            "help": "/help/maven.html"
+        }
+    ],
     "mirrors": [
         {
             "name": "debian",
