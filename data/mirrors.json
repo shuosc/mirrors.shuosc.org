@@ -285,17 +285,6 @@
             "exitcode": "0"
         },
         {
-            "name": "anaconda",
-            "isNew": false,
-            "official": false,
-            "taskStatus": "2",
-            "sources": "https://repo.continuum.io",
-            "updateTime": "2017-09-23 22:00:00",
-            "url": "/anaconda/",
-            "help": "/help/anaconda.html",
-            "exitcode": "0"
-        },
-        {
             "name": "virtualbox",
             "isNew": false,
             "official": false,
