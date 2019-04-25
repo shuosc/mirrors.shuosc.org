@@ -410,13 +410,13 @@
             methods: {
                 loadNews: function () {
                     var vm = this;
-                    axios.get('/news/recent.json')
+                    axios.get('https://mirrornews.shuosc.org/recent.json')
                     .then(function (response) {
                         if(response.data!==null){
                             vm.isNull = false;
                             vm.items = response.data;
                             for(var item of vm.items){
-                                item.url = "/news/p/"+item.abbrlink+".html";
+                                item.url = "https://mirrornews.shuosc.org/p/"+item.abbrlink+".html";
                                 s1 = new Date(item.date.slice(0,10).replace(/-/g, "/"));
                                 s2 = new Date();
                                 var days = s2.getTime() - s1.getTime();
