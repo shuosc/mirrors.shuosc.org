@@ -422,7 +422,7 @@
             methods: {
                 loadNews: function () {
                     var vm = this;
-                    axios.get('https://mirrornews.shuosc.org/recent.json')
+                    axios.get('/recent.json')
                     .then(function (response) {
                         if(response.data!==null){
                             vm.isNull = false;
