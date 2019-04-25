@@ -21,10 +21,10 @@
             <div class="title">上海大学开源镜像站</div>
             <div class="navBar">
                 <el-menu-item index="7"><a href="https://osc.shu.edu.cn">Home</a></el-menu-item>
-                <el-menu-item index="2"><a href="/news/">News</a></el-menu-item>
+                <el-menu-item index="2"><a href="https://mirrornews.shuosc.org">News</a></el-menu-item>
                 <el-menu-item index="3"><a href="/status.html">Status</a></el-menu-item>
-                <el-menu-item index="4"><a href="/help/">Help</a></el-menu-item>
-                <el-menu-item index="5"><a href="/news/atom.xml">RSS</a></el-menu-item>
+                <el-menu-item index="4"><a href="https://help.shuosc.org">Help</a></el-menu-item>
+                <el-menu-item index="5"><a href="https://mirrornews.shuosc.org/atom.xml">RSS</a></el-menu-item>
                 <el-menu-item index="6"><a href="/">Mirrors</a></el-menu-item>
             </div>
             <div class="clear"></div>
@@ -332,6 +332,7 @@
                             // if(typeof(data['upstream'])!= "undefined"){
                                 item.sources = data['upstream'];
                             // }
+                            item.help = "https://help.shuosc.org/" + item.help;
                         }
                     });
                     var clientWidth = document.documentElement.clientWidth;
@@ -462,7 +463,7 @@
                     url: '/visitor/'
                 },{
                     title: '镜像通知 / News',
-                    url: '/news/'
+                    url: 'https://mirrornews.shuosc.org'
                 },{
                     title: 'OSC@SHU',
                     url: 'https://osc.shu.edu.cn'
