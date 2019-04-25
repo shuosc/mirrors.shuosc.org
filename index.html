@@ -279,6 +279,9 @@
                     axios.get('/data/mirrors.json')
                     .then(function (response) {
                         proxy.items = response.data.proxy;
+                        for(item of proxy.items){
+                            item.help = "https://help.shuosc.org/" + item.help;
+                        }
                     });
                     var clientWidth = document.documentElement.clientWidth;
                     if(clientWidth<768){

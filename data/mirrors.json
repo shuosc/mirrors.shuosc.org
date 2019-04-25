@@ -4,13 +4,13 @@
             "name": "ppa",
             "url": "/ppa",
             "sources": "http://ppa.launchpad.net",
-            "help": "/help/ppa.html"
+            "help": "ppa.html"
         },
         {
             "name": "dart",
             "url": "/dart",
             "sources": "https://pub.dartlang.org",
-            "help": "/help/dart.html"
+            "help": "dart.html"
         },
         {
             "name": "dart-pub",
@@ -58,7 +58,7 @@
             "name": "maven",
             "url": "/maven",
             "sources": "https://maven-central.storage.googleapis.com",
-            "help": "/help/maven.html"
+            "help": "maven.html"
         }
     ],
     "mirrors": [
@@ -70,7 +70,7 @@
             "sources": "ftp.us.debian.org/debian",
             "updateTime": "2017-09-23 19:00:00",
             "url": "/debian/",
-            "help": "/help/debian.html",
+            "help": "debian.html",
             "exitcode": "0"
         },{
             "name": "saltstack",
@@ -80,7 +80,7 @@
             "sources": "repo.saltstack.com/saltstack_pkgrepo_full",
             "updateTime": "2017-09-23 19:00:00",
             "url": "/saltstack/",
-            "help": "/help/saltstack.html",
+            "help": "saltstack.html",
             "exitcode": "0"
         },{
             "name": "ubuntu-ports",
@@ -140,7 +140,7 @@
             "sources": "https://packages.microsoft.com",
             "updateTime": "2017-09-23 19:00:00",
             "url": "/vscode/",
-            "help": "/help/vscode.html",
+            "help": "vscode.html",
             "exitcode": "0"
         },{
             "name": "kaoslinux",
@@ -171,7 +171,7 @@
             "sources": "rsync::www.deb-multimedia.org/deb",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/deb-multimedia/",
-            "help": "/help/deb-multimedia.html",
+            "help": "deb-multimedia.html",
             "exitcode": "0"
         },
         {
@@ -193,7 +193,7 @@
             "sources": "https://homebrew.bintray.com/",
             "updateTime": "2017-09-23 12:00:00",
             "url": "/homebrew-bottles/",
-            "help": "/help/homebrew-bottles.html",
+            "help": "homebrew-bottles.html",
             "exitcode": "0"
         },
         {
@@ -204,7 +204,7 @@
             "sources": "http://pypi.python.org",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/pypi/",
-            "help": "/help/pypi.html",
+            "help": "pypi.html",
             "exitcode": "0"
         },
         {
@@ -215,7 +215,7 @@
             "sources": "http://nodejs.org/dist/",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/node/",
-            "help": "/help/node.html",
+            "help": "node.html",
             "exitcode": "0"
         },
         {
@@ -226,7 +226,7 @@
             "sources": "http://repo.mongodb.org",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/mongodb/",
-            "help": "/help/mongodb.html",
+            "help": "mongodb.html",
             "exitcode": "0"
         },
         {
@@ -248,7 +248,7 @@
             "sources": "https://repo.pritunl.com",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/pritunl/",
-            "help": "/help/pritunl.html",
+            "help": "pritunl.html",
             "exitcode": "0"
         },
         {
@@ -259,7 +259,7 @@
             "sources": "http://download.zerotier.com",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/zerotier/",
-            "help": "/help/zerotier.html",
+            "help": "zerotier.html",
             "exitcode": "0"
         },
         {
@@ -270,7 +270,7 @@
             "sources": "http://cache.ruby-china.org",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/ruby/",
-            "help": "/help/ruby.html",
+            "help": "ruby.html",
             "exitcode": "0"
         },
         {
@@ -281,7 +281,7 @@
             "sources": "http://download.docker.com",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/docker-ce/",
-            "help": "/help/docker-ce.html",
+            "help": "docker-ce.html",
             "exitcode": "0"
         },
         {
@@ -292,7 +292,7 @@
             "sources": "http://download.virtualbox.org/virtualbox",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/virtualbox/",
-            "help": "/help/virtualbox.html",
+            "help": "virtualbox.html",
             "exitcode": "0"
         },
         {
@@ -303,7 +303,7 @@
             "sources": "rsync::mirrors.ustc.edu.cn/archlinux",
             "updateTime": "2017-09-23 19:00:00",
             "url": "/archlinux/",
-            "help": "/help/archlinux.html",
+            "help": "archlinux.html",
             "exitcode": "0"
         },
         {
@@ -314,7 +314,7 @@
             "sources": "rsync::archive.ubuntu.com/ubuntu",
             "updateTime": "2017-11-28 10:00:00",
             "url": "/ubuntu/",
-            "help": "/help/ubuntu.html",
+            "help": "ubuntu.html",
             "exitcode": "0"
         },
         {
@@ -325,7 +325,7 @@
             "sources": "rsync::rsync.apache.org/apache-dist",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/apache/",
-            "help": "/help/apache.html",
+            "help": "apache.html",
             "exitcode": "0"
         },
         {
@@ -336,7 +336,7 @@
             "sources": "rsync::mirrors.ustc.edu.cn/centos",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/centos/",
-            "help": "/help/centos.html",
+            "help": "centos.html",
             "exitcode": "0"
         },
         {
@@ -347,7 +347,7 @@
             "sources": "rsync::mirrors.ustc.edu.cn/kali",
             "updateTime": "2017-09-23 18:00:00",
             "url": "/kali/",
-            "help": "/help/kali.html",
+            "help": "kali.html",
             "exitcode": "0"
         },
         {
@@ -358,7 +358,7 @@
             "sources": "rsync::rsync.osuosl.org/mariadb",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/mariadb/",
-            "help": "/help/mariadb.html",
+            "help": "mariadb.html",
             "exitcode": "0"
         },
         {
@@ -369,7 +369,7 @@
             "sources": "rsync::rsync.postgresql.org/pgsql-ftp",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/postgresql/",
-            "help": "/help/postgresql.html",
+            "help": "postgresql.html",
             "exitcode": "0"
         },
         {
@@ -380,7 +380,7 @@
             "sources": "rsync::rsync.dante.ctan.org/CTAN",
             "updateTime": "2017-09-23 21:00:00",
             "url": "/CTAN/",
-            "help": "/help/ctan.html",
+            "help": "ctan.html",
             "exitcode": "0"
         },
         {
@@ -391,7 +391,7 @@
             "sources": "rsync::ftp.iij.ad.jp/gentoo",
             "updateTime": "",
             "url": "/gentoo/",
-            "help": "/help/gentoo.html",
+            "help": "gentoo.html",
             "exitcode": "0"
         },
         {
@@ -402,7 +402,7 @@
             "sources": "rsync::mirrors.kernel.org/opensuse",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/opensuse/",
-            "help": "/help/opensuse.html",
+            "help": "opensuse.html",
             "exitcode": "0"
         },
         {
@@ -413,7 +413,7 @@
             "sources": "rsync::repo.zabbix.com/mirror",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/zabbix/",
-            "help": "/help/zabbix.html",
+            "help": "zabbix.html",
             "exitcode": "0"
         },
         {
@@ -424,7 +424,7 @@
             "sources": "rsync::cran.r-project.org/CRAN",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/CRAN/",
-            "help": "/help/cran.html",
+            "help": "cran.html",
             "exitcode": "0"
         },
         {
@@ -446,7 +446,7 @@
             "sources": "rsync::rsync.osuosl.org/jenkins",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/jenkins/",
-            "help": "https://jenkins.io",
+            "help": "",
             "exitcode": "0"
         },
         {
@@ -501,7 +501,7 @@
             "sources": "rsync::ftp.nluug.nl/repoforge",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/repoforge/",
-            "help": "/help/repoforge.html",
+            "help": "repoforge.html",
             "exitcode": "0"
         },
         {
@@ -534,7 +534,7 @@
             "sources": "rsync::rsync.alpinlinux.org/alpine",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/alpine/",
-            "help": "/help/alpine.html",
+            "help": "alpine.html",
             "exitcode": "0"
         },
         {
@@ -578,7 +578,7 @@
             "sources": "https://github.com/Homebrew/homebrew-core.git",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/homebrew-core/",
-            "help": "/help/homebrew-core.html",
+            "help": "homebrew-core.html",
             "exitcode": "0"
         },
         {
@@ -589,7 +589,7 @@
             "sources": "https://github.com/Homebrew/brew.git",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/brew/",
-            "help": "/help/homebrew.html",
+            "help": "homebrew.html",
             "exitcode": "0"
         },
         {
@@ -600,7 +600,7 @@
             "sources": "https://github.com/CocoaPods/Specs.git",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/CocoaPods/",
-            "help": "/help/cocoapods.html",
+            "help": "cocoapods.html",
             "exitcode": "0"
         },
         {
@@ -611,7 +611,7 @@
             "sources": "https://github.com/caskroom/homebrew-cask.git",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/homebrew-cask/",
-            "help": "/help/homebrew-cask.html",
+            "help": "homebrew-cask.html",
             "exitcode": "0"
         },
         {
@@ -622,7 +622,7 @@
             "sources": "mirror.math.princeton.edu::pub/CPAN",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/CPAN/",
-            "help": "/help/cpan.html",
+            "help": "cpan.html",
             "exitcode": "0"
         },
         {
@@ -655,7 +655,7 @@
             "sources": "mirror.math.princeton.edu::pub/cygwin",
             "updateTime": "2017-09-23 22:00:00",
             "url": "/cygwin/",
-            "help": "/help/cygwin.html",
+            "help": "/cygwin.html",
             "exitcode": "0"
         },
         {
@@ -765,7 +765,7 @@
             "sources": "archive.raspbian.org::archive/",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/raspbian/",
-            "help": "/help/raspbian.html",
+            "help": "/raspbian.html",
             "exitcode": "0"
         },
         {
@@ -776,7 +776,7 @@
             "sources": "https://rubygems.org",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/rubygems/",
-            "help": "/help/rubygems.html",
+            "help": "/rubygems.html",
             "exitcode": "0"
         },
         {
@@ -798,7 +798,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/archlinuxcn/",
-            "help": "/help/archlinuxcn.html",
+            "help": "archlinuxcn.html",
             "exitcode": "0"
         },
         {
@@ -820,7 +820,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/linuxmint/",
-            "help": "/help/linuxmint.html",
+            "help": "linuxmint.html",
             "exitcode": "0"
         },
         {
@@ -831,7 +831,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/fedora/",
-            "help": "/help/fedora.html",
+            "help": "fedora.html",
             "exitcode": "0"
         },
         {
@@ -853,7 +853,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/epel/",
-            "help": "/help/epel.html",
+            "help": "epel.html",
             "exitcode": "0"
         },
         {
@@ -886,7 +886,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/msys2/",
-            "help": "/help/msys2.html",
+            "help": "msys2.html",
             "exitcode": "0"
         },
         {
@@ -908,7 +908,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/manjaro/",
-            "help": "/help/manjaro.html",
+            "help": "manjaro.html",
             "exitcode": "0"
         },
         {
@@ -919,7 +919,7 @@
             "sources": "",
             "updateTime": "2017-10-26 22:00:00",
             "url": "/anthon/",
-            "help": "/help/anthon.html",
+            "help": "anthon.html",
             "exitcode": "0"
         },
         {
