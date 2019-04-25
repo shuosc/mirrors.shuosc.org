@@ -9,7 +9,8 @@
     <meta name="keywords" content="镜像站,镜像源,Linux,开源,软件源"> 
     <meta name="author" content="SHUOSC">
     <title>上海大学开源镜像站</title>
-    <link href="/src/element-ui.css" rel="stylesheet">
+    <!-- <link href="/src/element-ui.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui/lib/theme-chalk/index.css">
     <link href="/src/mirrors.css" rel="stylesheet">
     <link rel="shortcut icon" href="/src/img/favicon.ico">
 </head>
@@ -240,9 +241,12 @@
             <div class="clear"></div>
         </div>
     </div>
-    <script src="/src/vue.min.js"></script>
-    <script src="/src/element-ui.js"></script>
-    <script src="/src/axios.js"></script>
+    <!-- <script src="/src/vue.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <!-- <script src="/src/element-ui.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/element-ui/lib/index.js"></script>
+    <!-- <script src="/src/axios.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
     <script src="/src/mirrors.js"></script>
     <script type="text/javascript" src="/src/ip.js?domain=referer" async="async"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -280,7 +284,9 @@
                     .then(function (response) {
                         proxy.items = response.data.proxy;
                         for(item of proxy.items){
-                            item.help = "https://help.shuosc.org/" + item.help;
+                            if(item.help != ""){
+                                item.help = "https://help.shuosc.org/" + item.help;
+                            }
                         }
                     });
                     var clientWidth = document.documentElement.clientWidth;
@@ -335,7 +341,9 @@
                             // if(typeof(data['upstream'])!= "undefined"){
                                 item.sources = data['upstream'];
                             // }
-                            item.help = "https://help.shuosc.org/" + item.help;
+                            if(item.help != ""){
+                                item.help = "https://help.shuosc.org/" + item.help;
+                            }
                         }
                     });
                     var clientWidth = document.documentElement.clientWidth;

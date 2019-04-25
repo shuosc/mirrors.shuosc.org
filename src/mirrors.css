@@ -30,6 +30,14 @@ body {
     background-color: #455D6F;
 }
 
+.navBar a{
+    color: #dbdbdb;
+}
+
+.navBar a:hover {
+    color: #ffffff;
+}
+
 .el-menu--horizontal{
     border: none;
     background-color: #455D6F;
@@ -39,6 +47,14 @@ body {
     font-size: medium;
     font-weight: 400;
     color: #dbdbdb;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
 }
 
 .el-menu--horizontal .el-menu-item:hover {
