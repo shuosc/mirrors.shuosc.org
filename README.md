@@ -2,7 +2,7 @@
 
 - IPv4访问地址：https://mirrors.shu.edu.cn
 - IPv6访问地址：https://mirrors.shu6.edu.cn
-- 通用访问地址：https://mirrors.shuosc.org
+- 【根据相关法律法规暂停使用】通用访问地址：https://mirrors.shuosc.org
 
 - v1版截图
 ![v1 screenshot](https://ws2.sinaimg.cn/large/006tKfTcly1fiop8muo0vj30dd0k4dgm.jpg)
