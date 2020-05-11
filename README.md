@@ -2,9 +2,9 @@
 
 - （镜像站） http://mirrors.shu.edu.cn (校园网，IPv4)
 - （Docker镜像加速） http://docker.mirrors.shu.edu.cn （校园网，IPv4）
-- （镜像站） https://mirrors.shuosc.cn （校园网，IPv4；公网，IPv6）
 - （镜像站） https://mirrors6.shu.edu.cn （公网，IPv6）
 - （Docker镜像加速） https://docker.mirrors6.shu.edu.cn （公网，IPv6）
+- （镜像站） https://mirrors.shuosc.cn （校园网，IPv4；公网，IPv6；如遇不可以用请尝试切换其他域名）
 
 - v1版截图
 ![v1 screenshot](https://ws2.sinaimg.cn/large/006tKfTcly1fiop8muo0vj30dd0k4dgm.jpg)
