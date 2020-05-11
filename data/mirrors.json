@@ -956,12 +956,12 @@
                     "label": "16.04-desktop-i386"
                 },
                 {
-                    "value": "/ubuntu-releases/bionic/ubuntu-18.04.2-live-server-amd64.iso",
-                    "label": "18.04.2-live-server-amd64"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04.4-live-server-amd64.iso",
+                    "label": "18.04.4-live-server-amd64"
                 },
                 {
-                    "value": "/ubuntu-releases/bionic/ubuntu-18.04.2-desktop-amd64.iso",
-                    "label": "18.04.2-desktop-amd64"
+                    "value": "/ubuntu-releases/bionic/ubuntu-18.04.4-desktop-amd64.iso",
+                    "label": "18.04.4-desktop-amd64"
                 },
                 {
                     "value": "/ubuntu-cloud-images/xenial/current/xenial-server-cloudimg-amd64-disk1.img",
